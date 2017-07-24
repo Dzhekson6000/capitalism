@@ -21,6 +21,7 @@
 ## Build generated
 build/
 DerivedData/
+cmake-build*/
 
 ## Various settings
 *.pbxuser

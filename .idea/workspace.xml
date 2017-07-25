@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="MyGame" targetName="MyGame" />
+      <config projectName="MyGame" targetName="tinyxml2" />
+      <config projectName="MyGame" targetName="recast" />
+      <config projectName="MyGame" targetName="flatbuffers" />
+      <config projectName="MyGame" targetName="cocos2d" />
+      <config projectName="MyGame" targetName="bullet" />
+      <config projectName="capitalism" targetName="capitalism" />
+      <config projectName="MyGame" targetName="MyGame_PRE_BUILD" />
+      <config projectName="capitalism" targetName="capitalism_CORE_PRE_BUILD" />
+      <config projectName="MyGame" targetName="xxhash" />
+      <config projectName="capitalism" targetName="capitalism_PRE_BUILD" />
+      <config projectName="MyGame" targetName="MyGame_CORE_PRE_BUILD" />
+      <config projectName="MyGame" targetName="cocos2dInternal" />
+      <config projectName="MyGame" targetName="unzip" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b058765-3887-4ef2-aa59-7103a856b14d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/CloseNormal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/CloseSelected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/HelloWorld.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/fonts/Marker Felt.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/fonts/arial.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/android/arm64-v8a/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/android/armeabi-v7a/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/android/armeabi/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/android/x86/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/ios/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/linux/64-bit/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/mac/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/tizen/arm/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/tizen/x86/libchipmunk.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win10/arm/chipmunk.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win10/win32/chipmunk.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win10/x64/chipmunk.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win32/debug-lib/libchipmunk-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win32/debug-lib/libchipmunk.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win32/release-lib/libchipmunk-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/chipmunk/prebuilt/win32/release-lib/libchipmunk.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/android/arm64-v8a/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/android/armeabi-v7a/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/android/armeabi/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/android/x86/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/ios/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/mac/libcurl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/arm/libcurl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/arm/libcurl_imp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/win32/libcurl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/win32/libcurl_imp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/x64/libcurl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win10/x64/libcurl_imp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win32/libcurl.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/curl/prebuilt/win32/libcurl.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/android/arm64-v8a/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/android/armeabi-v7a/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/android/armeabi/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/android/x86/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/ios/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/linux/64-bit/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/mac/libfreetype.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/win10/arm/freetype.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/win10/win32/freetype.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/win10/x64/freetype.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/freetype2/prebuilt/win32/freetype.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/glfw3/prebuilt/mac/libglfw3.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/glfw3/prebuilt/win32/glfw3-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/glfw3/prebuilt/win32/glfw3.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/android/arm64-v8a/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/android/armeabi-v7a/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/android/armeabi/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/android/x86/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/ios/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/linux/64-bit/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/mac/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/tizen/arm/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/tizen/x86/libjpeg.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/win32/libjpeg-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/jpeg/prebuilt/win32/libjpeg.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmod.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/linux-specific/fmod/prebuilt/64-bit/libfmodL.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/arm64-v8a/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/arm64-v8a/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/armeabi-v7a/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/armeabi-v7a/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/armeabi/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/armeabi/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/x86/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/android/x86/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/ios/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/ios/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/linux/64-bit/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/linux/64-bit/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/mac/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/mac/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/tizen/arm/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/tizen/arm/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/tizen/x86/libcrypto.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/tizen/x86/libssl.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/arm/libeay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/arm/ssleay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/win32/libeay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/win32/ssleay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/x64/libeay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win10/x64/ssleay32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win32/libcrypto.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/openssl/prebuilt/win32/libssl.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/android/arm64-v8a/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/android/armeabi-v7a/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/android/armeabi/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/android/x86/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/ios/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/mac/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/tizen/arm/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/tizen/x86/libpng.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/win32/libpng-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/png/prebuilt/win32/libpng.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/arm/sqlite3.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/arm/sqlite3.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/win32/sqlite3.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/win32/sqlite3.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/x64/sqlite3.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win10/x64/sqlite3.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win32/sqlite3.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/sqlite3/libraries/win32/sqlite3.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/android/arm64-v8a/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/android/armeabi-v7a/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/android/armeabi/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/android/x86/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/ios/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/linux/64-bit/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/mac/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/tizen/arm/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/tizen/x86/libtiff.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/win32/libtiff-2015.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/win32/libtiff.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/tiff/prebuilt/win32/libtiff.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/android/arm64-v8a/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/android/armeabi-v7a/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/android/armeabi/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/android/x86/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/ios/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/linux/64-bit/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/mac/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/tizen/arm/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/tizen/x86/libwebp.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/webp/prebuilt/win32/libwebp.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/android/arm64-v8a/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/android/armeabi-v7a/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/android/armeabi/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/android/x86/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/ios/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/linux/64-bit/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/mac/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/tizen/arm/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/tizen/x86/libwebsockets.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/arm/websockets.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/arm/websockets.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/win32/websockets.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/win32/websockets.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/x64/websockets.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win10/x64/websockets.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win32/websockets.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/websockets/prebuilt/win32/websockets.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/ogg.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/ogg.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/vorbis.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/vorbis.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/vorbisfile.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/arm/vorbisfile.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/ogg.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/ogg.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/vorbis.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/vorbis.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/vorbisfile.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/win32/vorbisfile.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/ogg.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/ogg.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/vorbis.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/vorbis.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/vorbisfile.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/OggDecoder/prebuilt/x64/vorbisfile.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/arm/libEGL.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/arm/libEGL.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/arm/libGLESv2.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/arm/libGLESv2.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/win32/libEGL.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/win32/libEGL.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/win32/libGLESv2.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/win32/libGLESv2.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/x64/libEGL.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/x64/libEGL.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/x64/libGLESv2.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/angle/prebuilt/x64/libGLESv2.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/arm/zlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/arm/zlib1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/arm/zlibstatic.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/win32/zlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/win32/zlib1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/win32/zlibstatic.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/x64/zlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/x64/zlib1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win10-specific/zlib/prebuilt/x64/zlibstatic.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/gles/prebuilt/glew32.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/icon/prebuilt/libiconv.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/zlib/prebuilt/libzlib.lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/win32-specific/zlib/prebuilt/zlib1.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/zlib/prebuilt/android/arm64-v8a/libz.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/zlib/prebuilt/android/armeabi-v7a/libz.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/zlib/prebuilt/android/armeabi/libz.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/zlib/prebuilt/android/x86/libz.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/external/zlib/prebuilt/mac/libz.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/admob/proj.ios/Admob/libGoogleAdMobAds.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/flurry/proj.ios/FlurryAds/libFlurryAds.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/flurry/proj.ios/libFlurry.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/qh360/proj.android/CLibs/armeabi/libpaypalm_app_plugin_jar_360game.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/qh360/proj.android/CLibs/mips/libpaypalm_app_plugin_jar_360game.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/umeng/proj.ios/libMobClickLibrary.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/tools/fbx-conv/mac/libfbxsdk.dylib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/res/drawable-hdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/res/drawable-ldpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/res/drawable-mdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default-568h@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default-667h@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default-736h@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default-Landscape~ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Default@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-58.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Icon-87.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/mac/Icon.icns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/res/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/shared/res/capitalism.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/LockScreenLogo.scale-200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/SplashScreen.scale-200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/Square150x150Logo.scale-200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/Square44x44Logo.scale-200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/Square44x44Logo.targetsize-24_altform-unplated.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/StoreLogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Assets/Wide310x150Logo.scale-200.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/capitalism_TemporaryKey.pfx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/res/game.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/capitalism.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/AppDelegate.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/AppDelegate.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/HelloWorldScene.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/android-build.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/cocos2d-win10.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/cocos2d-win32.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/cocos2d_libs.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/cocos2d_tests.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/install-deps-linux.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/.cproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/.exportMap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/.tproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/appendix.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/basedef.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/build_c.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/build_edc.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/build_po.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/flags.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/funcs.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/makefile.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/platform.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/Build/tooldef.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/tizen/project_def.prop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/build/win32-msvc-2013-x86.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/ios/cocos2d-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/mac/cocos2d-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/admob/proj.ios/PluginAdmob-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/PluginFacebook-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/facebookads/proj.ios/PluginFacebookAds/PluginFacebookAds-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/flurry/proj.ios/PluginFlurry-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/iosiap/proj.ios/IOSIAP/PluginIAP-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/twitter/proj.ios/PluginTwitter-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/umeng/proj.ios/PluginUmeng-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/plugins/weibo/proj.ios/PluginWeibo-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/plugin/protocols/proj.ios/PluginProtocol-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/tools/simulator/frameworks/runtime-src/proj.ios_mac/ios/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/tools/simulator/frameworks/runtime-src/proj.ios_mac/mac/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/tools/simulator/libsimulator/proj.ios_mac/ios/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d/tools/simulator/libsimulator/proj.ios_mac/mac/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/jni/Android.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/jni/Application.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/proguard-rules.pro" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/gradle.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/gradlew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/gradlew.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android-studio/settings.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.cproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.externalToolBuilders/org.eclipse.cdt.managedbuilder.core.genmakebuilder.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.cdt.codan.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.cdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/.settings/org.eclipse.ltk.core.refactoring.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/ant.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/build-cfg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/jni/Android.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/jni/Application.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/jni/hellocpp/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/proguard-project.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.android/src/org/cocos2dx/cpp/AppActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/capitalism.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/AppController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/AppController.mm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/RootViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/RootViewController.mm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/ios/main.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/mac/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/mac/Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.ios_mac/mac/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.linux/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/.cproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/.exportMap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/.tproject" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/appendix.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/basedef.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/build_c.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/build_edc.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/build_po.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/flags.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/funcs.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/makefile.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/platform.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/Build/tooldef.mk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/build-cfg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/copy_resource.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/project_def.prop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/src/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.tizen/tizen-manifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/App.xaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/App.xaml.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/App.xaml.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/Cocos2dRenderer.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/Cocos2dRenderer.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLES.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLES.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Cocos2dEngine/OpenGLESPage.xaml.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/Package.appxmanifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/capitalism.vcxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/capitalism.vcxproj.filters" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/pch.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/pch.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/App/resources.props" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win10/capitalism.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/build-cfg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/capitalism.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/capitalism.vcxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/capitalism.vcxproj.filters" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/capitalism.vcxproj.user" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/game.rc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/main.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proj.win32/resource.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resources/fonts/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.cocos-project.json" afterPath="$PROJECT_DIR$/.cocos-project.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>FMOD include dirs</find>
+      <find>FMOD</find>
+      <find>FMOD_INCLUDE_DIRS</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="8" />
+    <option name="y" value="10" />
+    <option name="width" value="1350" />
+    <option name="height" value="731" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj.linux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capitalism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager" selected="Application.MyGame">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/sbin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="capitalism" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MyGame" RUN_TARGET_NAME="MyGame">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyGame_CORE_PRE_BUILD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame_CORE_PRE_BUILD" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyGame_PRE_BUILD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="MyGame_PRE_BUILD" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="cocos2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="cocos2d" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="cocos2dInternal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="cocos2dInternal" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="bullet" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="bullet" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="flatbuffers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="flatbuffers" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="recast" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="recast" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tinyxml2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="tinyxml2" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="unzip" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="unzip" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="xxhash" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyGame" TARGET_NAME="xxhash" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MyGame" RUN_TARGET_NAME="MyGame" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="capitalism" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="capitalism" TARGET_NAME="capitalism" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="capitalism" RUN_TARGET_NAME="capitalism">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="capitalism_CORE_PRE_BUILD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="capitalism" TARGET_NAME="capitalism_CORE_PRE_BUILD" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="capitalism_PRE_BUILD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="capitalism" TARGET_NAME="capitalism_PRE_BUILD" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="15">
+      <item index="0" class="java.lang.String" itemvalue="Application.MyGame" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MyGame_CORE_PRE_BUILD" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MyGame_PRE_BUILD" />
+      <item index="3" class="java.lang.String" itemvalue="Application.cocos2d" />
+      <item index="4" class="java.lang.String" itemvalue="Application.cocos2dInternal" />
+      <item index="5" class="java.lang.String" itemvalue="Application.bullet" />
+      <item index="6" class="java.lang.String" itemvalue="Application.flatbuffers" />
+      <item index="7" class="java.lang.String" itemvalue="Application.recast" />
+      <item index="8" class="java.lang.String" itemvalue="Application.tinyxml2" />
+      <item index="9" class="java.lang.String" itemvalue="Application.unzip" />
+      <item index="10" class="java.lang.String" itemvalue="Application.xxhash" />
+      <item index="11" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="12" class="java.lang.String" itemvalue="Application.capitalism" />
+      <item index="13" class="java.lang.String" itemvalue="Application.capitalism_CORE_PRE_BUILD" />
+      <item index="14" class="java.lang.String" itemvalue="Application.capitalism_PRE_BUILD" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b058765-3887-4ef2-aa59-7103a856b14d" name="Default" comment="" />
+      <created>1500906482201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1500906482201</updated>
+      <workItem from="1500906488375" duration="3510000" />
+      <workItem from="1500911445187" duration="1730000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5240000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="8" y="10" width="1350" height="731" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cocos-project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/CloseNormal.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proj.linux/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/cmake/Modules/FindGLFW3.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cocos2d/cmake/Modules/FindFMOD.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

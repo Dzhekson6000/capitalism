@@ -11,7 +11,7 @@ Private inheritance here hides part of interface from Director.
 class  AppDelegate : private cocos2d::Application
 {
 public:
-    AppDelegate();
+    AppDelegate() = default;
     virtual ~AppDelegate();
 
     virtual void initGLContextAttrs();

@@ -29,7 +29,7 @@ Temporary Items
 
 ### JetBrains template
 # User-specific stuff:
-.idea
+.idea/*
 
 ## File-based project format:
 *.iws

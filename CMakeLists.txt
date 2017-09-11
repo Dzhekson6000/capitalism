@@ -22,123 +22,161 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 # ****************************************************************************/
-cmake_policy(SET CMP0017 NEW)
+CMAKE_POLICY(SET CMP0017 NEW)
 
-cmake_minimum_required(VERSION 3.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 
-set(APP_NAME capitalism)
-project(${APP_NAME})
+SET(APP_NAME capitalism)
+PROJECT(${APP_NAME})
 
-set(COCOS2D_ROOT ${CMAKE_SOURCE_DIR}/cocos2d)
+SET(COCOS2D_ROOT ${CMAKE_SOURCE_DIR}/cocos2d)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${COCOS2D_ROOT}/cmake/Modules/")
-include(CocosBuildHelpers)
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${COCOS2D_ROOT}/cmake/Modules/")
+INCLUDE(CocosBuildHelpers)
 
 # Some macro definitions
-if(WINDOWS)
-    if(BUILD_SHARED_LIBS)
-        add_definitions(-D_USRDLL -D_EXPORT_DLL_ -D_USEGUIDLL -D_USREXDLL -D_USRSTUDIODLL)
-    else()
-        add_definitions(-DCC_STATIC)
-    endif()
+IF(WINDOWS)
+	IF(BUILD_SHARED_LIBS)
+		ADD_DEFINITIONS(-D_USRDLL -D_EXPORT_DLL_ -D_USEGUIDLL -D_USREXDLL -D_USRSTUDIODLL)
+	ELSE()
+		ADD_DEFINITIONS(-DCC_STATIC)
+	ENDIF()
 
-    add_definitions(-DCOCOS2DXWIN32_EXPORTS -D_WINDOWS -DWIN32 -D_WIN32)
-    set(PLATFORM_FOLDER win32)
-elseif(MACOSX OR APPLE)
-    add_definitions(-DCC_TARGET_OS_MAC)
-    add_definitions(-DUSE_FILE32API)
-    set(PLATFORM_FOLDER mac)
-elseif(LINUX)
-    add_definitions(-DLINUX)
-    set(PLATFORM_FOLDER linux)
-elseif(ANDROID)
-    add_definitions(-DUSE_FILE32API)
-    set(PLATFORM_FOLDER android)
-else()
-    message( FATAL_ERROR "Unsupported platform, CMake will exit" )
-endif()
+	ADD_DEFINITIONS(-DCOCOS2DXWIN32_EXPORTS -D_WINDOWS -DWIN32 -D_WIN32)
+	SET(PLATFORM_FOLDER win32)
+ELSEIF(MACOSX OR APPLE)
+	ADD_DEFINITIONS(-DCC_TARGET_OS_MAC)
+	ADD_DEFINITIONS(-DUSE_FILE32API)
+	SET(PLATFORM_FOLDER mac)
+ELSEIF(LINUX)
+	ADD_DEFINITIONS(-DLINUX)
+	SET(PLATFORM_FOLDER linux)
+ELSEIF(ANDROID)
+	ADD_DEFINITIONS(-DUSE_FILE32API)
+	SET(PLATFORM_FOLDER android)
+ELSE()
+	MESSAGE(FATAL_ERROR "Unsupported platform, CMake will exit")
+ENDIF()
 
 # Compiler options
-if(MSVC)
-    if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:msvcrt /NODEFAULTLIB:libcmt")
-    else()
-        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:libcmt")
-    endif()
-    add_definitions(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS
-                  -wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
-                  -wd4514 -wd4056 -wd4996 -wd4099)
-else()
-    if(CMAKE_BUILD_TYPE MATCHES Debug)
-        add_definitions(-DCOCOS2D_DEBUG=1)
-    endif()
-    set(CMAKE_C_FLAGS_DEBUG "-g -Wall")
-    set(CMAKE_CXX_FLAGS_DEBUG ${CMAKE_C_FLAGS_DEBUG})
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wno-deprecated-declarations -Wno-reorder")
-    if(CLANG)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
-    endif()
-endif(MSVC)
+IF(MSVC)
+	IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
+		SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:msvcrt /NODEFAULTLIB:libcmt")
+	ELSE()
+		SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:libcmt")
+	ENDIF()
+	ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS
+					-wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
+					-wd4514 -wd4056 -wd4996 -wd4099)
+ELSE()
+	IF(CMAKE_BUILD_TYPE MATCHES Debug)
+		ADD_DEFINITIONS(-DCOCOS2D_DEBUG=1)
+	ENDIF()
+	SET(CMAKE_C_FLAGS_DEBUG "-g -Wall")
+	SET(CMAKE_CXX_FLAGS_DEBUG ${CMAKE_C_FLAGS_DEBUG})
+	SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
+	SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-deprecated-declarations -Wno-reorder")
+	IF(CLANG)
+		SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+	ENDIF()
+ENDIF(MSVC)
 
-set(PLATFORM_SPECIFIC_SRC)
-set(PLATFORM_SPECIFIC_HEADERS)
+SET(PLATFORM_SPECIFIC_SRC)
+SET(PLATFORM_SPECIFIC_HEADERS)
 
-if(MACOSX OR APPLE)
-    set(PLATFORM_SPECIFIC_SRC proj.ios_mac/mac/main.cpp)
-elseif(LINUX)
-    set(PLATFORM_SPECIFIC_SRC proj.linux/main.cpp)
-elseif ( WIN32 )
-    set(PLATFORM_SPECIFIC_SRC proj.win32/main.cpp)
-    set(PLATFORM_SPECIFIC_HEADERS proj.win32/main.h proj.win32/resource.h)
-elseif(ANDROID)
-    set(PLATFORM_SPECIFIC_SRC proj.android-studio/app/jni/hellocpp/main.cpp)
-endif()
+IF(MACOSX OR APPLE)
+	SET(PLATFORM_SPECIFIC_SRC
+		proj.ios_mac/mac/main.cpp
+		)
+ELSEIF(LINUX)
+	SET(PLATFORM_SPECIFIC_SRC
+		proj.linux/main.cpp
+		)
+ELSEIF(WIN32)
+	SET(PLATFORM_SPECIFIC_SRC
+		proj.win32/main.cpp
+		)
+	SET(PLATFORM_SPECIFIC_HEADERS
+		proj.win32/main.h
+		proj.win32/resource.h
+		)
+ELSEIF(ANDROID)
+	SET(PLATFORM_SPECIFIC_SRC
+		proj.android-studio/app/jni/hellocpp/main.cpp
+		)
+ENDIF()
 
-include_directories(/usr/local/include/GLFW /usr/include/GLFW ${COCOS2D_ROOT} ${COCOS2D_ROOT}/cocos
-        ${COCOS2D_ROOT}/external ${COCOS2D_ROOT}/cocos/platform ${COCOS2D_ROOT}/cocos/audio/include/ Classes)
-if(WIN32)
-  include_directories(${COCOS2D_ROOT}/external/glfw3/include/win32 ${COCOS2D_ROOT}/external/win32-specific/gles/include/OGLES)
-endif(WIN32)
+INCLUDE_DIRECTORIES(
+		/usr/local/include/GLFW
+		/usr/include/GLFW
+		${COCOS2D_ROOT}
+		${COCOS2D_ROOT}/cocos
+		${COCOS2D_ROOT}/external
+		${COCOS2D_ROOT}/cocos/platform
+		${COCOS2D_ROOT}/cocos/audio/include/
+		Classes
+)
+IF(WIN32)
+	INCLUDE_DIRECTORIES(
+			${COCOS2D_ROOT}/external/glfw3/include/win32
+			${COCOS2D_ROOT}/external/win32-specific/gles/include/OGLES
+	)
+ENDIF(WIN32)
 
-set(GAME_SRC Classes/AppDelegate.cpp Classes/HelloWorldScene.cpp ${PLATFORM_SPECIFIC_SRC})
+SET(GAME_SRC
+	Classes/AppDelegate.cpp
+	Classes/Scene/MenuScene.cpp
+	Classes/Scene/GameScene.cpp
+	${PLATFORM_SPECIFIC_SRC}
+	Classes/Tools/Scroller.cpp Classes/Model/IsoPoint.cpp Classes/Model/IsoPoint.h)
+
+SET(GAME_HEADERS
+	Classes/AppDelegate.h
+	Classes/Scene/MenuScene.h
+	Classes/Scene/GameScene.h
+	${PLATFORM_SPECIFIC_HEADERS}
+	Classes/Tools/Scroller.h)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})
 
 # Configure libcocos2d
-set(BUILD_CPP_EMPTY_TEST OFF CACHE BOOL "turn off build cpp-empty-test")
-set(BUILD_CPP_TESTS OFF CACHE BOOL "turn off build cpp-tests")
-set(BUILD_LUA_LIBS OFF CACHE BOOL "turn off build lua related targets")
-set(BUILD_JS_LIBS OFF CACHE BOOL "turn off build js related targets")
-add_subdirectory(${COCOS2D_ROOT})
+SET(BUILD_CPP_EMPTY_TEST OFF CACHE BOOL "turn off build cpp-empty-test")
+SET(BUILD_CPP_TESTS OFF CACHE BOOL "turn off build cpp-tests")
+SET(BUILD_LUA_LIBS OFF CACHE BOOL "turn off build lua related targets")
+SET(BUILD_JS_LIBS OFF CACHE BOOL "turn off build js related targets")
+ADD_SUBDIRECTORY(${COCOS2D_ROOT})
 
 # MyGame
-if(ANDROID)
-    add_library(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
-    if(CMAKE_BUILD_TYPE MATCHES RELEASE)
-        add_custom_command(TARGET ${APP_NAME} POST_BUILD COMMAND ${CMAKE_STRIP} lib${APP_NAME}.so)
-    endif()
-else()
-    add_executable(${APP_NAME} ${GAME_SRC})
-endif()
+IF(ANDROID)
+	ADD_LIBRARY(${APP_NAME} SHARED ${GAME_SRC} ${GAME_HEADERS})
+	IF(CMAKE_BUILD_TYPE MATCHES RELEASE)
+		ADD_CUSTOM_COMMAND(TARGET ${APP_NAME} POST_BUILD COMMAND ${CMAKE_STRIP} lib${APP_NAME}.so)
+	ENDIF()
+ELSE()
+	ADD_EXECUTABLE(${APP_NAME} ${GAME_SRC} ${GAME_HEADERS})
+ENDIF()
 
-target_link_libraries(${APP_NAME} cocos2d)
+TARGET_LINK_LIBRARIES(${APP_NAME} cocos2d)
 
-set(APP_BIN_DIR "${CMAKE_BINARY_DIR}/bin")
+SET(APP_BIN_DIR "${CMAKE_BINARY_DIR}/bin")
 
-set_target_properties(${APP_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY  "${APP_BIN_DIR}")
+SET_TARGET_PROPERTIES(${APP_NAME} PROPERTIES
+					  RUNTIME_OUTPUT_DIRECTORY "${APP_BIN_DIR}")
 
-if(WIN32)
-    #also copying dlls to binary directory for the executable to run
-    pre_build(${APP_NAME}
-        COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
-        COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
-        COMMAND ${CMAKE_COMMAND} -E copy ${COCOS2D_ROOT}/external/win32-specific/gles/prebuilt/glew32.dll ${APP_BIN_DIR}/${CMAKE_BUILD_TYPE}
-	    COMMAND ${CMAKE_COMMAND} -E copy ${COCOS2D_ROOT}/external/win32-specific/zlib/prebuilt/zlib1.dll ${APP_BIN_DIR}/${CMAKE_BUILD_TYPE})
-elseif(ANDROID)
+IF(WIN32)
+	#also copying dlls to binary directory for the executable to run
+	PRE_BUILD(${APP_NAME}
+			  COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
+			  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
+			  COMMAND ${CMAKE_COMMAND} -E copy ${COCOS2D_ROOT}/external/win32-specific/gles/prebuilt/glew32.dll ${APP_BIN_DIR}/${CMAKE_BUILD_TYPE}
+			  COMMAND ${CMAKE_COMMAND} -E copy ${COCOS2D_ROOT}/external/win32-specific/zlib/prebuilt/zlib1.dll ${APP_BIN_DIR}/${CMAKE_BUILD_TYPE}
+			  )
+ELSEIF(ANDROID)
 
-else()
-    pre_build(${APP_NAME}
-        COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
-        COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources)
-endif()
+ELSE()
+	PRE_BUILD(${APP_NAME}
+			  COMMAND ${CMAKE_COMMAND} -E remove_directory ${APP_BIN_DIR}/Resources
+			  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/Resources ${APP_BIN_DIR}/Resources
+			  )
+
+ENDIF()

@@ -1,0 +1,2426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area left="0" top="0" width="300" length="300">
+	<objects>
+		<house id="2256" x="150" y="76" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.4000000059604645">
+			<inh type="Жители" q="323" w="2.0"/>
+			<rent type="trade" s="1000" o="0" p="42.9 р."/>
+		</house>
+		<house id="77155" x="99" y="163" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="319" w="2.0"/>
+			<rent type="trade" s="1000" o="800" p="75.6 р."/>
+		</house>
+		<house id="77111" x="177" y="112" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1516" w="3.0"/>
+			<rent type="trade" s="1500" o="1400" p="200.6 р."/>
+		</house>
+		<house id="77082" x="104" y="69" w="2" l="2" h="16" img="hs.high:tower2" attr="0.0">
+			<inh type="Жители" q="1199" w="3.0"/>
+			<rent type="trade" s="1000" o="500" p="134.1 р."/>
+		</house>
+		<house id="212876" x="196" y="159" w="3" l="2" h="12" img="hs.modern:green1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1454" w="4.0"/>
+			<rent type="trade" s="1500" o="1050" p="214 р."/>
+		</house>
+		<house id="809258" x="176" y="182" w="3" l="2" h="12" o="645892" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1216" w="2.0"/>
+			<rent type="trade" s="1500" o="600" p="81.2 р."/>
+		</house>
+		<house id="2334" x="103" y="106" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.4000000059604645">
+			<inh type="Жители" q="257" w="2.0"/>
+			<rent type="trade" s="2000" o="1300" p="70.1 р."/>
+		</house>
+		<house id="2341" x="162" y="106" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.4000000059604645">
+			<inh type="Жители" q="259" w="2.0"/>
+			<rent type="trade" s="2000" o="750" p="76.2 р."/>
+		</house>
+		<house id="212930" x="85" y="96" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1450" w="3.0"/>
+			<rent type="trade" s="1500" o="300" p="116.2 р."/>
+		</house>
+		<house id="2292" x="128" y="89" w="2" l="4" h="4" img="hs.ancient:mansion1" r="1" attr="0.5">
+			<inh type="Жители" q="261" w="2.0"/>
+			<rent type="trade" s="2000" o="1500" p="79 р."/>
+		</house>
+		<house id="77154" x="99" y="166" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="342" w="2.0"/>
+			<rent type="trade" s="1000" o="400" p="65.1 р."/>
+		</house>
+		<house id="2279" x="152" y="84" w="2" l="2" h="12" img="hs.high:tower1" attr="0.5">
+			<inh type="Жители" q="775" w="3.0"/>
+			<rent type="trade" s="1000" o="200" p="150 р."/>
+		</house>
+		<house id="77089" x="108" y="79" w="2" l="2" h="7" img="hs.stalin:red" attr="0.05000000074505806">
+			<inh type="Жители" q="402" w="2.0"/>
+			<rent type="trade" s="1000" o="500" p="59.4 р."/>
+		</house>
+		<house id="113875" x="158" y="121" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1496" w="4.0"/>
+			<rent type="trade" s="1500" o="1000" p="280.1 р."/>
+		</house>
+		<house id="212869" x="200" y="152" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1451" w="3.0"/>
+			<rent type="trade" s="1500" o="1200" p="169.9 р."/>
+		</house>
+		<school id="2351" x="166" y="109" w="3" l="3" h="4" img="munitipal:school" attr="0.4000000059604645"/>
+		<house id="89195" x="98" y="120" w="2" l="3" h="12" img="hs.panel:tower" r="1" attr="0.25">
+			<inh type="Жители" q="1468" w="2.0"/>
+			<rent type="trade" s="1500" o="1000" p="69.3 р."/>
+		</house>
+		<house id="2377" x="141" y="122" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="720" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="278.7 р."/>
+		</house>
+		<house id="239510" x="121" y="63" w="3" l="2" h="12" img="hs.panel:tower" attr="-0.05000000074505806">
+			<inh type="Жители" q="1242" w="2.0"/>
+			<rent type="trade" s="1500" o="850" p="64.7 р."/>
+		</house>
+		<house id="113943" x="147" y="188" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1423" w="3.0"/>
+			<rent type="trade" s="1500" o="1250" p="218.7 р."/>
+		</house>
+		<house id="113947" x="148" y="191" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="335" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="92.7 р."/>
+		</house>
+		<house id="77121" x="185" y="127" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="728" w="3.0"/>
+			<rent type="trade" s="1000" o="300" p="163.4 р."/>
+		</house>
+		<tradecenter id="440914" x="189" y="144" w="2" l="2" h="1" o="241303" img="trade:shop1" attr="0.05000000074505806">
+			<rent type="trade" s="1000" o="750" p="151 р."/>
+		</tradecenter>
+		<house id="2271" x="125" y="81" w="3" l="2" h="12" img="hs.modern:green1" attr="0.5">
+			<inh type="Жители" q="1432" w="4.0"/>
+			<rent type="trade" s="1500" o="1100" p="215.7 р."/>
+		</house>
+		<house id="2401" x="168" y="128" w="2" l="2" h="12" img="hs.modern:round" attr="0.4000000059604645">
+			<inh type="Жители" q="741" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="275.5 р."/>
+		</house>
+		<house id="113964" x="145" y="51" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="543" w="5.0"/>
+			<rent type="trade" s="1500" o="150" p="230 р."/>
+		</house>
+		<house id="89217" x="89" y="124" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1469" w="4.0"/>
+			<rent type="trade" s="1500" o="750" p="213.8 р."/>
+		</house>
+		<house id="77076" x="101" y="67" w="2" l="3" h="16" img="hs.high:block" attr="0.0">
+			<inh type="Жители" q="1674" w="2.0"/>
+			<rent type="trade" s="1500" o="800" p="83.3 р."/>
+		</house>
+		<hotel id="2407" x="133" y="131" w="6" l="3" h="13" img="hotels:plaza" attr="0.10000000149011612"/>
+		<house id="113952" x="129" y="49" w="3" l="3" h="18" img="hs.modern:grand" attr="0.0">
+			<inh type="Жители" q="2011" w="4.0"/>
+			<rent type="trade" s="2250" o="1150" p="231.9 р."/>
+		</house>
+		<house id="212875" x="196" y="151" w="3" l="2" h="12" img="hs.modern:green1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1404" w="4.0"/>
+			<rent type="trade" s="1500" o="1050" p="213 р."/>
+		</house>
+		<house id="2242" x="141" y="70" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.20000000298023224">
+			<inh type="Жители" q="2568" w="5.0"/>
+			<rent type="trade" s="1250" o="950" p="396.9 р."/>
+		</house>
+		<house id="89158" x="186" y="96" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1488" w="3.0"/>
+			<rent type="trade" s="1500" o="450" p="143.3 р."/>
+		</house>
+		<house id="2339" x="146" y="106" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="748" w="4.0"/>
+			<rent type="trade" s="1000" o="550" p="238.5 р."/>
+		</house>
+		<house id="61996" x="125" y="66" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2597" w="5.0"/>
+			<rent type="trade" s="1250" o="1150" p="403 р."/>
+		</house>
+		<house id="89202" x="89" y="109" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="697" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="233.4 р."/>
+		</house>
+		<hotel id="2510" x="136" y="188" w="2" l="4" h="5" img="hotels:ancient2" r="1" attr="0.0"/>
+		<house id="89245" x="153" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="745" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="236.9 р."/>
+		</house>
+		<house id="2237" x="160" y="67" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.10000000149011612">
+			<inh type="Жители" q="803" w="2.0"/>
+			<rent type="trade" s="3000" o="2450" p="73.2 р."/>
+		</house>
+		<house id="2409" x="174" y="133" w="3" l="4" h="4" img="hs.modern:mansionbig" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="319" w="8.0"/>
+			<rent type="trade" s="2500" o="2200" p="725 р."/>
+		</house>
+		<house id="212926" x="89" y="93" w="3" l="2" h="12" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1450" w="2.0"/>
+			<rent type="trade" s="1500" o="550" p="53.6 р."/>
+		</house>
+		<house id="212935" x="88" y="100" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1435" w="3.0"/>
+			<rent type="trade" s="1500" o="250" p="142.4 р."/>
+		</house>
+		<house id="89238" x="147" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="733" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="175.6 р."/>
+		</house>
+		<house id="61964" x="108" y="97" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1424" w="4.0"/>
+			<rent type="trade" s="1500" o="400" p="201.3 р."/>
+		</house>
+		<house id="77101" x="98" y="109" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.25">
+			<inh type="Жители" q="759" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="128.9 р."/>
+		</house>
+		<house id="212866" x="190" y="162" w="4" l="2" h="7" img="hs.stalin:short" attr="0.25">
+			<inh type="Жители" q="525" w="2.0"/>
+			<rent type="trade" s="2000" o="1150" p="75.6 р."/>
+		</house>
+		<house id="113906" x="144" y="182" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.0">
+			<inh type="Жители" q="798" w="2.0"/>
+			<rent type="trade" s="3000" o="2750" p="99.3 р."/>
+		</house>
+		<house id="2297" x="140" y="90" w="2" l="2" h="16" img="hs.high:tower3" attr="0.20000000298023224">
+			<inh type="Жители" q="1191" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="207.7 р."/>
+		</house>
+		<house id="2370" x="146" y="119" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="754" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="278.7 р."/>
+		</house>
+		<house id="113971" x="133" y="119" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.15000000596046448">
+			<inh type="Жители" q="1467" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="297.9 р."/>
+		</house>
+		<house id="89219" x="98" y="140" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="269" w="2.0"/>
+			<rent type="trade" s="2000" o="800" p="65.4 р."/>
+		</house>
+		<house id="113959" x="137" y="48" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.0">
+			<inh type="Жители" q="548" w="5.0"/>
+			<rent type="trade" s="1500" o="650" p="294.4 р."/>
+		</house>
+		<house id="89220" x="93" y="134" w="4" l="2" h="7" img="hs.stalin:short" attr="0.0">
+			<inh type="Жители" q="528" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="53.3 р."/>
+		</house>
+		<house id="89155" x="186" y="103" w="2" l="2" h="12" img="hs.high:tower1" attr="0.10000000149011612">
+			<inh type="Жители" q="739" w="3.0"/>
+			<rent type="trade" s="1000" o="100" p="129.8 р."/>
+		</house>
+		<house id="89187" x="92" y="131" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="551" w="5.0"/>
+			<rent type="trade" s="1500" o="650" p="301.1 р."/>
+		</house>
+		<cliniccenter id="2403" x="155" y="130" w="4" l="4" h="1" img="munitipal:cliniccenter" attr="0.4000000059604645"/>
+		<house id="2475" x="117" y="163" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="869" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="239.5 р."/>
+		</house>
+		<house id="212865" x="197" y="162" w="4" l="2" h="7" img="hs.stalin:short" attr="0.30000001192092896">
+			<inh type="Жители" q="527" w="2.0"/>
+			<rent type="trade" s="2000" o="1650" p="78.3 р."/>
+		</house>
+		<house id="2283" x="174" y="85" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1449" w="3.0"/>
+			<rent type="trade" s="1500" o="300" p="136.3 р."/>
+		</house>
+		<house id="207540" x="157" y="49" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1446" w="3.0"/>
+			<rent type="trade" s="1500" o="450" p="136 р."/>
+		</house>
+		<house id="2326" x="103" y="103" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.3499999940395355">
+			<inh type="Жители" q="263" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="56.7 р."/>
+		</house>
+		<house id="77094" x="105" y="86" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="815" w="2.0"/>
+			<rent type="trade" s="3000" o="1800" p="62 р."/>
+		</house>
+		<house id="2337" x="124" y="106" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.44999998807907104">
+			<inh type="Жители" q="1685" w="4.0"/>
+			<rent type="trade" s="1500" o="1200" p="272.9 р."/>
+		</house>
+		<house id="89200" x="95" y="120" w="3" l="2" h="12" img="hs.modern:green2" attr="-0.05000000074505806">
+			<inh type="Жители" q="1427" w="3.0"/>
+			<rent type="trade" s="1500" o="600" p="179.1 р."/>
+		</house>
+		<house id="2340" x="156" y="106" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.10000000149011612">
+			<inh type="Жители" q="252" w="2.0"/>
+			<rent type="trade" s="2000" o="950" p="80.2 р."/>
+		</house>
+		<house id="77122" x="177" y="108" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="766" w="3.0"/>
+			<rent type="trade" s="1000" o="0" p="183 р."/>
+		</house>
+		<house id="2487" x="145" y="169" w="2" l="2" h="12" img="hs.high:smalltower1" attr="-0.05000000074505806">
+			<inh type="Жители" q="876" w="4.0"/>
+			<rent type="trade" s="1000" o="700" p="265.1 р."/>
+		</house>
+		<house id="77080" x="108" y="69" w="2" l="2" h="16" img="hs.high:tower2" attr="0.05000000074505806">
+			<inh type="Жители" q="1187" w="3.0"/>
+			<rent type="trade" s="1000" o="350" p="126.3 р."/>
+		</house>
+		<house id="2289" x="117" y="89" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="1504" w="4.0"/>
+			<rent type="trade" s="1500" o="900" p="202.6 р."/>
+		</house>
+		<house id="2250" x="131" y="76" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.5">
+			<inh type="Жители" q="320" w="2.0"/>
+			<rent type="trade" s="1000" o="200" p="54.6 р."/>
+		</house>
+		<house id="113945" x="147" y="204" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1485" w="3.0"/>
+			<rent type="trade" s="1500" o="800" p="163.9 р."/>
+		</house>
+		<house id="2436" x="174" y="147" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1474" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="256.8 р."/>
+		</house>
+		<house id="89223" x="88" y="139" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.30000001192092896">
+			<inh type="Жители" q="260" w="2.0"/>
+			<rent type="trade" s="2000" o="450" p="53.4 р."/>
+		</house>
+		<house id="113930" x="150" y="188" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="540" w="2.0"/>
+			<rent type="trade" s="2000" o="1800" p="98.7 р."/>
+		</house>
+		<house id="212862" x="200" y="148" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1228" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="227.5 р."/>
+		</house>
+		<house id="89240" x="141" y="63" w="3" l="2" h="24" img="hs.high:grandtower" attr="-0.05000000074505806">
+			<inh type="Жители" q="2626" w="5.0"/>
+			<rent type="trade" s="1250" o="1050" p="410.1 р."/>
+		</house>
+		<house id="212863" x="185" y="162" w="2" l="2" h="16" img="hs.high:tower3" attr="0.25">
+			<inh type="Жители" q="1193" w="4.0"/>
+			<rent type="trade" s="1000" o="450" p="220.7 р."/>
+		</house>
+		<house id="77081" x="108" y="72" w="2" l="2" h="16" img="hs.high:tower2" attr="0.3499999940395355">
+			<inh type="Жители" q="1167" w="3.0"/>
+			<rent type="trade" s="1000" o="800" p="153.1 р."/>
+		</house>
+		<house id="207542" x="162" y="57" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1482" w="3.0"/>
+			<rent type="trade" s="1500" o="250" p="124.8 р."/>
+		</house>
+		<house id="2375" x="122" y="120" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.15000000596046448">
+			<inh type="Жители" q="1443" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="290.6 р."/>
+		</house>
+		<house id="113965" x="149" y="51" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="561" w="5.0"/>
+			<rent type="trade" s="1500" o="700" p="303.8 р."/>
+		</house>
+		<house id="89159" x="186" y="92" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1482" w="3.0"/>
+			<rent type="trade" s="1500" o="900" p="164.7 р."/>
+		</house>
+		<house id="2320" x="112" y="100" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1436" w="3.0"/>
+			<rent type="trade" s="1500" o="1000" p="171.5 р."/>
+		</house>
+		<house id="2466" x="171" y="159" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1517" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="264.7 р."/>
+		</house>
+		<house id="2398" x="158" y="128" w="2" l="2" h="12" img="hs.modern:round" attr="0.4000000059604645">
+			<inh type="Жители" q="717" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="279.1 р."/>
+		</house>
+		<house id="113894" x="177" y="132" w="2" l="3" h="16" img="hs.high:block" attr="0.3499999940395355">
+			<inh type="Жители" q="1656" w="2.0"/>
+			<rent type="trade" s="1500" o="1500" p="131.4 р."/>
+		</house>
+		<house id="757392" x="190" y="136" w="3" l="2" h="12" o="645892" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1320" w="3.0"/>
+			<rent type="trade" s="1500" o="1050" p="180.7 р."/>
+		</house>
+		<house id="2303" x="137" y="93" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.5">
+			<inh type="Жители" q="1471" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="288.2 р."/>
+		</house>
+		<house id="2498" x="120" y="177" w="2" l="2" h="7" img="hs.stalin:red" attr="0.30000001192092896">
+			<inh type="Жители" q="395" w="2.0"/>
+			<rent type="trade" s="1000" o="0" p="49.5 р."/>
+		</house>
+		<house id="2300" x="117" y="93" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1537" w="3.0"/>
+			<rent type="trade" s="1500" o="600" p="153.6 р."/>
+		</house>
+		<house id="2448" x="146" y="153" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1628" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="319.1 р."/>
+		</house>
+		<house id="2516" x="136" y="200" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.0">
+			<inh type="Жители" q="833" w="2.0"/>
+			<rent type="trade" s="3000" o="2500" p="79.4 р."/>
+		</house>
+		<house id="212899" x="102" y="130" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.30000001192092896">
+			<inh type="Жители" q="1643" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="272.8 р."/>
+		</house>
+		<house id="2449" x="150" y="153" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1686" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="320.3 р."/>
+		</house>
+		<house id="61997" x="115" y="66" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.3499999940395355">
+			<inh type="Жители" q="2543" w="5.0"/>
+			<rent type="trade" s="1250" o="400" p="326.6 р."/>
+		</house>
+		<house id="77145" x="105" y="167" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="270" w="2.0"/>
+			<rent type="trade" s="2000" o="900" p="73 р."/>
+		</house>
+		<house id="113897" x="181" y="143" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1657" w="2.0"/>
+			<rent type="trade" s="1500" o="1000" p="120.3 р."/>
+		</house>
+		<house id="113932" x="150" y="203" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="525" w="2.0"/>
+			<rent type="trade" s="2000" o="1500" p="73.3 р."/>
+		</house>
+		<house id="77120" x="177" y="127" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="718" w="3.0"/>
+			<rent type="trade" s="1000" o="600" p="197.3 р."/>
+		</house>
+		<house id="113891" x="180" y="151" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1424" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="253.4 р."/>
+		</house>
+		<house id="113895" x="177" y="143" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1663" w="2.0"/>
+			<rent type="trade" s="1500" o="1300" p="129.2 р."/>
+		</house>
+		<house id="212933" x="89" y="96" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1464" w="3.0"/>
+			<rent type="trade" s="1500" o="350" p="122.2 р."/>
+		</house>
+		<house id="113937" x="153" y="191" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="265" w="2.0"/>
+			<rent type="trade" s="2000" o="1900" p="99.1 р."/>
+		</house>
+		<house id="2296" x="137" y="90" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.20000000298023224">
+			<inh type="Жители" q="1447" w="4.0"/>
+			<rent type="trade" s="1500" o="1150" p="269 р."/>
+		</house>
+		<house id="2288" x="114" y="89" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1425" w="4.0"/>
+			<rent type="trade" s="1500" o="750" p="192.6 р."/>
+		</house>
+		<house id="89246" x="150" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="742" w="4.0"/>
+			<rent type="trade" s="1000" o="50" p="144.8 р."/>
+		</house>
+		<house id="89237" x="150" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="713" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="239 р."/>
+		</house>
+		<house id="89163" x="181" y="96" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1488" w="4.0"/>
+			<rent type="trade" s="1500" o="800" p="201.9 р."/>
+		</house>
+		<house id="212931" x="85" y="103" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1469" w="3.0"/>
+			<rent type="trade" s="1500" o="650" p="137.6 р."/>
+		</house>
+		<officecenter id="2440" x="140" y="149" w="3" l="3" h="17" img="offices:roundtower2" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="2991" w="7.0"/>
+			<rent type="office" s="15000" o="14200" p="1 268.5 р."/>
+			<rent type="trade" s="1000" o="950" p="632.6 р."/>
+		</officecenter>
+		<house id="2366" x="154" y="117" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="766" w="2.0"/>
+			<rent type="trade" s="3000" o="2150" p="86.4 р."/>
+		</house>
+		<house id="2438" x="117" y="149" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.30000001192092896">
+			<inh type="Жители" q="880" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="227.1 р."/>
+		</house>
+		<house id="89157" x="186" y="100" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1475" w="3.0"/>
+			<rent type="trade" s="1500" o="1250" p="181.8 р."/>
+		</house>
+		<house id="207539" x="157" y="54" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1477" w="3.0"/>
+			<rent type="trade" s="1500" o="250" p="124.2 р."/>
+		</house>
+		<house id="852541" x="166" y="200" w="3" l="2" h="12" o="703182" img="hs.panel:tower" s="building" attr="0.0">
+			<rent type="trade" s="1500" o="0" p="45.2 р."/>
+		</house>
+		<house id="2514" x="136" y="193" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="547" w="2.0"/>
+			<rent type="trade" s="2000" o="1350" p="82.7 р."/>
+		</house>
+		<house id="113911" x="156" y="186" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="842" w="2.0"/>
+			<rent type="trade" s="3000" o="3000" p="102.1 р."/>
+		</house>
+		<house id="77114" x="181" y="120" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1453" w="4.0"/>
+			<rent type="trade" s="1500" o="1100" p="227.6 р."/>
+		</house>
+		<house id="61946" x="166" y="172" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="506" w="5.0"/>
+			<rent type="trade" s="1500" o="1250" p="418.8 р."/>
+		</house>
+		<house id="77115" x="181" y="124" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1457" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="242.4 р."/>
+		</house>
+		<house id="2246" x="153" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.10000000149011612">
+			<inh type="Жители" q="775" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="135.5 р."/>
+		</house>
+		<house id="2379" x="151" y="122" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.4000000059604645">
+			<inh type="Жители" q="577" w="5.0"/>
+			<rent type="trade" s="1500" o="1450" p="398.4 р."/>
+		</house>
+		<house id="2386" x="122" y="125" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1467" w="4.0"/>
+			<rent type="trade" s="1500" o="1200" p="279.7 р."/>
+		</house>
+		<house id="599123" x="161" y="180" w="3" l="2" h="9" o="481614" img="hs.panel:bold" name="Жилой дом #1" attr="0.30000001192092896">
+			<inh type="Жители" q="892" w="2.0"/>
+			<rent type="trade" s="1500" o="1450" p="84.5 р."/>
+		</house>
+		<house id="2284" x="111" y="86" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.05000000074505806">
+			<inh type="Жители" q="344" w="2.0"/>
+			<rent type="trade" s="1000" o="0" p="38.9 р."/>
+		</house>
+		<house id="2500" x="141" y="177" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1442" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="320.3 р."/>
+		</house>
+		<house id="89190" x="92" y="116" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="537" w="5.0"/>
+			<rent type="trade" s="1500" o="500" p="280.7 р."/>
+		</house>
+		<house id="61993" x="114" y="76" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="522" w="2.0"/>
+			<rent type="trade" s="2000" o="950" p="59.8 р."/>
+		</house>
+		<house id="2430" x="131" y="145" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="803" w="2.0"/>
+			<rent type="trade" s="3000" o="2850" p="94.6 р."/>
+		</house>
+		<house id="113961" x="137" y="51" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="590" w="5.0"/>
+			<rent type="trade" s="1500" o="600" p="291.6 р."/>
+		</house>
+		<house id="2402" x="171" y="128" w="2" l="2" h="12" img="hs.modern:round" attr="0.4000000059604645">
+			<inh type="Жители" q="755" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="273.2 р."/>
+		</house>
+		<house id="2494" x="145" y="172" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="914" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="261.7 р."/>
+		</house>
+		<house id="784187" x="171" y="184" w="3" l="2" h="12" o="645892" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1268" w="2.0"/>
+			<rent type="trade" s="1500" o="900" p="90.8 р."/>
+		</house>
+		<house id="113942" x="147" y="185" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1446" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="217 р."/>
+		</house>
+		<house id="212868" x="185" y="159" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.25">
+			<inh type="Жители" q="1436" w="3.0"/>
+			<rent type="trade" s="1500" o="1500" p="199 р."/>
+		</house>
+		<house id="77090" x="105" y="89" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1651" w="4.0"/>
+			<rent type="trade" s="1500" o="850" p="230 р."/>
+		</house>
+		<house id="77149" x="105" y="159" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="239" w="2.0"/>
+			<rent type="trade" s="2000" o="600" p="68.7 р."/>
+		</house>
+		<house id="2441" x="131" y="150" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="554" w="2.0"/>
+			<rent type="trade" s="2000" o="1750" p="93.4 р."/>
+		</house>
+		<house id="77112" x="181" y="112" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1507" w="4.0"/>
+			<rent type="trade" s="1500" o="1000" p="219.5 р."/>
+		</house>
+		<house id="2388" x="141" y="125" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.4000000059604645">
+			<inh type="Жители" q="722" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="279.9 р."/>
+		</house>
+		<house id="113963" x="149" y="54" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="534" w="5.0"/>
+			<rent type="trade" s="1500" o="350" p="265.8 р."/>
+		</house>
+		<house id="212936" x="91" y="100" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1414" w="3.0"/>
+			<rent type="trade" s="1500" o="550" p="167.6 р."/>
+		</house>
+		<house id="113960" x="133" y="51" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.0">
+			<inh type="Жители" q="577" w="5.0"/>
+			<rent type="trade" s="1500" o="450" p="272.7 р."/>
+		</house>
+		<house id="212900" x="114" y="130" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.30000001192092896">
+			<inh type="Жители" q="1673" w="4.0"/>
+			<rent type="trade" s="1500" o="1300" p="279.4 р."/>
+		</house>
+		<house id="77109" x="177" y="120" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1464" w="3.0"/>
+			<rent type="trade" s="1500" o="1150" p="194.1 р."/>
+		</house>
+		<house id="649892" x="186" y="167" w="2" l="3" h="12" o="520106" img="hs.high:brick" attr="0.30000001192092896">
+			<inh type="Жители" q="1166" w="2.0"/>
+			<rent type="trade" s="1500" o="1200" p="121.4 р."/>
+		</house>
+		<house id="2255" x="147" y="76" w="2" l="2" h="7" img="hs.stalin:red" attr="0.5">
+			<inh type="Жители" q="400" w="2.0"/>
+			<rent type="trade" s="1000" o="750" p="75 р."/>
+		</house>
+		<house id="2496" x="120" y="174" w="2" l="2" h="4" img="hs.ancient:house1" attr="0.30000001192092896">
+			<inh type="Жители" q="158" w="2.0"/>
+			<rent type="trade" s="1000" o="500" p="82.9 р."/>
+		</house>
+		<house id="113890" x="177" y="147" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="1500" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="257.8 р."/>
+		</house>
+		<house id="2376" x="126" y="120" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.15000000596046448">
+			<inh type="Жители" q="2545" w="5.0"/>
+			<rent type="trade" s="1250" o="1050" p="432.2 р."/>
+		</house>
+		<house id="2373" x="171" y="119" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1097" w="5.0"/>
+			<rent type="trade" s="1000" o="850" p="361.3 р."/>
+		</house>
+		<house id="2444" x="171" y="151" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1428" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="257.9 р."/>
+		</house>
+		<house id="2240" x="134" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="756" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="176.4 р."/>
+		</house>
+		<house id="618864" x="161" y="184" w="3" l="2" h="9" o="520106" img="hs.panel:bent" attr="0.30000001192092896">
+			<inh type="Жители" q="887" w="2.0"/>
+			<rent type="trade" s="1000" o="950" p="82.2 р."/>
+		</house>
+		<house id="2369" x="141" y="119" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="786" w="4.0"/>
+			<rent type="trade" s="1000" o="150" p="189.1 р."/>
+		</house>
+		<house id="2432" x="139" y="145" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.4000000059604645">
+			<inh type="Жители" q="341" w="2.0"/>
+			<rent type="trade" s="1000" o="1000" p="98.6 р."/>
+		</house>
+		<house id="2380" x="154" y="122" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.10000000149011612">
+			<inh type="Жители" q="338" w="2.0"/>
+			<rent type="trade" s="1000" o="950" p="94.6 р."/>
+		</house>
+		<house id="113918" x="151" y="178" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1433" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="320.2 р."/>
+		</house>
+		<house id="77096" x="94" y="99" w="2" l="2" h="12" img="hs.high:tower1" attr="-0.05000000074505806">
+			<inh type="Жители" q="733" w="3.0"/>
+			<rent type="trade" s="1000" o="0" p="99.4 р."/>
+		</house>
+		<house id="77152" x="99" y="169" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.30000001192092896">
+			<inh type="Жители" q="847" w="4.0"/>
+			<rent type="trade" s="1000" o="600" p="202 р."/>
+		</house>
+		<house id="2415" x="124" y="134" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.05000000074505806">
+			<inh type="Жители" q="822" w="4.0"/>
+			<rent type="trade" s="1000" o="700" p="225.4 р."/>
+		</house>
+		<house id="77113" x="181" y="116" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1448" w="4.0"/>
+			<rent type="trade" s="1500" o="1050" p="223 р."/>
+		</house>
+		<house id="113969" x="159" y="154" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1650" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="320.3 р."/>
+		</house>
+		<house id="61936" x="169" y="166" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="741" w="4.0"/>
+			<rent type="trade" s="1000" o="700" p="285.5 р."/>
+		</house>
+		<house id="89250" x="137" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="733" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="171.7 р."/>
+		</house>
+		<house id="77147" x="105" y="163" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="271" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="74.2 р."/>
+		</house>
+		<house id="2439" x="136" y="149" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1657" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="306 р."/>
+		</house>
+		<house id="89148" x="177" y="103" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="734" w="3.0"/>
+			<rent type="trade" s="1000" o="100" p="188.9 р."/>
+		</house>
+		<house id="89184" x="98" y="131" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1209" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="233 р."/>
+		</house>
+		<house id="77123" x="185" y="108" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="734" w="3.0"/>
+			<rent type="trade" s="1000" o="100" p="131.8 р."/>
+		</house>
+		<house id="2482" x="117" y="166" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.30000001192092896">
+			<inh type="Жители" q="822" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="174.3 р."/>
+		</house>
+		<house id="89156" x="186" y="80" w="2" l="2" h="12" img="hs.high:tower1" attr="0.4000000059604645">
+			<inh type="Жители" q="745" w="3.0"/>
+			<rent type="trade" s="1000" o="0" p="136.5 р."/>
+		</house>
+		<hotel id="113926" x="156" y="195" w="3" l="3" h="4" img="hotels:mini" attr="0.0"/>
+		<house id="89244" x="128" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="716" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="195.6 р."/>
+		</house>
+		<house id="77110" x="177" y="116" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1514" w="3.0"/>
+			<rent type="trade" s="1500" o="750" p="174 р."/>
+		</house>
+		<house id="77093" x="108" y="86" w="2" l="2" h="16" img="hs.high:tower3" attr="0.05000000074505806">
+			<inh type="Жители" q="1222" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="165.7 р."/>
+		</house>
+		<house id="2453" x="168" y="154" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2579" w="6.0"/>
+			<rent type="trade" s="1250" o="1250" p="475.5 р."/>
+		</house>
+		<house id="2361" x="165" y="114" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1093" w="5.0"/>
+			<rent type="trade" s="1000" o="950" p="367.4 р."/>
+		</house>
+		<house id="2321" x="154" y="100" w="2" l="4" h="4" img="hs.ancient:mansion1" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="267" w="2.0"/>
+			<rent type="trade" s="2000" o="600" p="71.2 р."/>
+		</house>
+		<officecenter id="113915" x="157" y="178" w="5" l="3" h="26" img="offices:huge" attr="0.30000001192092896">
+			<inh type="Жители" q="4476" w="9.0"/>
+			<rent type="office" s="42750" o="23050" p="1 582.8 р."/>
+			<rent type="trade" s="2250" o="2250" p="917 р."/>
+		</officecenter>
+		<house id="2354" x="141" y="112" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.15000000596046448">
+			<inh type="Жители" q="740" w="4.0"/>
+			<rent type="trade" s="1000" o="650" p="250 р."/>
+		</house>
+		<house id="2241" x="137" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="736" w="4.0"/>
+			<rent type="trade" s="1000" o="300" p="191.1 р."/>
+		</house>
+		<house id="113939" x="139" y="195" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1456" w="3.0"/>
+			<rent type="trade" s="1500" o="1350" p="199.8 р."/>
+		</house>
+		<house id="113904" x="182" y="135" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1429" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="282.5 р."/>
+		</house>
+		<tradecenter id="355994" x="178" y="166" w="2" l="2" h="1" o="232447" img="trade:shop1" name="Торговый центр #СДЛ" attr="0.25">
+			<rent type="trade" s="1000" o="200" p="124.7 р."/>
+		</tradecenter>
+		<house id="2490" x="131" y="171" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="776" w="2.0"/>
+			<rent type="trade" s="3000" o="2700" p="96.1 р."/>
+		</house>
+		<house id="2293" x="169" y="89" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1457" w="3.0"/>
+			<rent type="trade" s="1500" o="600" p="160 р."/>
+		</house>
+		<officecenter id="2327" x="107" y="103" w="3" l="3" h="13" img="offices:roundtower3" attr="0.05000000074505806">
+			<inh type="Жители" q="1781" w="6.0"/>
+			<rent type="office" s="18000" o="9400" p="990.1 р."/>
+			<rent type="trade" s="2250" o="1650" p="561.2 р."/>
+		</officecenter>
+		<house id="113879" x="168" y="113" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1433" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="251.2 р."/>
+		</house>
+		<house id="113944" x="147" y="201" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1498" w="3.0"/>
+			<rent type="trade" s="1500" o="650" p="158.7 р."/>
+		</house>
+		<house id="2391" x="156" y="125" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.10000000149011612">
+			<inh type="Жители" q="252" w="2.0"/>
+			<rent type="trade" s="2000" o="1750" p="97.9 р."/>
+		</house>
+		<house id="2418" x="124" y="138" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.30000001192092896">
+			<inh type="Жители" q="890" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="237.2 р."/>
+		</house>
+		<house id="2434" x="168" y="145" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.3499999940395355">
+			<inh type="Жители" q="1647" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="306 р."/>
+		</house>
+		<house id="2427" x="139" y="142" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.4000000059604645">
+			<inh type="Жители" q="329" w="2.0"/>
+			<rent type="trade" s="1000" o="600" p="86.6 р."/>
+		</house>
+		<house id="113899" x="185" y="143" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1673" w="2.0"/>
+			<rent type="trade" s="1500" o="1450" p="125.5 р."/>
+		</house>
+		<house id="2429" x="143" y="144" w="3" l="4" h="4" img="hs.modern:mansionbig" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="323" w="8.0"/>
+			<rent type="trade" s="2500" o="2350" p="754.2 р."/>
+		</house>
+		<house id="2392" x="162" y="125" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.4000000059604645">
+			<inh type="Жители" q="250" w="2.0"/>
+			<rent type="trade" s="2000" o="1900" p="99.9 р."/>
+		</house>
+		<house id="2315" x="115" y="98" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1668" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="264.2 р."/>
+		</house>
+		<house id="113970" x="164" y="154" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1613" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="319.1 р."/>
+		</house>
+		<house id="113929" x="153" y="188" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="532" w="2.0"/>
+			<rent type="trade" s="2000" o="1750" p="98.7 р."/>
+		</house>
+		<house id="89243" x="131" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="697" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="227.8 р."/>
+		</house>
+		<metro id="2259" x="125" y="78" h="1" img="munitipal:metro" attr="0.5"/>
+		<house id="2318" x="151" y="98" w="2" l="2" h="7" img="hs.stalin:red" attr="0.5">
+			<inh type="Жители" q="428" w="2.0"/>
+			<rent type="trade" s="1000" o="650" p="79.6 р."/>
+		</house>
+		<college id="2330" x="151" y="103" w="4" l="4" h="1" img="munitipal:college" attr="0.20000000298023224"/>
+		<house id="77108" x="177" y="124" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1463" w="3.0"/>
+			<rent type="trade" s="1500" o="1450" p="206.4 р."/>
+		</house>
+		<house id="77097" x="96" y="103" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="756" w="3.0"/>
+			<rent type="trade" s="1000" o="700" p="173.8 р."/>
+		</house>
+		<house id="2270" x="164" y="80" w="3" l="3" h="18" img="hs.modern:grand" attr="0.4000000059604645">
+			<inh type="Жители" q="2050" w="4.0"/>
+			<rent type="trade" s="2250" o="2150" p="296.2 р."/>
+		</house>
+		<house id="89249" x="141" y="58" w="3" l="2" h="24" img="hs.high:grandtower" attr="-0.05000000074505806">
+			<inh type="Жители" q="2538" w="5.0"/>
+			<rent type="trade" s="1250" o="600" p="360.6 р."/>
+		</house>
+		<house id="2302" x="133" y="93" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.5">
+			<inh type="Жители" q="1407" w="4.0"/>
+			<rent type="trade" s="1500" o="900" p="253.9 р."/>
+		</house>
+		<house id="212864" x="200" y="162" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1238" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="238.3 р."/>
+		</house>
+		<house id="2417" x="117" y="138" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="888" w="4.0"/>
+			<rent type="trade" s="1000" o="500" p="204.8 р."/>
+		</house>
+		<house id="77102" x="95" y="110" w="2" l="2" h="12" img="hs.modern:brick1" r="1" attr="0.25">
+			<inh type="Жители" q="741" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="193.9 р."/>
+		</house>
+		<house id="2362" x="171" y="114" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1105" w="5.0"/>
+			<rent type="trade" s="1000" o="400" p="297.4 р."/>
+		</house>
+		<house id="2260" x="111" y="79" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.3499999940395355">
+			<inh type="Жители" q="342" w="2.0"/>
+			<rent type="trade" s="1000" o="100" p="45.3 р."/>
+		</house>
+		<prison id="2473" x="130" y="162" w="4" l="4" h="1" img="munitipal:prison" attr="0.30000001192092896"/>
+		<house id="2359" x="126" y="114" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.15000000596046448">
+			<inh type="Жители" q="2613" w="5.0"/>
+			<rent type="trade" s="1250" o="950" p="427.9 р."/>
+		</house>
+		<house id="113924" x="156" y="200" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="530" w="2.0"/>
+			<rent type="trade" s="2000" o="1700" p="82.7 р."/>
+		</house>
+		<house id="61927" x="156" y="172" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.25">
+			<inh type="Жители" q="1459" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="227.2 р."/>
+		</house>
+		<house id="2273" x="111" y="82" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.05000000074505806">
+			<inh type="Жители" q="342" w="2.0"/>
+			<rent type="trade" s="1000" o="400" p="58.1 р."/>
+		</house>
+		<house id="89203" x="84" y="109" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.0">
+			<inh type="Жители" q="739" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="121.4 р."/>
+		</house>
+		<house id="847161" x="195" y="133" w="3" l="2" h="12" o="645892" img="hs.modern:brick2" s="building" attr="0.10000000149011612">
+			<rent type="trade" s="1000" o="0" p="130.3 р."/>
+		</house>
+		<house id="89236" x="153" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="703" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="176.4 р."/>
+		</house>
+		<house id="2342" x="103" y="109" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.4000000059604645">
+			<inh type="Жители" q="258" w="2.0"/>
+			<rent type="trade" s="2000" o="1450" p="72.5 р."/>
+		</house>
+		<house id="835372" x="195" y="137" w="3" l="2" h="12" o="645892" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1282" w="3.0"/>
+			<rent type="trade" s="1500" o="400" p="141.5 р."/>
+		</house>
+		<house id="113949" x="148" y="198" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="343" w="2.0"/>
+			<rent type="trade" s="1000" o="850" p="81.7 р."/>
+		</house>
+		<house id="89165" x="181" y="88" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1495" w="4.0"/>
+			<rent type="trade" s="1500" o="600" p="198.1 р."/>
+		</house>
+		<house id="2431" x="136" y="145" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.4000000059604645">
+			<inh type="Жители" q="329" w="2.0"/>
+			<rent type="trade" s="1000" o="600" p="92.7 р."/>
+		</house>
+		<house id="2410" x="103" y="134" w="4" l="2" h="7" img="hs.stalin:short" attr="0.30000001192092896">
+			<inh type="Жители" q="532" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="58.2 р."/>
+		</house>
+		<house id="2329" x="146" y="103" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.20000000298023224">
+			<inh type="Жители" q="788" w="2.0"/>
+			<rent type="trade" s="3000" o="2150" p="81.1 р."/>
+		</house>
+		<house id="77074" x="101" y="76" w="2" l="3" h="16" img="hs.high:block" attr="0.3499999940395355">
+			<inh type="Жители" q="1674" w="2.0"/>
+			<rent type="trade" s="1500" o="100" p="89.8 р."/>
+		</house>
+		<tradecenter id="2306" x="142" y="94" w="3" l="3" h="3" img="trade:supermarket3" attr="0.20000000298023224">
+			<rent type="trade" s="9000" o="6850" p="288.1 р."/>
+		</tradecenter>
+		<house id="77075" x="111" y="76" w="2" l="3" h="16" img="hs.high:block" attr="0.3499999940395355">
+			<inh type="Жители" q="1598" w="2.0"/>
+			<rent type="trade" s="1500" o="1100" p="97.6 р."/>
+		</house>
+		<house id="2286" x="134" y="86" w="2" l="2" h="12" img="hs.high:tower1" attr="0.5">
+			<inh type="Жители" q="753" w="3.0"/>
+			<rent type="trade" s="1000" o="250" p="154 р."/>
+		</house>
+		<house id="2367" x="162" y="117" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="775" w="2.0"/>
+			<rent type="trade" s="3000" o="2700" p="91.3 р."/>
+		</house>
+		<house id="113973" x="129" y="123" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1445" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="292.7 р."/>
+		</house>
+		<house id="77156" x="99" y="159" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="334" w="2.0"/>
+			<rent type="trade" s="1000" o="200" p="56.4 р."/>
+		</house>
+		<house id="2442" x="159" y="151" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2566" w="6.0"/>
+			<rent type="trade" s="1250" o="1250" p="480.1 р."/>
+		</house>
+		<house id="113934" x="143" y="203" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="510" w="2.0"/>
+			<rent type="trade" s="2000" o="1150" p="70.9 р."/>
+		</house>
+		<house id="647218" x="178" y="174" w="3" l="2" h="12" o="481614" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1286" w="2.0"/>
+			<rent type="trade" s="1500" o="1050" p="92.1 р."/>
+		</house>
+		<house id="77119" x="185" y="112" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1422" w="3.0"/>
+			<rent type="trade" s="1500" o="450" p="149.3 р."/>
+		</house>
+		<house id="2422" x="103" y="140" w="4" l="2" h="7" img="hs.stalin:short" attr="0.0">
+			<inh type="Жители" q="531" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="59.8 р."/>
+		</house>
+		<house id="2452" x="155" y="154" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2557" w="6.0"/>
+			<rent type="trade" s="1250" o="1250" p="480.1 р."/>
+		</house>
+		<house id="2470" x="141" y="160" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="859" w="4.0"/>
+			<rent type="trade" s="1000" o="700" p="244.9 р."/>
+		</house>
+		<house id="113955" x="141" y="49" w="3" l="3" h="18" img="hs.modern:grand" attr="0.0">
+			<inh type="Жители" q="2043" w="4.0"/>
+			<rent type="trade" s="2250" o="1000" p="227.8 р."/>
+		</house>
+		<house id="2357" x="118" y="114" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.15000000596046448">
+			<inh type="Жители" q="2578" w="5.0"/>
+			<rent type="trade" s="1250" o="1050" p="420.7 р."/>
+		</house>
+		<house id="61933" x="160" y="172" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.0">
+			<inh type="Жители" q="781" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="294.2 р."/>
+		</house>
+		<house id="212897" x="102" y="113" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.4000000059604645">
+			<inh type="Жители" q="1638" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="268.2 р."/>
+		</house>
+		<house id="89215" x="85" y="124" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1460" w="4.0"/>
+			<rent type="trade" s="1500" o="1050" p="244.3 р."/>
+		</house>
+		<house id="113874" x="158" y="111" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="1422" w="4.0"/>
+			<rent type="trade" s="1500" o="750" p="258 р."/>
+		</house>
+		<house id="2433" x="164" y="145" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1705" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="316.5 р."/>
+		</house>
+		<house id="61968" x="105" y="97" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1676" w="4.0"/>
+			<rent type="trade" s="1500" o="750" p="226.5 р."/>
+		</house>
+		<house id="89214" x="98" y="124" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1430" w="4.0"/>
+			<rent type="trade" s="1500" o="850" p="248 р."/>
+		</house>
+		<house id="2420" x="138" y="139" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1455" w="3.0"/>
+			<rent type="trade" s="1500" o="1400" p="215.8 р."/>
+		</house>
+		<house id="2383" x="165" y="124" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1042" w="5.0"/>
+			<rent type="trade" s="1000" o="1000" p="377.6 р."/>
+		</house>
+		<house id="61925" x="156" y="166" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1491" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="227.2 р."/>
+		</house>
+		<house id="212934" x="85" y="100" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1451" w="3.0"/>
+			<rent type="trade" s="1500" o="350" p="148.8 р."/>
+		</house>
+		<tradecenter id="61991" x="125" y="76" w="6" l="4" h="3" img="trade:center2" attr="0.05000000074505806">
+			<rent type="trade" s="9000" o="8500" p="460.2 р."/>
+		</tradecenter>
+		<house id="61967" x="101" y="93" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1406" w="4.0"/>
+			<rent type="trade" s="1500" o="800" p="224.9 р."/>
+		</house>
+		<house id="62000" x="118" y="67" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="575" w="5.0"/>
+			<rent type="trade" s="1500" o="500" p="280.7 р."/>
+		</house>
+		<house id="62001" x="121" y="67" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="545" w="5.0"/>
+			<rent type="trade" s="1500" o="600" p="293.7 р."/>
+		</house>
+		<house id="613887" x="172" y="176" w="3" l="2" h="9" o="481614" img="hs.panel:bold" name="Жилой дом #3" attr="0.0">
+			<inh type="Жители" q="909" w="2.0"/>
+			<rent type="trade" s="1500" o="900" p="77 р."/>
+		</house>
+		<stadium id="2272" x="160" y="81" w="6" l="4" h="1" img="munitipal:stadium" r="1" attr="0.4000000059604645"/>
+		<house id="61928" x="174" y="166" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1451" w="3.0"/>
+			<rent type="trade" s="1500" o="1450" p="218.7 р."/>
+		</house>
+		<house id="207538" x="157" y="59" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1504" w="3.0"/>
+			<rent type="trade" s="1500" o="500" p="143.4 р."/>
+		</house>
+		<house id="77125" x="182" y="108" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.05000000074505806">
+			<inh type="Жители" q="1106" w="5.0"/>
+			<rent type="trade" s="1000" o="500" p="299.7 р."/>
+		</house>
+		<house id="2346" x="138" y="109" w="3" l="3" h="18" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="2045" w="4.0"/>
+			<rent type="trade" s="2250" o="1950" p="303.6 р."/>
+		</house>
+		<house id="2428" x="174" y="143" w="3" l="4" h="4" img="hs.modern:mansionbig" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="349" w="8.0"/>
+			<rent type="trade" s="2500" o="2000" p="722.4 р."/>
+		</house>
+		<house id="2413" x="117" y="134" w="2" l="2" h="12" img="hs.high:smalltower2" attr="-0.05000000074505806">
+			<inh type="Жители" q="923" w="4.0"/>
+			<rent type="trade" s="1000" o="500" p="203.9 р."/>
+		</house>
+		<house id="89150" x="177" y="96" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1461" w="3.0"/>
+			<rent type="trade" s="1500" o="1100" p="181.8 р."/>
+		</house>
+		<house id="2458" x="117" y="156" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="872" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="238.4 р."/>
+		</house>
+		<house id="212873" x="190" y="151" w="3" l="2" h="12" img="hs.modern:green1" attr="0.05000000074505806">
+			<inh type="Жители" q="1468" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="240.1 р."/>
+		</house>
+		<house id="835378" x="204" y="163" w="2" l="2" h="16" o="645892" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1043" w="4.0"/>
+			<rent type="trade" s="1000" o="300" p="178.8 р."/>
+		</house>
+		<house id="113941" x="152" y="195" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1457" w="3.0"/>
+			<rent type="trade" s="1500" o="1150" p="200.9 р."/>
+		</house>
+		<house id="2467" x="114" y="160" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="324" w="2.0"/>
+			<rent type="trade" s="1000" o="200" p="62.8 р."/>
+		</house>
+		<house id="2425" x="121" y="140" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.30000001192092896">
+			<inh type="Жители" q="1678" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="292.7 р."/>
+		</house>
+		<house id="113958" x="133" y="48" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.0">
+			<inh type="Жители" q="553" w="5.0"/>
+			<rent type="trade" s="1500" o="850" p="310.3 р."/>
+		</house>
+		<house id="61932" x="160" y="169" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="743" w="4.0"/>
+			<rent type="trade" s="1000" o="1050" p="297.9 р."/>
+		</house>
+		<house id="2335" x="112" y="106" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.3499999940395355">
+			<inh type="Жители" q="1493" w="3.0"/>
+			<rent type="trade" s="1500" o="1250" p="189.5 р."/>
+		</house>
+		<house id="113900" x="186" y="135" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1424" w="4.0"/>
+			<rent type="trade" s="1500" o="1300" p="280.6 р."/>
+		</house>
+		<house id="2385" x="118" y="125" w="3" l="2" h="24" img="hs.high:grandtower" attr="-0.05000000074505806">
+			<inh type="Жители" q="2518" w="5.0"/>
+			<rent type="trade" s="1250" o="1100" p="431.3 р."/>
+		</house>
+		<house id="89218" x="98" y="134" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.30000001192092896">
+			<inh type="Жители" q="271" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="59 р."/>
+		</house>
+		<bridge id="2520" x="134" y="233"/>
+		<house id="77087" x="101" y="84" w="2" l="2" h="7" img="hs.stalin:red" attr="0.4000000059604645">
+			<inh type="Жители" q="387" w="2.0"/>
+			<rent type="trade" s="1000" o="0" p="36.1 р."/>
+		</house>
+		<house id="2424" x="113" y="140" w="4" l="2" h="7" img="hs.stalin:short" attr="0.30000001192092896">
+			<inh type="Жители" q="557" w="2.0"/>
+			<rent type="trade" s="2000" o="1150" p="75 р."/>
+		</house>
+		<house id="89253" x="128" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.0">
+			<inh type="Жители" q="723" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="127.2 р."/>
+		</house>
+		<house id="113972" x="129" y="119" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.15000000596046448">
+			<inh type="Жители" q="1456" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="292.9 р."/>
+		</house>
+		<house id="89199" x="89" y="127" w="3" l="2" h="12" img="hs.modern:green2" attr="-0.05000000074505806">
+			<inh type="Жители" q="1471" w="3.0"/>
+			<rent type="trade" s="1500" o="1150" p="203.8 р."/>
+		</house>
+		<house id="77083" x="104" y="72" w="2" l="2" h="16" img="hs.high:tower2" attr="0.3499999940395355">
+			<inh type="Жители" q="1193" w="3.0"/>
+			<rent type="trade" s="1000" o="500" p="134.9 р."/>
+		</house>
+		<house id="2249" x="128" y="76" w="2" l="3" h="16" img="hs.high:block" attr="0.4000000059604645">
+			<inh type="Жители" q="1704" w="2.0"/>
+			<rent type="trade" s="1500" o="800" p="97 р."/>
+		</house>
+		<house id="113880" x="168" y="118" w="2" l="2" h="16" img="hs.high:tower3" attr="0.3499999940395355">
+			<inh type="Жители" q="1168" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="252.5 р."/>
+		</house>
+		<house id="207543" x="162" y="62" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1464" w="3.0"/>
+			<rent type="trade" s="1500" o="400" p="138.6 р."/>
+		</house>
+		<house id="713155" x="191" y="166" w="3" l="2" h="9" o="520106" img="hs.panel:bent" attr="0.30000001192092896">
+			<inh type="Жители" q="872" w="2.0"/>
+			<rent type="trade" s="1000" o="950" p="67.1 р."/>
+		</house>
+		<house id="212867" x="185" y="152" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1464" w="3.0"/>
+			<rent type="trade" s="1500" o="1300" p="198 р."/>
+		</house>
+		<house id="2507" x="136" y="183" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="510" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="89.3 р."/>
+		</house>
+		<house id="2324" x="115" y="102" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1429" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="274 р."/>
+		</house>
+		<house id="2333" x="138" y="104" w="3" l="3" h="18" img="hs.modern:grand" attr="0.20000000298023224">
+			<inh type="Жители" q="2030" w="4.0"/>
+			<rent type="trade" s="2250" o="1800" p="295.3 р."/>
+		</house>
+		<house id="77095" x="98" y="99" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="778" w="3.0"/>
+			<rent type="trade" s="1000" o="350" p="149.6 р."/>
+		</house>
+		<house id="2277" x="128" y="84" w="2" l="4" h="4" img="hs.ancient:mansion1" r="1" attr="0.5">
+			<inh type="Жители" q="276" w="2.0"/>
+			<rent type="trade" s="2000" o="1750" p="80.2 р."/>
+		</house>
+		<house id="212923" x="89" y="106" w="3" l="2" h="12" img="hs.panel:tower" attr="-0.05000000074505806">
+			<inh type="Жители" q="1479" w="2.0"/>
+			<rent type="trade" s="1500" o="300" p="49.7 р."/>
+		</house>
+		<house id="113908" x="152" y="182" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.0">
+			<inh type="Жители" q="794" w="2.0"/>
+			<rent type="trade" s="3000" o="2950" p="102 р."/>
+		</house>
+		<house id="89162" x="181" y="100" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1438" w="4.0"/>
+			<rent type="trade" s="1500" o="1300" p="228.4 р."/>
+		</house>
+		<house id="2389" x="146" y="125" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.10000000149011612">
+			<inh type="Жители" q="700" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="273.5 р."/>
+		</house>
+		<house id="89192" x="85" y="131" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1211" w="4.0"/>
+			<rent type="trade" s="1000" o="550" p="197.1 р."/>
+		</house>
+		<house id="672466" x="166" y="180" w="3" l="2" h="12" o="481614" img="hs.panel:tower" s="building" attr="0.0">
+			<rent type="trade" s="1500" o="0" p="57 р."/>
+		</house>
+		<house id="61969" x="105" y="92" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.3499999940395355">
+			<inh type="Жители" q="1680" w="4.0"/>
+			<rent type="trade" s="1500" o="550" p="210 р."/>
+		</house>
+		<house id="212886" x="145" y="163" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="877" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="260.6 р."/>
+		</house>
+		<house id="835610" x="171" y="188" w="3" l="2" h="12" o="703182" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1214" w="2.0"/>
+			<rent type="trade" s="1500" o="200" p="65.5 р."/>
+		</house>
+		<house id="2353" x="125" y="111" w="3" l="3" h="18" img="hs.modern:grand" attr="0.44999998807907104">
+			<inh type="Жители" q="2024" w="4.0"/>
+			<rent type="trade" s="2250" o="1900" p="289.8 р."/>
+		</house>
+		<house id="791711" x="166" y="192" w="3" l="2" h="12" o="703182" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1225" w="2.0"/>
+			<rent type="trade" s="1500" o="850" p="82.3 р."/>
+		</house>
+		<house id="2269" x="174" y="79" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1457" w="3.0"/>
+			<rent type="trade" s="1500" o="150" p="120.8 р."/>
+		</house>
+		<house id="113946" x="145" y="191" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="326" w="2.0"/>
+			<rent type="trade" s="1000" o="1000" p="94.4 р."/>
+		</house>
+		<house id="2461" x="141" y="157" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="882" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="261.6 р."/>
+		</house>
+		<house id="61965" x="108" y="93" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1446" w="4.0"/>
+			<rent type="trade" s="1500" o="1150" p="251.3 р."/>
+		</house>
+		<house id="77098" x="96" y="95" w="2" l="2" h="12" img="hs.high:tower1" attr="0.3499999940395355">
+			<inh type="Жители" q="736" w="3.0"/>
+			<rent type="trade" s="1000" o="500" p="179.3 р."/>
+		</house>
+		<house id="77118" x="185" y="116" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1476" w="3.0"/>
+			<rent type="trade" s="1500" o="800" p="169.6 р."/>
+		</house>
+		<house id="61998" x="121" y="71" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="548" w="5.0"/>
+			<rent type="trade" s="1500" o="550" p="290.5 р."/>
+		</house>
+		<house id="89251" x="134" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="744" w="4.0"/>
+			<rent type="trade" s="1000" o="300" p="184.4 р."/>
+		</house>
+		<house id="2479" x="174" y="163" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1447" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="260.2 р."/>
+		</house>
+		<house id="2338" x="141" y="106" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="710" w="4.0"/>
+			<rent type="trade" s="1000" o="650" p="237.5 р."/>
+		</house>
+		<house id="2314" x="112" y="97" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1485" w="3.0"/>
+			<rent type="trade" s="1500" o="650" p="154.7 р."/>
+		</house>
+		<house id="2280" x="164" y="84" w="3" l="3" h="18" img="hs.modern:grand" attr="0.10000000149011612">
+			<inh type="Жители" q="2082" w="4.0"/>
+			<rent type="trade" s="2250" o="1650" p="280 р."/>
+		</house>
+		<house id="212870" x="200" y="159" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1432" w="3.0"/>
+			<rent type="trade" s="1500" o="900" p="164.7 р."/>
+		</house>
+		<house id="780730" x="166" y="184" w="3" l="2" h="12" o="645892" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1179" w="2.0"/>
+			<rent type="trade" s="1500" o="250" p="71.7 р."/>
+		</house>
+		<house id="2374" x="118" y="120" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.15000000596046448">
+			<inh type="Жители" q="2601" w="5.0"/>
+			<rent type="trade" s="1250" o="1100" p="428.4 р."/>
+		</house>
+		<house id="113966" x="145" y="48" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.0">
+			<inh type="Жители" q="558" w="5.0"/>
+			<rent type="trade" s="1500" o="550" p="286.3 р."/>
+		</house>
+		<house id="61995" x="115" y="71" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.3499999940395355">
+			<inh type="Жители" q="2571" w="5.0"/>
+			<rent type="trade" s="1250" o="1200" p="403 р."/>
+		</house>
+		<house id="2483" x="136" y="166" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="870" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="233.7 р."/>
+		</house>
+		<house id="2344" x="114" y="109" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.4000000059604645">
+			<inh type="Жители" q="1095" w="5.0"/>
+			<rent type="trade" s="1000" o="400" p="280.1 р."/>
+		</house>
+		<house id="2363" x="129" y="115" w="2" l="3" h="16" img="hs.high:block" attr="0.15000000596046448">
+			<inh type="Жители" q="1646" w="2.0"/>
+			<rent type="trade" s="1500" o="900" p="113.4 р."/>
+		</house>
+		<house id="2464" x="155" y="157" w="3" l="2" h="12" img="hs.modern:green1" attr="0.05000000074505806">
+			<inh type="Жители" q="1490" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="272.8 р."/>
+		</house>
+		<house id="2456" x="174" y="155" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1437" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="259.1 р."/>
+		</house>
+		<house id="2508" x="120" y="186" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1160" w="4.0"/>
+			<rent type="trade" s="1000" o="550" p="231.8 р."/>
+		</house>
+		<house id="212877" x="196" y="156" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="514" w="2.0"/>
+			<rent type="trade" s="2000" o="1150" p="69.4 р."/>
+		</house>
+		<house id="2364" x="133" y="115" w="2" l="3" h="16" img="hs.high:block" attr="0.15000000596046448">
+			<inh type="Жители" q="1681" w="2.0"/>
+			<rent type="trade" s="1500" o="1250" p="126.5 р."/>
+		</house>
+		<house id="212932" x="90" y="103" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1464" w="3.0"/>
+			<rent type="trade" s="1500" o="800" p="148.1 р."/>
+		</house>
+		<house id="113905" x="182" y="139" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1437" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="294.2 р."/>
+		</house>
+		<house id="2476" x="155" y="163" w="3" l="2" h="12" img="hs.modern:green1" attr="0.25">
+			<inh type="Жители" q="1491" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="274 р."/>
+		</house>
+		<house id="2481" x="113" y="166" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="849" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="195.9 р."/>
+		</house>
+		<house id="2411" x="108" y="134" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="265" w="2.0"/>
+			<rent type="trade" s="2000" o="1450" p="79.6 р."/>
+		</house>
+		<house id="2345" x="120" y="109" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.44999998807907104">
+			<inh type="Жители" q="1142" w="5.0"/>
+			<rent type="trade" s="1000" o="950" p="348.8 р."/>
+		</house>
+		<house id="89198" x="95" y="127" w="3" l="2" h="12" img="hs.modern:green2" attr="0.25">
+			<inh type="Жители" q="1475" w="4.0"/>
+			<rent type="trade" s="1500" o="350" p="162.4 р."/>
+		</house>
+		<house id="2472" x="151" y="160" w="2" l="2" h="12" img="hs.high:smalltower1" attr="-0.05000000074505806">
+			<inh type="Жители" q="853" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="261.7 р."/>
+		</house>
+		<house id="61935" x="169" y="169" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="715" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="293.1 р."/>
+		</house>
+		<house id="2331" x="156" y="103" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.10000000149011612">
+			<inh type="Жители" q="261" w="2.0"/>
+			<rent type="trade" s="2000" o="1150" p="83.1 р."/>
+		</house>
+		<house id="113896" x="181" y="132" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1660" w="2.0"/>
+			<rent type="trade" s="1500" o="1100" p="118.9 р."/>
+		</house>
+		<officecenter id="404357" x="182" y="170" w="3" l="3" h="12" img="offices:tower1" attr="0.30000001192092896">
+			<inh type="Жители" q="1668" w="5.0"/>
+			<rent type="office" s="11000" o="9750" p="797.9 р."/>
+			<rent type="trade" s="1000" o="1000" p="409.5 р."/>
+		</officecenter>
+		<house id="2446" x="117" y="153" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.0">
+			<inh type="Жители" q="1459" w="4.0"/>
+			<rent type="trade" s="1500" o="1100" p="233.8 р."/>
+		</house>
+		<house id="2469" x="136" y="160" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="895" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="257.2 р."/>
+		</house>
+		<house id="2506" x="131" y="183" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="517" w="2.0"/>
+			<rent type="trade" s="2000" o="1300" p="87.4 р."/>
+		</house>
+		<house id="2294" x="174" y="89" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1453" w="3.0"/>
+			<rent type="trade" s="1500" o="250" p="133.5 р."/>
+		</house>
+		<hotel id="2509" x="131" y="188" w="2" l="4" h="5" img="hotels:ancient2" r="1" attr="0.0"/>
+		<house id="2281" x="143" y="85" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.5">
+			<inh type="Жители" q="1437" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="281 р."/>
+		</house>
+		<house id="77079" x="108" y="66" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.30000001192092896">
+			<inh type="Жители" q="835" w="2.0"/>
+			<rent type="trade" s="3000" o="1450" p="55.1 р."/>
+		</house>
+		<house id="2263" x="132" y="79" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.5">
+			<inh type="Жители" q="800" w="2.0"/>
+			<rent type="trade" s="3000" o="2750" p="77 р."/>
+		</house>
+		<house id="2276" x="125" y="84" w="3" l="2" h="12" img="hs.modern:green1" attr="0.5">
+			<inh type="Жители" q="1408" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="231.2 р."/>
+		</house>
+		<bassin id="2253" x="141" y="76" w="2" l="4" h="1" img="munitipal:bassin" r="1" attr="0.20000000298023224"/>
+		<house id="2325" x="124" y="102" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.5">
+			<inh type="Жители" q="1459" w="4.0"/>
+			<rent type="trade" s="1500" o="1250" p="273.3 р."/>
+		</house>
+		<house id="113903" x="178" y="139" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1448" w="4.0"/>
+			<rent type="trade" s="1500" o="1200" p="286.7 р."/>
+		</house>
+		<house id="2503" x="120" y="180" w="2" l="2" h="4" img="hs.ancient:house1" attr="0.30000001192092896">
+			<inh type="Жители" q="159" w="2.0"/>
+			<rent type="trade" s="1000" o="500" p="82.9 р."/>
+		</house>
+		<house id="77084" x="101" y="72" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1092" w="4.0"/>
+			<rent type="trade" s="1000" o="250" p="277 р."/>
+		</house>
+		<house id="2365" x="151" y="116" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.10000000149011612">
+			<inh type="Жители" q="558" w="5.0"/>
+			<rent type="trade" s="1500" o="1300" p="399.5 р."/>
+		</house>
+		<house id="212860" x="190" y="148" w="4" l="2" h="7" img="hs.stalin:short" attr="0.3499999940395355">
+			<inh type="Жители" q="515" w="2.0"/>
+			<rent type="trade" s="2000" o="1300" p="76.6 р."/>
+		</house>
+		<house id="2404" x="118" y="131" w="3" l="2" h="24" img="hs.high:grandtower" attr="-0.05000000074505806">
+			<inh type="Жители" q="2577" w="5.0"/>
+			<rent type="trade" s="1250" o="1000" p="434.2 р."/>
+		</house>
+		<house id="113953" x="153" y="49" w="3" l="3" h="18" img="hs.modern:grand" attr="0.0">
+			<inh type="Жители" q="2015" w="4.0"/>
+			<rent type="trade" s="2250" o="900" p="229.7 р."/>
+		</house>
+		<tradecenter id="2352" x="151" y="110" w="4" l="6" h="3" img="trade:center2" r="1" attr="0.10000000149011612">
+			<rent type="trade" s="9000" o="8700" p="507.6 р."/>
+		</tradecenter>
+		<house id="77104" x="98" y="113" w="2" l="2" h="12" img="hs.modern:brick1" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="736" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="227.8 р."/>
+		</house>
+		<house id="2485" x="136" y="169" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="860" w="4.0"/>
+			<rent type="trade" s="1000" o="600" p="230.4 р."/>
+		</house>
+		<house id="2243" x="144" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.10000000149011612">
+			<inh type="Жители" q="706" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="204.6 р."/>
+		</house>
+		<house id="2317" x="148" y="98" w="2" l="2" h="7" img="hs.stalin:red" attr="0.5">
+			<inh type="Жители" q="419" w="2.0"/>
+			<rent type="trade" s="1000" o="950" p="87.2 р."/>
+		</house>
+		<house id="113902" x="178" y="135" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1445" w="4.0"/>
+			<rent type="trade" s="1500" o="1100" p="279.6 р."/>
+		</house>
+		<house id="89241" x="137" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="712" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="131.3 р."/>
+		</house>
+		<house id="113938" x="153" y="198" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="252" w="2.0"/>
+			<rent type="trade" s="2000" o="800" p="72.3 р."/>
+		</house>
+		<tradecenter id="2499" x="137" y="177" w="3" l="4" h="6" img="trade:supermarket2" attr="0.0">
+			<rent type="trade" s="12000" o="11500" p="332.1 р."/>
+		</tradecenter>
+		<house id="2309" x="161" y="95" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1456" w="4.0"/>
+			<rent type="trade" s="1500" o="1000" p="265.6 р."/>
+		</house>
+		<house id="2239" x="131" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="742" w="4.0"/>
+			<rent type="trade" s="1000" o="100" p="158 р."/>
+		</house>
+		<house id="2349" x="154" y="109" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.10000000149011612">
+			<inh type="Жители" q="361" w="2.0"/>
+			<rent type="trade" s="1000" o="750" p="86.1 р."/>
+		</house>
+		<police id="2455" x="111" y="155" w="4" l="4" h="1" img="munitipal:police" attr="0.0"/>
+		<house id="89197" x="85" y="120" w="2" l="3" h="12" img="hs.panel:tower" r="1" attr="0.25">
+			<inh type="Жители" q="1446" w="2.0"/>
+			<rent type="trade" s="1500" o="400" p="52.4 р."/>
+		</house>
+		<house id="113957" x="137" y="54" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="558" w="5.0"/>
+			<rent type="trade" s="1500" o="700" p="302.6 р."/>
+		</house>
+		<house id="2348" x="146" y="109" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="715" w="4.0"/>
+			<rent type="trade" s="1000" o="650" p="250 р."/>
+		</house>
+		<house id="212885" x="141" y="163" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="906" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="262.8 р."/>
+		</house>
+		<house id="2285" x="131" y="86" w="2" l="2" h="12" img="hs.high:tower1" attr="0.5">
+			<inh type="Жители" q="726" w="3.0"/>
+			<rent type="trade" s="1000" o="750" p="193.4 р."/>
+		</house>
+		<house id="212879" x="193" y="156" w="3" l="3" h="18" img="hs.modern:grand" attr="-0.05000000074505806">
+			<inh type="Жители" q="2042" w="4.0"/>
+			<rent type="trade" s="2250" o="1850" p="285.5 р."/>
+		</house>
+		<court id="844327" x="202" y="168" w="4" l="4" h="1" o="703182" img="munitipal:court" attr="0.30000001192092896"/>
+		<house id="61947" x="163" y="167" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="564" w="5.0"/>
+			<rent type="trade" s="1500" o="1300" p="412.4 р."/>
+		</house>
+		<house id="89161" x="186" y="84" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="1439" w="3.0"/>
+			<rent type="trade" s="1500" o="550" p="144.7 р."/>
+		</house>
+		<house id="77146" x="110" y="163" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="267" w="2.0"/>
+			<rent type="trade" s="2000" o="850" p="76.1 р."/>
+		</house>
+		<house id="2505" x="120" y="183" w="4" l="2" h="7" img="hs.stalin:short" attr="0.30000001192092896">
+			<inh type="Жители" q="503" w="2.0"/>
+			<rent type="trade" s="2000" o="850" p="75 р."/>
+		</house>
+		<house id="89194" x="98" y="128" w="2" l="3" h="12" img="hs.panel:tower" r="1" attr="0.25">
+			<inh type="Жители" q="1488" w="2.0"/>
+			<rent type="trade" s="1500" o="500" p="60.7 р."/>
+		</house>
+		<house id="212927" x="93" y="93" w="3" l="2" h="12" img="hs.panel:tower" attr="-0.05000000074505806">
+			<inh type="Жители" q="1511" w="2.0"/>
+			<rent type="trade" s="1500" o="500" p="54.3 р."/>
+		</house>
+		<house id="2423" x="108" y="140" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="246" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="64.3 р."/>
+		</house>
+		<house id="2471" x="145" y="160" w="2" l="2" h="12" img="hs.high:smalltower2" attr="-0.05000000074505806">
+			<inh type="Жители" q="857" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="257.1 р."/>
+		</house>
+		<house id="212925" x="85" y="93" w="3" l="2" h="12" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1433" w="2.0"/>
+			<rent type="trade" s="1500" o="350" p="47.3 р."/>
+		</house>
+		<house id="212874" x="190" y="159" w="3" l="2" h="12" img="hs.modern:green1" attr="0.25">
+			<inh type="Жители" q="1481" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="243.2 р."/>
+		</house>
+		<house id="2310" x="165" y="95" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1460" w="4.0"/>
+			<rent type="trade" s="1500" o="500" p="227 р."/>
+		</house>
+		<bridge id="2435" x="115" y="146"/>
+		<house id="89247" x="147" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="709" w="4.0"/>
+			<rent type="trade" s="1000" o="100" p="155.9 р."/>
+		</house>
+		<house id="61945" x="166" y="167" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="546" w="5.0"/>
+			<rent type="trade" s="1500" o="1400" p="422.5 р."/>
+		</house>
+		<house id="61966" x="101" y="97" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1403" w="4.0"/>
+			<rent type="trade" s="1500" o="450" p="200.7 р."/>
+		</house>
+		<house id="113887" x="177" y="163" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1418" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="256.8 р."/>
+		</house>
+		<house id="2378" x="146" y="122" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.10000000149011612">
+			<inh type="Жители" q="713" w="4.0"/>
+			<rent type="trade" s="1000" o="850" p="272.3 р."/>
+		</house>
+		<house id="61992" x="118" y="76" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="537" w="2.0"/>
+			<rent type="trade" s="2000" o="1050" p="62.2 р."/>
+		</house>
+		<house id="77085" x="101" y="89" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="530" w="2.0"/>
+			<rent type="trade" s="2000" o="550" p="49.7 р."/>
+		</house>
+		<house id="773353" x="171" y="180" w="3" l="2" h="9" o="645892" img="hs.panel:bold" attr="0.0">
+			<inh type="Жители" q="923" w="2.0"/>
+			<rent type="trade" s="1500" o="1450" p="81.3 р."/>
+		</house>
+		<house id="789758" x="166" y="188" w="3" l="2" h="12" o="645892" img="hs.panel:tower" attr="0.0">
+			<inh type="Жители" q="1223" w="2.0"/>
+			<rent type="trade" s="1500" o="1250" p="97.4 р."/>
+		</house>
+		<house id="89239" x="144" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="691" w="4.0"/>
+			<rent type="trade" s="1000" o="350" p="195.5 р."/>
+		</house>
+		<house id="113888" x="180" y="159" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1454" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="256.7 р."/>
+		</house>
+		<house id="89152" x="177" y="88" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1492" w="3.0"/>
+			<rent type="trade" s="1500" o="1350" p="188.1 р."/>
+		</house>
+		<house id="89153" x="177" y="84" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1437" w="3.0"/>
+			<rent type="trade" s="1500" o="300" p="134.9 р."/>
+		</house>
+		<officecenter id="404356" x="182" y="166" w="3" l="2" h="11" img="offices:tower4" attr="0.25">
+			<inh type="Жители" q="662" w="5.0"/>
+			<rent type="office" s="4000" o="4000" p="819 р."/>
+			<rent type="trade" s="500" o="450" p="399 р."/>
+		</officecenter>
+		<house id="207537" x="157" y="63" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1477" w="3.0"/>
+			<rent type="trade" s="1500" o="900" p="165.6 р."/>
+		</house>
+		<house id="2421" x="142" y="139" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1459" w="3.0"/>
+			<rent type="trade" s="1500" o="1200" p="209.8 р."/>
+		</house>
+		<house id="2258" x="160" y="76" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.4000000059604645">
+			<inh type="Жители" q="768" w="2.0"/>
+			<rent type="trade" s="3000" o="2200" p="74.6 р."/>
+		</house>
+		<house id="61929" x="174" y="169" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.25">
+			<inh type="Жители" q="1453" w="3.0"/>
+			<rent type="trade" s="1500" o="1450" p="218.7 р."/>
+		</house>
+		<house id="212921" x="98" y="106" w="3" l="2" h="12" img="hs.panel:tower" attr="0.3499999940395355">
+			<inh type="Жители" q="1493" w="2.0"/>
+			<rent type="trade" s="1500" o="650" p="61.9 р."/>
+		</house>
+		<house id="89164" x="181" y="92" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1458" w="4.0"/>
+			<rent type="trade" s="1500" o="800" p="200 р."/>
+		</house>
+		<house id="89201" x="89" y="120" w="3" l="2" h="12" img="hs.modern:green2" attr="-0.05000000074505806">
+			<inh type="Жители" q="1465" w="3.0"/>
+			<rent type="trade" s="1500" o="750" p="182.7 р."/>
+		</house>
+		<house id="113916" x="145" y="178" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1425" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="321.6 р."/>
+		</house>
+		<house id="773204" x="166" y="72" w="3" l="2" h="9" o="699278" img="hs.panel:bent" attr="0.4000000059604645">
+			<inh type="Жители" q="918" w="1.0"/>
+			<rent type="trade" s="1000" o="500" p="52.8 р."/>
+		</house>
+		<house id="2251" x="134" y="76" w="2" l="2" h="7" img="hs.stalin:red" attr="0.5">
+			<inh type="Жители" q="385" w="2.0"/>
+			<rent type="trade" s="1000" o="1000" p="78 р."/>
+		</house>
+		<station id="2450" x="121" y="154" w="2" l="6" h="2" img="munitipal:station" r="1" attr="0.30000001192092896"/>
+		<house id="89167" x="183" y="103" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.05000000074505806">
+			<inh type="Жители" q="1122" w="5.0"/>
+			<rent type="trade" s="1000" o="600" p="308.9 р."/>
+		</house>
+		<house id="113907" x="144" y="207" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.30000001192092896">
+			<inh type="Жители" q="798" w="2.0"/>
+			<rent type="trade" s="3000" o="1600" p="60.6 р."/>
+		</house>
+		<house id="607295" x="167" y="176" w="3" l="2" h="9" o="481614" img="hs.panel:bold" name="Жилой дом #2" attr="-0.05000000074505806">
+			<inh type="Жители" q="916" w="2.0"/>
+			<rent type="trade" s="1500" o="1450" p="82.6 р."/>
+		</house>
+		<house id="89185" x="98" y="116" w="2" l="2" h="16" img="hs.high:tower3" attr="0.25">
+			<inh type="Жители" q="1211" w="4.0"/>
+			<rent type="trade" s="1000" o="650" p="214.5 р."/>
+		</house>
+		<house id="2307" x="153" y="95" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.20000000298023224">
+			<inh type="Жители" q="1435" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="289.3 р."/>
+		</house>
+		<house id="113892" x="180" y="147" w="2" l="3" h="24" img="hs.high:grandtower" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="2523" w="6.0"/>
+			<rent type="trade" s="1250" o="1250" p="457.1 р."/>
+		</house>
+		<house id="819598" x="190" y="132" w="3" l="2" h="12" o="645892" img="hs.high:red2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1280" w="3.0"/>
+			<rent type="trade" s="1500" o="1000" p="177.7 р."/>
+		</house>
+		<house id="2491" x="113" y="172" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.0">
+			<inh type="Жители" q="1451" w="4.0"/>
+			<rent type="trade" s="1500" o="1300" p="242.3 р."/>
+		</house>
+		<house id="77116" x="185" y="124" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1512" w="3.0"/>
+			<rent type="trade" s="1500" o="1400" p="196.7 р."/>
+		</house>
+		<house id="113877" x="159" y="114" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1437" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="297.5 р."/>
+		</house>
+		<house id="77153" x="99" y="156" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="312" w="2.0"/>
+			<rent type="trade" s="1000" o="150" p="58.7 р."/>
+		</house>
+		<house id="89166" x="181" y="84" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1487" w="4.0"/>
+			<rent type="trade" s="1500" o="800" p="196.3 р."/>
+		</house>
+		<house id="2312" x="174" y="95" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1485" w="3.0"/>
+			<rent type="trade" s="1500" o="750" p="168 р."/>
+		</house>
+		<house id="2416" x="140" y="136" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1458" w="3.0"/>
+			<rent type="trade" s="1500" o="1500" p="219.5 р."/>
+		</house>
+		<house id="113910" x="156" y="207" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="785" w="2.0"/>
+			<rent type="trade" s="3000" o="1750" p="63.4 р."/>
+		</house>
+		<house id="2257" x="153" y="76" w="2" l="3" h="16" img="hs.high:block" attr="0.4000000059604645">
+			<inh type="Жители" q="1682" w="2.0"/>
+			<rent type="trade" s="1500" o="1100" p="109.4 р."/>
+		</house>
+		<house id="2495" x="151" y="172" w="2" l="2" h="12" img="hs.high:smalltower2" attr="-0.05000000074505806">
+			<inh type="Жители" q="879" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="266.2 р."/>
+		</house>
+		<house id="89186" x="95" y="131" w="2" l="2" h="12" img="hs.modern:round" attr="0.25">
+			<inh type="Жители" q="702" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="223 р."/>
+		</house>
+		<house id="2358" x="122" y="114" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.44999998807907104">
+			<inh type="Жители" q="1474" w="4.0"/>
+			<rent type="trade" s="1500" o="1350" p="283.2 р."/>
+		</house>
+		<house id="2319" x="145" y="99" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.5">
+			<inh type="Жители" q="795" w="2.0"/>
+			<rent type="trade" s="3000" o="3000" p="87.7 р."/>
+		</house>
+		<house id="2384" x="171" y="124" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="1091" w="5.0"/>
+			<rent type="trade" s="1000" o="850" p="357.6 р."/>
+		</house>
+		<house id="77124" x="182" y="127" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.05000000074505806">
+			<inh type="Жители" q="1094" w="5.0"/>
+			<rent type="trade" s="1000" o="800" p="343.3 р."/>
+		</house>
+		<house id="2488" x="151" y="169" w="2" l="2" h="12" img="hs.high:smalltower2" attr="-0.05000000074505806">
+			<inh type="Жители" q="867" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="266.2 р."/>
+		</house>
+		<house id="242760" x="162" y="176" w="4" l="2" h="12" o="51203" img="hs.panel:kalinin" attr="0.30000001192092896">
+			<inh type="Жители" q="970" w="5.0"/>
+			<rent type="trade" s="1000" o="950" p="389.4 р."/>
+		</house>
+		<house id="113936" x="142" y="198" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="252" w="2.0"/>
+			<rent type="trade" s="2000" o="1800" p="85.8 р."/>
+		</house>
+		<house id="113962" x="145" y="54" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="555" w="5.0"/>
+			<rent type="trade" s="1500" o="500" p="283.8 р."/>
+		</house>
+		<house id="2447" x="142" y="153" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.0">
+			<inh type="Жители" q="1665" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="317.8 р."/>
+		</house>
+		<house id="212924" x="94" y="106" w="3" l="2" h="12" img="hs.panel:tower" attr="-0.05000000074505806">
+			<inh type="Жители" q="1475" w="2.0"/>
+			<rent type="trade" s="1500" o="1300" p="70.9 р."/>
+		</house>
+		<house id="89149" x="177" y="100" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1469" w="3.0"/>
+			<rent type="trade" s="1500" o="200" p="130.9 р."/>
+		</house>
+		<house id="113876" x="158" y="117" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1428" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="304 р."/>
+		</house>
+		<house id="2387" x="126" y="125" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2565" w="6.0"/>
+			<rent type="trade" s="1250" o="1100" p="440 р."/>
+		</house>
+		<historic id="2298" x="150" y="91" img="hist.moscow:tvtower"/>
+		<house id="2372" x="165" y="119" w="2" l="4" h="12" img="hs.panel:kalinin" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1075" w="5.0"/>
+			<rent type="trade" s="1000" o="650" p="325 р."/>
+		</house>
+		<house id="77144" x="110" y="167" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="258" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="77.6 р."/>
+		</house>
+		<court id="2291" x="125" y="89" w="4" l="4" h="1" img="munitipal:court" attr="0.5"/>
+		<house id="2459" x="131" y="157" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="821" w="2.0"/>
+			<rent type="trade" s="3000" o="2800" p="96 р."/>
+		</house>
+		<house id="2274" x="143" y="82" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.5">
+			<inh type="Жители" q="1450" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="278.6 р."/>
+		</house>
+		<house id="61948" x="163" y="172" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="0.0">
+			<inh type="Жители" q="533" w="5.0"/>
+			<rent type="trade" s="1500" o="1450" p="427.7 р."/>
+		</house>
+		<house id="2261" x="116" y="79" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.4000000059604645">
+			<inh type="Жители" q="260" w="2.0"/>
+			<rent type="trade" s="2000" o="800" p="61.8 р."/>
+		</house>
+		<house id="2517" x="131" y="207" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.0">
+			<inh type="Жители" q="823" w="2.0"/>
+			<rent type="trade" s="3000" o="1450" p="59.5 р."/>
+		</house>
+		<house id="89196" x="85" y="128" w="2" l="3" h="12" img="hs.panel:tower" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1480" w="2.0"/>
+			<rent type="trade" s="1500" o="800" p="61.7 р."/>
+		</house>
+		<house id="2457" x="114" y="156" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="325" w="2.0"/>
+			<rent type="trade" s="1000" o="200" p="62.8 р."/>
+		</house>
+		<house id="113935" x="142" y="191" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="262" w="2.0"/>
+			<rent type="trade" s="2000" o="1600" p="93.8 р."/>
+		</house>
+		<house id="2332" x="162" y="103" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.10000000149011612">
+			<inh type="Жители" q="291" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="79.9 р."/>
+		</house>
+		<house id="820678" x="195" y="141" w="3" l="2" h="12" o="645892" img="hs.high:red2x3" attr="0.4000000059604645">
+			<inh type="Жители" q="1247" w="3.0"/>
+			<rent type="trade" s="1500" o="750" p="162.2 р."/>
+		</house>
+		<house id="212871" x="185" y="155" w="2" l="2" h="16" img="hs.high:tower3" attr="0.05000000074505806">
+			<inh type="Жители" q="1188" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="265.1 р."/>
+		</house>
+		<house id="2278" x="148" y="84" w="2" l="2" h="12" img="hs.high:tower1" attr="0.5">
+			<inh type="Жители" q="739" w="3.0"/>
+			<rent type="trade" s="1000" o="300" p="161.1 р."/>
+		</house>
+		<house id="850673" x="166" y="196" w="3" l="2" h="12" o="703182" img="hs.panel:tower" s="building" attr="0.0">
+			<rent type="trade" s="1500" o="0" p="48.7 р."/>
+		</house>
+		<house id="89160" x="186" y="88" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1465" w="3.0"/>
+			<rent type="trade" s="1500" o="500" p="143.4 р."/>
+		</house>
+		<house id="113927" x="140" y="188" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="517" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="83 р."/>
+		</house>
+		<house id="61934" x="169" y="172" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="741" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="289.4 р."/>
+		</house>
+		<house id="113956" x="133" y="54" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="-0.05000000074505806">
+			<inh type="Жители" q="541" w="5.0"/>
+			<rent type="trade" s="1500" o="600" p="291.6 р."/>
+		</house>
+		<house id="89248" x="144" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="741" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="198.3 р."/>
+		</house>
+		<house id="2368" x="138" y="119" w="3" l="3" h="18" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="2036" w="4.0"/>
+			<rent type="trade" s="2250" o="2100" p="314.1 р."/>
+		</house>
+		<officecenter id="2382" x="138" y="124" w="4" l="3" h="10" img="offices:center1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="2965" w="6.0"/>
+			<rent type="office" s="18000" o="13300" p="957.9 р."/>
+			<rent type="trade" s="2250" o="2150" p="508.1 р."/>
+		</officecenter>
+		<house id="89221" x="93" y="140" w="4" l="2" h="7" img="hs.stalin:short" attr="0.0">
+			<inh type="Жители" q="549" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="54.1 р."/>
+		</house>
+		<house id="212872" x="200" y="155" w="2" l="2" h="16" img="hs.high:tower3" attr="0.0">
+			<inh type="Жители" q="1199" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="195 р."/>
+		</house>
+		<house id="113901" x="186" y="139" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1404" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="291.8 р."/>
+		</house>
+		<house id="2266" x="146" y="79" w="4" l="2" h="7" img="hs.stalin:short" attr="0.5">
+			<inh type="Жители" q="542" w="2.0"/>
+			<rent type="trade" s="2000" o="1650" p="77.4 р."/>
+		</house>
+		<house id="61994" x="125" y="71" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.3499999940395355">
+			<inh type="Жители" q="2580" w="5.0"/>
+			<rent type="trade" s="1250" o="1100" p="402.8 р."/>
+		</house>
+		<house id="77148" x="110" y="159" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.0">
+			<inh type="Жители" q="260" w="2.0"/>
+			<rent type="trade" s="2000" o="1900" p="89.6 р."/>
+		</house>
+		<house id="2381" x="162" y="122" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.05000000074505806">
+			<inh type="Жители" q="309" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="92.7 р."/>
+		</house>
+		<house id="2406" x="126" y="131" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2583" w="6.0"/>
+			<rent type="trade" s="1250" o="1050" p="436.5 р."/>
+		</house>
+		<house id="2414" x="121" y="134" w="3" l="2" h="16" img="hs.high:gray2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1680" w="4.0"/>
+			<rent type="trade" s="1500" o="1550" p="297.9 р."/>
+		</house>
+		<house id="2489" x="120" y="171" w="2" l="2" h="7" img="hs.stalin:red" attr="0.0">
+			<inh type="Жители" q="380" w="2.0"/>
+			<rent type="trade" s="1000" o="500" p="78.9 р."/>
+		</house>
+		<house id="113928" x="143" y="188" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="549" w="2.0"/>
+			<rent type="trade" s="2000" o="1800" p="97.3 р."/>
+		</house>
+		<house id="113898" x="185" y="132" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1680" w="2.0"/>
+			<rent type="trade" s="1500" o="1400" p="122.1 р."/>
+		</house>
+		<house id="842080" x="176" y="186" w="3" l="2" h="9" o="645892" img="hs.panel:bold" s="building" attr="0.0">
+			<rent type="trade" s="1500" o="0" p="40.3 р."/>
+		</house>
+		<house id="2275" x="114" y="84" w="2" l="4" h="4" img="hs.ancient:mansion1" r="1" attr="0.3499999940395355">
+			<inh type="Жители" q="274" w="2.0"/>
+			<rent type="trade" s="2000" o="1000" p="66 р."/>
+		</house>
+		<house id="2463" x="151" y="157" w="2" l="2" h="12" img="hs.high:smalltower1" attr="-0.05000000074505806">
+			<inh type="Жители" q="913" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="265.1 р."/>
+		</house>
+		<house id="2311" x="169" y="95" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1421" w="3.0"/>
+			<rent type="trade" s="1500" o="1150" p="201 р."/>
+		</house>
+		<house id="207541" x="162" y="52" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.0">
+			<inh type="Жители" q="1469" w="3.0"/>
+			<rent type="trade" s="1500" o="950" p="160.8 р."/>
+		</house>
+		<house id="89168" x="182" y="80" w="4" l="2" h="12" img="hs.panel:kalinin" attr="0.10000000149011612">
+			<inh type="Жители" q="1039" w="5.0"/>
+			<rent type="trade" s="1000" o="400" p="271.6 р."/>
+		</house>
+		<bridge id="2304" x="154" y="93"/>
+		<bridge id="2519" x="132" y="233"/>
+		<house id="2502" x="113" y="180" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1461" w="4.0"/>
+			<rent type="trade" s="1500" o="1050" p="229.1 р."/>
+		</house>
+		<house id="89193" x="85" y="116" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1216" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="218.3 р."/>
+		</house>
+		<tradecenter id="2419" x="131" y="138" w="6" l="6" h="3" img="trade:center1" attr="0.3499999940395355">
+			<rent type="trade" s="18000" o="17050" p="505.1 р."/>
+		</tradecenter>
+		<house id="792992" x="193" y="144" w="3" l="2" h="12" o="645892" img="hs.high:red2x3" attr="0.4000000059604645">
+			<inh type="Жители" q="1319" w="3.0"/>
+			<rent type="trade" s="1500" o="500" p="150.9 р."/>
+		</house>
+		<house id="2301" x="120" y="93" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.44999998807907104">
+			<inh type="Жители" q="1440" w="3.0"/>
+			<rent type="trade" s="1500" o="900" p="169.9 р."/>
+		</house>
+		<house id="2399" x="161" y="128" w="2" l="2" h="12" img="hs.modern:round" attr="0.4000000059604645">
+			<inh type="Жители" q="729" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="275.6 р."/>
+		</house>
+		<house id="2512" x="120" y="192" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1192" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="240.7 р."/>
+		</house>
+		<house id="2356" x="151" y="113" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.10000000149011612">
+			<inh type="Жители" q="551" w="5.0"/>
+			<rent type="trade" s="1500" o="1400" p="404 р."/>
+		</house>
+		<house id="2238" x="128" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.3499999940395355">
+			<inh type="Жители" q="773" w="4.0"/>
+			<rent type="trade" s="1000" o="550" p="212.8 р."/>
+		</house>
+		<bridge id="2454" x="216" y="154"/>
+		<house id="671651" x="206" y="160" w="3" l="2" h="9" o="520284" img="hs.panel:bold" s="building" attr="0.30000001192092896">
+			<rent type="trade" s="1500" o="0" p="29.4 р."/>
+		</house>
+		<house id="2247" x="160" y="70" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.10000000149011612">
+			<inh type="Жители" q="831" w="2.0"/>
+			<rent type="trade" s="3000" o="1750" p="69.1 р."/>
+		</house>
+		<house id="2295" x="133" y="90" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.5">
+			<inh type="Жители" q="1434" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="282.2 р."/>
+		</house>
+		<house id="212859" x="185" y="148" w="2" l="2" h="16" img="hs.high:tower3" attr="0.3499999940395355">
+			<inh type="Жители" q="1190" w="4.0"/>
+			<rent type="trade" s="1000" o="1000" p="263.9 р."/>
+		</house>
+		<house id="89222" x="88" y="134" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.30000001192092896">
+			<inh type="Жители" q="248" w="2.0"/>
+			<rent type="trade" s="2000" o="500" p="54 р."/>
+		</house>
+		<house id="113909" x="152" y="207" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.0">
+			<inh type="Жители" q="791" w="2.0"/>
+			<rent type="trade" s="3000" o="1600" p="59.9 р."/>
+		</house>
+		<house id="2287" x="111" y="89" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.05000000074505806">
+			<inh type="Жители" q="321" w="2.0"/>
+			<rent type="trade" s="1000" o="0" p="39.2 р."/>
+		</house>
+		<house id="61930" x="174" y="172" w="3" l="2" h="12" img="hs.high:red2x3" attr="-0.05000000074505806">
+			<inh type="Жители" q="1466" w="3.0"/>
+			<rent type="trade" s="1500" o="1450" p="216.8 р."/>
+		</house>
+		<tradecenter id="787736" x="160" y="193" w="2" l="3" h="4" o="703182" img="trade:shop2" name="Торговый центр (Южный)" attr="0.30000001192092896">
+			<rent type="trade" s="4500" o="3100" p="160.4 р."/>
+		</tradecenter>
+		<house id="113933" x="140" y="203" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="535" w="2.0"/>
+			<rent type="trade" s="2000" o="1600" p="73.2 р."/>
+		</house>
+		<house id="89189" x="95" y="116" w="2" l="2" h="12" img="hs.modern:round" attr="-0.05000000074505806">
+			<inh type="Жители" q="722" w="4.0"/>
+			<rent type="trade" s="1000" o="350" p="184.5 р."/>
+		</house>
+		<house id="2328" x="112" y="103" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1417" w="3.0"/>
+			<rent type="trade" s="1500" o="850" p="166 р."/>
+		</house>
+		<house id="2396" x="146" y="128" w="4" l="2" h="7" img="hs.stalin:short" attr="0.10000000149011612">
+			<inh type="Жители" q="522" w="2.0"/>
+			<rent type="trade" s="2000" o="1500" p="92.7 р."/>
+		</house>
+		<house id="212898" x="114" y="113" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.4000000059604645">
+			<inh type="Жители" q="1679" w="4.0"/>
+			<rent type="trade" s="1500" o="1150" p="259.9 р."/>
+		</house>
+		<house id="2355" x="146" y="112" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="764" w="4.0"/>
+			<rent type="trade" s="1000" o="650" p="251.1 р."/>
+		</house>
+		<house id="2245" x="150" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="714" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="135.5 р."/>
+		</house>
+		<house id="2405" x="122" y="131" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1441" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="292.9 р."/>
+		</house>
+		<house id="113954" x="141" y="54" w="3" l="3" h="18" img="hs.modern:grand" attr="-0.05000000074505806">
+			<inh type="Жители" q="2076" w="4.0"/>
+			<rent type="trade" s="2250" o="1200" p="240.3 р."/>
+		</house>
+		<house id="89204" x="84" y="113" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.30000001192092896">
+			<inh type="Жители" q="714" w="4.0"/>
+			<rent type="trade" s="1000" o="500" p="194.4 р."/>
+		</house>
+		<house id="2462" x="145" y="157" w="2" l="2" h="12" img="hs.high:smalltower2" attr="-0.05000000074505806">
+			<inh type="Жители" q="892" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="259.4 р."/>
+		</house>
+		<house id="2350" x="162" y="109" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.10000000149011612">
+			<inh type="Жители" q="336" w="2.0"/>
+			<rent type="trade" s="1000" o="600" p="81.1 р."/>
+		</house>
+		<house id="89205" x="89" y="113" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="751" w="4.0"/>
+			<rent type="trade" s="1000" o="100" p="148.9 р."/>
+		</house>
+		<house id="61999" x="118" y="71" w="2" l="3" h="6" img="hs.modern:mansionmedium" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="551" w="5.0"/>
+			<rent type="trade" s="1500" o="600" p="293.7 р."/>
+		</house>
+		<house id="2268" x="169" y="79" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1440" w="3.0"/>
+			<rent type="trade" s="1500" o="1050" p="177.1 р."/>
+		</house>
+		<house id="113917" x="148" y="178" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1447" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="320.2 р."/>
+		</house>
+		<house id="2437" x="157" y="148" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1690" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="319.1 р."/>
+		</house>
+		<house id="77151" x="99" y="153" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.30000001192092896">
+			<inh type="Жители" q="879" w="4.0"/>
+			<rent type="trade" s="1000" o="750" p="210.9 р."/>
+		</house>
+		<house id="113967" x="149" y="48" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.0">
+			<inh type="Жители" q="527" w="5.0"/>
+			<rent type="trade" s="1500" o="800" p="310.6 р."/>
+		</house>
+		<house id="2267" x="153" y="79" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.4000000059604645">
+			<inh type="Жители" q="814" w="2.0"/>
+			<rent type="trade" s="3000" o="1450" p="70.9 р."/>
+		</house>
+		<house id="77117" x="185" y="120" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1476" w="3.0"/>
+			<rent type="trade" s="1500" o="1350" p="183.6 р."/>
+		</house>
+		<house id="61931" x="160" y="166" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.0">
+			<inh type="Жители" q="737" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="297.9 р."/>
+		</house>
+		<house id="2316" x="124" y="98" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.5">
+			<inh type="Жители" q="1689" w="4.0"/>
+			<rent type="trade" s="1500" o="1500" p="283.4 р."/>
+		</house>
+		<house id="2360" x="138" y="114" w="3" l="3" h="18" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="2076" w="4.0"/>
+			<rent type="trade" s="2250" o="1950" p="306 р."/>
+		</house>
+		<house id="77078" x="108" y="75" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.3499999940395355">
+			<inh type="Жители" q="776" w="2.0"/>
+			<rent type="trade" s="3000" o="2700" p="66 р."/>
+		</house>
+		<house id="2445" x="114" y="153" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.30000001192092896">
+			<inh type="Жители" q="876" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="236.3 р."/>
+		</house>
+		<house id="2264" x="137" y="79" w="4" l="2" h="7" img="hs.stalin:short" attr="0.5">
+			<inh type="Жители" q="512" w="2.0"/>
+			<rent type="trade" s="2000" o="1250" p="71.3 р."/>
+		</house>
+		<house id="2336" x="115" y="106" w="2" l="3" h="16" img="hs.high:gray2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1623" w="4.0"/>
+			<rent type="trade" s="1500" o="1250" p="268.7 р."/>
+		</house>
+		<bridge id="2480" x="127" y="164"/>
+		<house id="113878" x="168" y="124" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="1482" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="256.8 р."/>
+		</house>
+		<house id="850361" x="190" y="128" w="3" l="2" h="12" o="645892" img="hs.modern:brick2" s="building" attr="0.4000000059604645">
+			<rent type="trade" s="1000" o="0" p="133.9 р."/>
+		</house>
+		<house id="89154" x="177" y="80" w="2" l="2" h="12" img="hs.high:tower1" attr="0.05000000074505806">
+			<inh type="Жители" q="740" w="3.0"/>
+			<rent type="trade" s="1000" o="200" p="142.1 р."/>
+		</house>
+		<theatre id="2408" x="138" y="131" w="4" l="5" h="3" img="munitipal:theatre" attr="0.4000000059604645"/>
+		<house id="2323" x="166" y="100" w="3" l="4" h="4" img="hs.modern:mansionbig" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="307" w="7.0"/>
+			<rent type="trade" s="2500" o="2250" p="721.7 р."/>
+		</house>
+		<house id="757393" x="177" y="178" w="3" l="2" h="9" o="645892" img="hs.panel:bold" attr="0.0">
+			<inh type="Жители" q="920" w="2.0"/>
+			<rent type="trade" s="1500" o="950" p="70.6 р."/>
+		</house>
+		<house id="2468" x="117" y="160" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.0">
+			<inh type="Жители" q="1460" w="4.0"/>
+			<rent type="trade" s="1500" o="900" p="224 р."/>
+		</house>
+		<house id="89216" x="94" y="124" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1431" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="263.6 р."/>
+		</house>
+		<house id="2511" x="120" y="189" w="2" l="2" h="16" img="hs.high:tower3" attr="0.30000001192092896">
+			<inh type="Жители" q="1230" w="4.0"/>
+			<rent type="trade" s="1000" o="450" p="218.7 р."/>
+		</house>
+		<warehouse.universal id="381" w="3" l="3" img="industrial:hangar"/>
+		<house id="113950" x="153" y="54" w="3" l="3" h="18" img="hs.modern:grand" attr="-0.05000000074505806">
+			<inh type="Жители" q="1985" w="4.0"/>
+			<rent type="trade" s="2250" o="1250" p="253.1 р."/>
+		</house>
+		<house id="77092" x="108" y="82" w="2" l="2" h="16" img="hs.high:tower3" attr="0.05000000074505806">
+			<inh type="Жители" q="1195" w="4.0"/>
+			<rent type="trade" s="1000" o="800" p="220.3 р."/>
+		</house>
+		<house id="212929" x="93" y="103" w="2" l="2" h="7" img="hs.stalin:red" attr="-0.05000000074505806">
+			<inh type="Жители" q="420" w="2.0"/>
+			<rent type="trade" s="1000" o="1000" p="68.3 р."/>
+		</house>
+		<house id="2282" x="169" y="85" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1446" w="3.0"/>
+			<rent type="trade" s="1500" o="1200" p="185.6 р."/>
+		</house>
+		<house id="2443" x="164" y="151" w="3" l="2" h="24" img="hs.high:grandtower" attr="0.05000000074505806">
+			<inh type="Жители" q="2535" w="6.0"/>
+			<rent type="trade" s="1250" o="1250" p="477 р."/>
+		</house>
+		<house id="2395" x="141" y="128" w="2" l="2" h="4" img="hs.ancient:house1" attr="0.4000000059604645">
+			<inh type="Жители" q="170" w="2.0"/>
+			<rent type="trade" s="1000" o="750" p="93.7 р."/>
+		</house>
+		<house id="2262" x="121" y="79" w="4" l="2" h="4" img="hs.ancient:mansion1" attr="0.05000000074505806">
+			<inh type="Жители" q="278" w="2.0"/>
+			<rent type="trade" s="2000" o="750" p="60.2 р."/>
+		</house>
+		<house id="89151" x="177" y="92" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1489" w="3.0"/>
+			<rent type="trade" s="1500" o="1150" p="178.9 р."/>
+		</house>
+		<house id="77143" x="106" y="153" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.0">
+			<inh type="Жители" q="841" w="2.0"/>
+			<rent type="trade" s="3000" o="2150" p="76 р."/>
+		</house>
+		<house id="2252" x="137" y="76" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.5">
+			<inh type="Жители" q="351" w="2.0"/>
+			<rent type="trade" s="1000" o="850" p="75.5 р."/>
+		</house>
+		<house id="77091" x="105" y="79" w="3" l="2" h="16" img="hs.high:gray2x3" attr="0.05000000074505806">
+			<inh type="Жители" q="1656" w="4.0"/>
+			<rent type="trade" s="1500" o="150" p="163.7 р."/>
+		</house>
+		<house id="2347" x="141" y="109" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.20000000298023224">
+			<inh type="Жители" q="729" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="275.1 р."/>
+		</house>
+		<policlinic id="2451" x="138" y="154" w="4" l="4" h="1" img="munitipal:policlinic" attr="0.30000001192092896"/>
+		<house id="89188" x="88" y="131" w="2" l="2" h="12" img="hs.modern:round" attr="0.25">
+			<inh type="Жители" q="716" w="4.0"/>
+			<rent type="trade" s="1000" o="450" p="192 р."/>
+		</house>
+		<house id="2518" x="136" y="207" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.0">
+			<inh type="Жители" q="792" w="2.0"/>
+			<rent type="trade" s="3000" o="1750" p="63.1 р."/>
+		</house>
+		<house id="2343" x="109" y="109" w="2" l="2" h="12" img="hs.modern:round" attr="0.10000000149011612">
+			<inh type="Жители" q="752" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="173.5 р."/>
+		</house>
+		<house id="2460" x="136" y="157" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="894" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="252.7 р."/>
+		</house>
+		<house id="2493" x="142" y="172" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="874" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="260.6 р."/>
+		</house>
+		<house id="89252" x="131" y="58" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="740" w="4.0"/>
+			<rent type="trade" s="1000" o="0" p="128.3 р."/>
+		</house>
+		<house id="77077" x="111" y="67" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1633" w="2.0"/>
+			<rent type="trade" s="1500" o="850" p="85.5 р."/>
+		</house>
+		<house id="113951" x="129" y="54" w="3" l="3" h="18" img="hs.modern:grand" attr="0.0">
+			<inh type="Жители" q="2034" w="4.0"/>
+			<rent type="trade" s="2250" o="1300" p="240.6 р."/>
+		</house>
+		<house id="2299" x="114" y="93" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1465" w="3.0"/>
+			<rent type="trade" s="1500" o="550" p="148.5 р."/>
+		</house>
+		<house id="113893" x="180" y="163" w="2" l="3" h="24" img="hs.high:grandtower" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="2560" w="6.0"/>
+			<rent type="trade" s="1250" o="1100" p="447.4 р."/>
+		</house>
+		<house id="2492" x="136" y="172" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.0">
+			<inh type="Жители" q="882" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="254.9 р."/>
+		</house>
+		<tradecenter id="2265" x="141" y="79" w="3" l="2" h="5" img="trade:supermarket1" attr="0.5">
+			<rent type="trade" s="7500" o="7050" p="292.6 р."/>
+		</tradecenter>
+		<house id="2313" x="138" y="96" w="2" l="2" h="7" img="hs.stalin:red" attr="0.5">
+			<inh type="Жители" q="410" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="83.5 р."/>
+		</house>
+		<house id="2393" x="129" y="127" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1667" w="2.0"/>
+			<rent type="trade" s="1500" o="1450" p="130.3 р."/>
+		</house>
+		<house id="77088" x="108" y="89" w="2" l="2" h="7" img="hs.stalin:red" attr="0.05000000074505806">
+			<inh type="Жители" q="379" w="2.0"/>
+			<rent type="trade" s="1000" o="300" p="55.2 р."/>
+		</house>
+		<house id="77103" x="92" y="110" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="739" w="4.0"/>
+			<rent type="trade" s="1000" o="400" p="191.2 р."/>
+		</house>
+		<house id="2248" x="160" y="73" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.4000000059604645">
+			<inh type="Жители" q="807" w="2.0"/>
+			<rent type="trade" s="3000" o="1600" p="68.8 р."/>
+		</house>
+		<house id="2412" x="113" y="134" w="4" l="2" h="7" img="hs.stalin:short" attr="0.30000001192092896">
+			<inh type="Жители" q="523" w="2.0"/>
+			<rent type="trade" s="2000" o="700" p="66.8 р."/>
+		</house>
+		<house id="212861" x="197" y="148" w="4" l="2" h="7" img="hs.stalin:short" attr="0.10000000149011612">
+			<inh type="Жители" q="528" w="2.0"/>
+			<rent type="trade" s="2000" o="1350" p="71.5 р."/>
+		</house>
+		<house id="2486" x="141" y="169" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="890" w="4.0"/>
+			<rent type="trade" s="1000" o="950" p="232.4 р."/>
+		</house>
+		<house id="212922" x="85" y="106" w="3" l="2" h="12" img="hs.panel:tower" attr="-0.05000000074505806">
+			<inh type="Жители" q="1484" w="2.0"/>
+			<rent type="trade" s="1500" o="950" p="61 р."/>
+		</house>
+		<house id="89191" x="88" y="116" w="2" l="2" h="12" img="hs.modern:round" attr="-0.05000000074505806">
+			<inh type="Жители" q="712" w="4.0"/>
+			<rent type="trade" s="1000" o="100" p="144.4 р."/>
+		</house>
+		<house id="2497" x="113" y="176" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="1479" w="4.0"/>
+			<rent type="trade" s="1500" o="800" p="216.1 р."/>
+		</house>
+		<house id="113931" x="153" y="203" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.0">
+			<inh type="Жители" q="509" w="2.0"/>
+			<rent type="trade" s="2000" o="800" p="63.5 р."/>
+		</house>
+		<house id="2254" x="144" y="76" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.5">
+			<inh type="Жители" q="340" w="2.0"/>
+			<rent type="trade" s="1000" o="300" p="60.8 р."/>
+		</house>
+		<house id="212928" x="93" y="96" w="2" l="2" h="7" img="hs.stalin:red" attr="-0.05000000074505806">
+			<inh type="Жители" q="377" w="2.0"/>
+			<rent type="trade" s="1000" o="500" p="56.5 р."/>
+		</house>
+		<house id="61926" x="156" y="169" w="3" l="2" h="12" img="hs.high:red2x3" attr="0.30000001192092896">
+			<inh type="Жители" q="1498" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="227.2 р."/>
+		</house>
+		<house id="2465" x="168" y="157" w="3" l="2" h="12" img="hs.modern:green1" attr="0.05000000074505806">
+			<inh type="Жители" q="1452" w="4.0"/>
+			<rent type="trade" s="1500" o="1150" p="251.3 р."/>
+		</house>
+		<house id="113948" x="145" y="198" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.0">
+			<inh type="Жители" q="324" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="82.2 р."/>
+		</house>
+		<house id="2400" x="165" y="128" w="2" l="2" h="12" img="hs.modern:round" attr="0.4000000059604645">
+			<inh type="Жители" q="752" w="4.0"/>
+			<rent type="trade" s="1000" o="900" p="269.6 р."/>
+		</house>
+		<house id="77150" x="106" y="156" w="6" l="2" h="7" img="hs.stalin:wide" attr="0.0">
+			<inh type="Жители" q="796" w="2.0"/>
+			<rent type="trade" s="3000" o="2100" p="76.2 р."/>
+		</house>
+		<tradecenter id="2477" x="164" y="163" w="8" l="8" h="2" img="trade:megastore" attr="-0.05000000074505806">
+			<rent type="trade" s="24000" o="23950" p="910.9 р."/>
+		</tradecenter>
+		<house id="2484" x="120" y="168" w="2" l="2" h="4" img="hs.ancient:house1" attr="0.30000001192092896">
+			<inh type="Жители" q="183" w="2.0"/>
+			<rent type="trade" s="1000" o="600" p="86.4 р."/>
+		</house>
+		<house id="2371" x="151" y="119" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.10000000149011612">
+			<inh type="Жители" q="565" w="5.0"/>
+			<rent type="trade" s="1500" o="1250" p="397 р."/>
+		</house>
+		<house id="813135" x="170" y="75" w="2" l="2" h="12" o="699278" img="hs.modern:brick1" s="building" attr="0.4000000059604645">
+			<rent type="trade" s="1000" o="0" p="134.9 р."/>
+		</house>
+		<house id="113974" x="133" y="123" w="2" l="3" h="14" img="hs.high:yelow2x3" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1437" w="4.0"/>
+			<rent type="trade" s="1500" o="1400" p="297.7 р."/>
+		</house>
+		<hospital id="2305" x="125" y="94" w="4" l="4" h="8" img="munitipal:hospital" attr="0.44999998807907104"/>
+		<house id="2394" x="133" y="127" w="2" l="3" h="16" img="hs.high:block" attr="0.05000000074505806">
+			<inh type="Жители" q="1670" w="2.0"/>
+			<rent type="trade" s="1500" o="1400" p="130.8 р."/>
+		</house>
+		<house id="2478" x="168" y="163" w="3" l="2" h="12" img="hs.modern:green1" attr="-0.05000000074505806">
+			<inh type="Жители" q="1461" w="4.0"/>
+			<rent type="trade" s="1500" o="1300" p="260 р."/>
+		</house>
+		<house id="2390" x="151" y="125" w="3" l="2" h="6" img="hs.modern:mansionmedium" attr="0.4000000059604645">
+			<inh type="Жители" q="551" w="5.0"/>
+			<rent type="trade" s="1500" o="1500" p="418.1 р."/>
+		</house>
+		<house id="2244" x="147" y="70" w="2" l="2" h="12" img="hs.modern:brick1" attr="0.05000000074505806">
+			<inh type="Жители" q="769" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="178.8 р."/>
+		</house>
+		<house id="77086" x="101" y="81" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.4000000059604645">
+			<inh type="Жители" q="529" w="2.0"/>
+			<rent type="trade" s="2000" o="1550" p="62.5 р."/>
+		</house>
+		<house id="857384" x="166" y="204" w="3" l="2" h="12" o="703182" img="hs.panel:tower" s="building" attr="0.0">
+			<rent type="trade" s="1500" o="0" p="41.7 р."/>
+		</house>
+		<house id="2308" x="157" y="95" w="3" l="2" h="14" img="hs.high:yelow2x3" attr="0.10000000149011612">
+			<inh type="Жители" q="1418" w="4.0"/>
+			<rent type="trade" s="1500" o="900" p="260.3 р."/>
+		</house>
+		<officecenter id="404355" x="178" y="170" w="2" l="3" h="8" img="offices:center2" attr="0.25">
+			<inh type="Жители" q="1138" w="6.0"/>
+			<rent type="office" s="7500" o="6650" p="1 003.2 р."/>
+			<rent type="trade" s="1500" o="1250" p="495.9 р."/>
+		</officecenter>
+		<house id="113925" x="156" y="191" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="528" w="2.0"/>
+			<rent type="trade" s="2000" o="1950" p="95.3 р."/>
+		</house>
+		<house id="2397" x="150" y="128" w="2" l="2" h="4" img="hs.ancient:house1" attr="0.4000000059604645">
+			<inh type="Жители" q="153" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="101.9 р."/>
+		</house>
+		<house id="89242" x="134" y="63" w="2" l="2" h="12" img="hs.modern:brick1" attr="-0.05000000074505806">
+			<inh type="Жители" q="722" w="4.0"/>
+			<rent type="trade" s="1000" o="200" p="173.2 р."/>
+		</house>
+		<house id="2515" x="131" y="200" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.0">
+			<inh type="Жители" q="815" w="2.0"/>
+			<rent type="trade" s="3000" o="2350" p="76.4 р."/>
+		</house>
+		<house id="620949" x="166" y="76" w="3" l="2" h="12" o="481614" img="hs.high:red2x3" name="Жилой дом #4" attr="0.10000000149011612">
+			<inh type="Жители" q="1260" w="3.0"/>
+			<rent type="trade" s="1500" o="250" p="132.1 р."/>
+		</house>
+		<house id="2290" x="120" y="89" w="2" l="3" h="12" img="hs.modern:green1" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1429" w="4.0"/>
+			<rent type="trade" s="1500" o="1200" p="218.9 р."/>
+		</house>
+		<house id="113889" x="177" y="155" w="2" l="3" h="12" img="hs.modern:green2" r="1" attr="0.05000000074505806">
+			<inh type="Жители" q="1470" w="4.0"/>
+			<rent type="trade" s="1500" o="1450" p="257.9 р."/>
+		</house>
+		<house id="747620" x="196" y="166" w="3" l="2" h="9" o="520106" img="hs.panel:bold" s="building" attr="0.30000001192092896">
+			<rent type="trade" s="1500" o="0" p="34 р."/>
+		</house>
+		<house id="2501" x="131" y="178" w="2" l="6" h="7" img="hs.stalin:wide" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="794" w="2.0"/>
+			<rent type="trade" s="3000" o="2050" p="89.9 р."/>
+		</house>
+		<house id="113940" x="142" y="195" w="2" l="3" h="12" img="hs.high:red2x3" r="1" attr="0.0">
+			<inh type="Жители" q="1463" w="3.0"/>
+			<rent type="trade" s="1500" o="1400" p="202.6 р."/>
+		</house>
+		<house id="212878" x="189" y="156" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="-0.05000000074505806">
+			<inh type="Жители" q="543" w="2.0"/>
+			<rent type="trade" s="2000" o="1750" p="82.9 р."/>
+		</house>
+		<house id="2474" x="114" y="163" w="2" l="2" h="12" img="hs.high:smalltower1" attr="0.0">
+			<inh type="Жители" q="908" w="4.0"/>
+			<rent type="trade" s="1000" o="600" p="215.4 р."/>
+		</house>
+		<house id="2513" x="131" y="193" w="2" l="4" h="7" img="hs.stalin:short" r="1" attr="0.30000001192092896">
+			<inh type="Жители" q="547" w="2.0"/>
+			<rent type="trade" s="2000" o="1350" p="81.5 р."/>
+		</house>
+		<house id="2426" x="136" y="142" w="2" l="2" h="6" img="hs.stalin:gray" attr="0.4000000059604645">
+			<inh type="Жители" q="341" w="2.0"/>
+			<rent type="trade" s="1000" o="900" p="94.7 р."/>
+		</house>
+		<house id="2322" x="162" y="100" w="2" l="4" h="4" img="hs.ancient:mansion1" r="1" attr="0.10000000149011612">
+			<inh type="Жители" q="269" w="2.0"/>
+			<rent type="trade" s="2000" o="550" p="79.6 р."/>
+		</house>
+		<house id="2504" x="115" y="183" w="2" l="2" h="12" img="hs.high:smalltower2" attr="0.30000001192092896">
+			<inh type="Жители" q="890" w="4.0"/>
+			<rent type="trade" s="1000" o="550" p="211.2 р."/>
+		</house>
+	</objects>
+</area>

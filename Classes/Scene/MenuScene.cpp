@@ -38,6 +38,7 @@ bool MenuScene::TouchBegan(Touch* touch, Event* event)
 void MenuScene::TouchEnded(Touch* touch, Event* event)
 {
 	Director::getInstance()->replaceScene(GameScene::createScene());
+	getEventDispatcher()->removeAllEventListeners();
 }
 
 

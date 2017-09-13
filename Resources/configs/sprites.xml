@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <sprites_root>images/Tiles</sprites_root>
+    <sprites name="tiles" image="tiles.png" preload="true" caption="графика клеток" size="42">
+        <sprite name="ground">
+            <frame number="1" coords="0,0,46,24,23,12"/>
+            <frame number="2" coords="46,0,46,24,23,12"/>
+            <frame number="3" coords="92,0,46,24,23,12"/>
+            <frame number="4" coords="0,300,46,24,23,12"/>
+            <frame number="5" coords="46,300,46,24,23,12"/>
+            <frame number="6" coords="92,300,46,24,23,12"/>
+            <frame number="7" coords="138,300,46,24,23,12"/>
+            <frame number="8" from="1" flip="vert"/>
+            <frame number="9" from="2" flip="vert"/>
+            <frame number="10" from="3" flip="vert"/>
+            <frame number="11" from="4" flip="vert"/>
+            <frame number="12" from="5" flip="vert"/>
+            <frame number="13" from="6" flip="vert"/>
+            <frame number="14" from="7" flip="vert"/>
+            <frame number="15" from="1" flip="hor"/>
+            <frame number="16" from="2" flip="hor"/>
+            <frame number="17" from="3" flip="hor"/>
+            <frame number="18" from="4" flip="hor"/>
+            <frame number="19" from="5" flip="hor"/>
+            <frame number="20" from="6" flip="hor"/>
+            <frame number="21" from="7" flip="hor"/>
+        </sprite>
+        <sprite name="city">
+            <frame number="1" coords="138,324,46,24,23,12"/>
+            <frame number="2" coords="184,324,46,24,23,12"/>
+            <frame number="3" coords="230,324,46,24,23,12"/>
+            <frame number="4" from="1" flip="vert"/>
+            <frame number="5" from="2" flip="vert"/>
+            <frame number="6" from="3" flip="vert"/>
+            <frame number="7" from="1" flip="hor"/>
+            <frame number="8" from="2" flip="hor"/>
+            <frame number="9" from="3" flip="hor"/>
+        </sprite>
+        <sprite name="asphault" coords="230,0,46,24,23,12"/>
+        <sprite name="pave" coords="276,0,46,24,23,12"/>
+        <sprite name="square" coords="322,0,46,24,23,12"/>
+        <sprite name="dirt" coords="138,0,46,24,23,12"/>
+        <sprite name="water">
+            <frame number="1" coords="0,276,46,24,23,12"/>
+            <frame number="2" coords="46,276,46,24,23,12"/>
+            <frame number="3" from="2" flip="vert"/>
+            <frame number="4" from="2" flip="both"/>
+            <frame number="5" from="2" flip="hor"/>
+            <frame number="6" coords="92,276,46,24,23,12"/>
+            <frame number="7" coords="138,276,46,24,23,12"/>
+            <frame number="8" from="6" flip="hor"/>
+            <frame number="9" from="7" flip="vert"/>
+            <frame number="10" coords="184,276,46,24,23,12"/>
+            <frame number="11" coords="230,276,46,24,23,12"/>
+            <frame number="12" from="10" flip="hor"/>
+            <frame number="13" from="11" flip="vert"/>
+            <frame number="14" coords="276,276,46,24,23,12"/>
+        </sprite>
+        <sprite name="road">
+            <frame number="1" coords="0,24,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+            <frame number="3" coords="46,24,46,24,23,12"/>
+            <frame number="4" coords="92,24,46,24,23,12"/>
+            <frame number="5" from="3" flip="hor"/>
+            <frame number="6" from="4" flip="vert"/>
+            <frame number="7" coords="138,24,46,24,23,12"/>
+            <frame number="8" from="7" flip="vert"/>
+            <frame number="9" from="7" flip="both"/>
+            <frame number="10" from="7" flip="hor"/>
+            <frame number="11" coords="184,24,46,24,23,12"/>
+        </sprite>
+        <sprite name="roadbridge">
+            <frame number="1" coords="0,240,46,36,23,24"/>
+            <frame number="2" coords="92,252,46,24,23,12"/>
+            <frame number="3" coords="46,240,46,36,23,24"/>
+            <frame number="4" coords="138,223,70,53,23,41"/>
+            <frame number="5" from="1" flip="hor"/>
+            <frame number="6" from="2" flip="hor"/>
+            <frame number="7" from="3" flip="hor"/>
+            <frame number="8" from="4" flip="hor"/>
+        </sprite>
+        <sprite name="railroad">
+            <frame number="1" coords="0,196,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+            <frame number="3" coords="46,196,46,24,23,12"/>
+            <frame number="4" coords="92,196,46,24,23,12"/>
+            <frame number="5" from="3" flip="hor"/>
+            <frame number="6" from="4" flip="vert"/>
+            <frame number="7" coords="138,196,46,24,23,12"/>
+            <frame number="8" from="7" flip="vert"/>
+            <frame number="9" from="7" flip="both"/>
+            <frame number="10" from="7" flip="hor"/>
+            <frame number="11" coords="184,196,46,24,23,12"/>
+        </sprite>
+        <sprite name="railbridge">
+            <frame number="1" coords="208,240,46,36,23,24"/>
+            <frame number="2" coords="254,252,46,24,23,12"/>
+            <frame number="3" coords="300,237,46,39,23,27"/>
+            <frame number="4" from="1" flip="hor"/>
+            <frame number="5" from="2" flip="hor"/>
+            <frame number="6" from="3" flip="hor"/>
+        </sprite>
+        <sprite name="tree" coords="0,53,46,46,23,34"/>
+        <sprite name="citytree">
+            <frame number="1" coords="124,68,15,24,8,22"/>
+            <frame number="2" coords="142,70,13,22,7,20"/>
+            <frame number="3" coords="158,71,15,20,8,18"/>
+            <frame number="4" coords="175,72,13,19,7,17"/>
+        </sprite>
+        <sprite name="smalltree" coords="190,64,12,27,9,25"/>
+        <sprite name="fruittree" coords="210,64,18,27,9,25"/>
+        <sprite name="court">
+            <frame number="1" coords="92,124,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+
+            <frame number="3" coords="0,124,46,24,23,12"/>
+            <frame number="4" coords="0,100,46,24,23,12"/>
+            <frame number="5" from="4" flip="hor"/>
+            <frame number="6" from="3" flip="hor"/>
+            <frame number="7" coords="46,124,46,24,23,12"/>
+            <frame number="8" coords="46,100,46,24,23,12"/>
+            <frame number="9" from="8" flip="hor"/>
+            <frame number="10" from="7" flip="hor"/>
+
+            <frame number="11" coords="92,100,46,24,23,12"/>
+            <frame number="12" coords="138,100,46,24,23,12"/>
+            <frame number="13" from="11" flip="hor"/>
+            <frame number="14" coords="138,124,46,24,23,12"/>
+
+            <frame number="15" coords="184,100,46,24,23,12"/>
+            <frame number="16" coords="230,124,46,24,23,12"/>
+            <frame number="17" from="15" flip="hor"/>
+            <frame number="18" coords="230,100,46,24,23,12"/>
+
+            <frame number="19" coords="184,124,46,24,23,12"/>
+            <frame number="20" coords="276,100,46,24,23,12"/>
+            <frame number="21" coords="276,124,46,24,23,12"/>
+            <frame number="22" coords="322,100,46,24,23,12"/>
+            <frame number="23" coords="322,124,46,24,23,12"/>
+        </sprite>
+        <sprite name="park">
+            <frame number="1" coords="92,148,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+            <frame number="3" coords="92,172,46,24,23,12"/>
+            <frame number="4" from="3" flip="hor"/>
+
+            <frame number="5" coords="138,148,46,24,23,12"/>
+            <frame number="6" from="5" flip="vert"/>
+            <frame number="7" from="5" flip="both"/>
+            <frame number="8" from="5" flip="hor"/>
+
+            <frame number="9" coords="46,148,46,24,23,12"/>
+            <frame number="10" coords="46,172,46,24,23,12"/>
+            <frame number="11" coords="0,148,46,24,23,12"/>
+            <frame number="12" coords="0,172,46,24,23,12"/>
+
+            <frame number="13" coords="184,148,46,24,23,12"/>
+            <frame number="14" coords="184,172,46,24,23,12"/>
+            <frame number="15" coords="230,148,46,24,23,12"/>
+            <frame number="16" coords="230,172,46,24,23,12"/>
+
+            <frame number="17" coords="276,148,46,24,23,12"/>
+            <frame number="18" coords="276,172,46,24,23,12"/>
+            <frame number="19" coords="276,196,46,24,23,12"/>
+            <frame number="20" coords="322,196,46,24,23,12"/>
+        </sprite>
+        <sprite name="fence" coords="92,76,24,23,0,11">
+            <frame number="2" coords="92,53,24,23,0,11"/>
+        </sprite>
+        <sprite name="gates" coords="68,53,24,23,0,11"/>
+        <sprite name="monument1" coords="230,24,30,35,9,29"/>
+        <sprite name="monument2" coords="260,24,50,46,18,37"/>
+        <sprite name="monument3" coords="310,24,29,32,9,26"/>
+        <sprite name="monument4" coords="340,24,29,49,9,43"/>
+
+        <!-- sub city -->
+        <sprite name="grassland">
+            <frame number="1" coords="0,300,46,24,23,12"/>
+            <frame number="2" coords="46,300,46,24,23,12"/>
+            <frame number="3" coords="92,300,46,24,23,12"/>
+            <frame number="4" coords="138,300,46,24,23,12"/>
+        </sprite>
+        <sprite name="desert">
+            <frame number="1" coords="184,300,46,24,23,12"/>
+            <frame number="2" coords="230,300,46,24,23,12"/>
+            <frame number="3" coords="276,300,46,24,23,12"/>
+        </sprite>
+        <sprite name="tundra">
+            <frame number="1" coords="0,324,46,24,23,12"/>
+            <frame number="2" coords="46,324,46,24,23,12"/>
+            <frame number="3" coords="92,324,46,24,23,12"/>
+        </sprite>
+        <sprite name="subroad">
+            <frame number="1" coords="0,348,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+            <frame number="3" coords="46,348,46,24,23,12"/>
+            <frame number="4" coords="92,348,46,24,23,12"/>
+            <frame number="5" from="3" flip="hor"/>
+            <frame number="6" from="4" flip="vert"/>
+            <frame number="7" coords="138,348,46,24,23,12"/>
+            <frame number="8" from="7" flip="vert"/>
+            <frame number="9" from="7" flip="both"/>
+            <frame number="10" from="7" flip="hor"/>
+            <frame number="11" coords="184,348,46,24,23,12"/>
+        </sprite>
+        <sprite name="subrailroad">
+            <frame number="1" coords="0,372,46,24,23,12"/>
+            <frame number="2" from="1" flip="hor"/>
+            <frame number="3" coords="46,372,46,24,23,12"/>
+            <frame number="4" coords="92,372,46,24,23,12"/>
+            <frame number="5" from="3" flip="hor"/>
+            <frame number="6" from="4" flip="vert"/>
+            <frame number="7" coords="138,372,46,24,23,12"/>
+            <frame number="8" from="7" flip="vert"/>
+            <frame number="9" from="7" flip="both"/>
+            <frame number="10" from="7" flip="hor"/>
+            <frame number="11" coords="184,372,46,24,23,12"/>
+        </sprite>
+        <sprite name="subforest">
+            <frame number="1" coords="323,472,46,28,23,16"/>
+        </sprite>
+        <sprite name="river">
+            <frame number="1" coords="0,396,46,24,23,12"/>
+            <frame number="2" coords="46,396,46,24,23,12"/>
+            <frame number="3" coords="92,396,46,24,23,12"/>
+            <frame number="4" coords="138,396,46,24,23,12"/>
+            <frame number="5" coords="184,396,46,24,23,12"/>
+            <frame number="6" coords="230,396,46,24,23,12"/>
+            <frame number="7" coords="276,396,46,24,23,12"/>
+            <frame number="8" coords="322,396,46,24,23,12"/>
+            <frame number="9" coords="0,420,46,24,23,12"/>
+            <frame number="10" coords="46,420,46,24,23,12"/>
+            <frame number="11" coords="46,420,46,24,23,12"/>
+            <frame number="12" coords="92,420,46,24,23,12"/>
+            <frame number="13" coords="138,420,46,24,23,12"/>
+            <frame number="14" coords="184,420,46,24,23,12"/>
+            <frame number="15" coords="230,420,46,24,23,12"/>
+            <frame number="16" coords="276,420,46,24,23,12"/>
+            <frame number="17" coords="322,420,46,24,23,12"/>
+            <frame number="18" coords="0,444,46,24,23,12"/>
+            <frame number="19" coords="46,444,46,24,23,12"/>
+        </sprite>
+
+        <sprite name="mountain1" coords="0,468,46,32,23,20"/>
+        <sprite name="mountain2" coords="46,468,46,32,23,20"/>
+        <sprite name="mountain3" coords="92,468,46,32,23,20"/>
+        <sprite name="mountain4" coords="138,466,46,34,23,22"/>
+        <sprite name="mountain5" coords="276,471,46,29,23,17"/>
+
+        <sprite name="mountain31" coords="184,447,92,53,23,41"/>
+        <sprite name="mountain22" coords="0,500,92,50,46,38"/>
+
+        <sprite name="crop">
+            <frame number="1" coords="322,299,46,25,23,13"/>
+            <frame number="2" coords="322,274,46,25,23,13"/>
+            <frame number="3" coords="322,324,46,24,23,12"/>
+        </sprite>
+        <sprite name="industrial" coords="322,324,46,24,23,12"/>
+    </sprites>
+    <sprites name="hs.hrush" image="Buildings/hs.hrush.gif" caption="графика хрущевок">
+        <sprite name="hrush1">
+            <frame number="1" coords="0,0,94,79,23,67"/>
+            <frame number="2" coords="95,0,94,79,71,67"/>
+        </sprite>
+        <sprite name="hrush2">
+            <frame number="1" coords="190,0,94,79,23,67"/>
+            <frame number="2" coords="285,0,94,79,71,67"/>
+        </sprite>
+        <sprite name="red">
+            <frame number="1" coords="380,6,70,73,23,61"/>
+            <frame number="2" coords="451,6,70,73,47,61"/>
+        </sprite>
+    </sprites>
+    <sprites name="hs.panel" image="Buildings/hs.panel.gif" caption="графика панельных домов" size="">
+        <sprite name="white">
+            <frame number="1" coords="0,0,117,132,22,120"/>
+            <frame number="2" coords="0,133,117,132,95,120"/>
+        </sprite>
+        <sprite name="gray">
+            <frame number="1" coords="118,0,118,124,95,112"/>
+            <frame number="2" coords="118,125,118,124,23,112"/>
+        </sprite>
+        <sprite name="tower">
+            <frame number="1" coords="237,0,118,144,71,132"/>
+            <frame number="2" coords="356,6,118,144,47,132"/>
+        </sprite>
+        <sprite name="kalinin">
+            <frame number="1" coords="0,266,141,126,94,114"/>
+            <frame number="2" coords="0,393,141,126,46,114"/>
+        </sprite>
+        <sprite name="flat">
+            <frame number="1" coords="142,250,94,117,71,105"/>
+            <frame number="2" coords="142,368,94,117,23,105"/>
+        </sprite>
+        <sprite name="bold">
+            <frame number="1" coords="237,274,118,126,71,114"/>
+            <frame number="2" coords="356,274,118,126,47,114"/>
+        </sprite>
+        <sprite name="bent">
+            <frame number="1" coords="237,401,118,118,71,106"/>
+            <frame number="2" coords="356,401,118,118,47,106"/>
+        </sprite>
+        <sprite name="pink">
+            <frame number="1" coords="237,145,94,128,71,116"/>
+            <frame number="2" coords="332,145,94,128,23,116"/>
+        </sprite>
+    </sprites>
+    <sprites name="hs.ancient" image="Buildings/hs.ancient.gif" caption="графика старинных домов">
+        <sprite name="mansion1">
+            <frame number="1" coords="0,0,142,116,95,104"/>
+            <frame number="2" coords="0,117,142,116,47,104"/>
+        </sprite>
+        <sprite name="house1">
+            <frame number="1" coords="143,0,96,92,47,80"/>
+            <frame number="2" coords="143,93,96,92,49,80"/>
+        </sprite>
+        <sprite name="mansion2">
+            <frame number="1" coords="240,0,214,145,143,133"/>
+            <frame number="2" coords="240,146,214,145,71,133"/>
+        </sprite>
+        <sprite name="house2">
+            <frame number="1" coords="0,234,118,97,97,85"/>
+            <frame number="2" coords="119,234,118,97,23,85"/>
+        </sprite>
+        <sprite name="house3">
+            <frame number="1" coords="0,332,121,79,74,67"/>
+            <frame number="2" coords="122,332,121,79,47,67"/>
+        </sprite>
+    </sprites>
+    <sprites name="hs.high" image="Buildings/hs.high.gif" caption="графика высотных домов">
+        <sprite name="red2x3">
+            <frame number="1" coords="0,0,118,165,71,153"/>
+            <frame number="2" coords="0,166,118,165,47,153"/>
+        </sprite>
+        <sprite name="tower1">
+            <frame number="1" coords="119,0,94,159,47,147"/>
+            <frame number="2" coords="119,160,94,159,47,147"/>
+        </sprite>
+        <sprite name="flat1x4">
+            <frame number="1" coords="214,0,118,159,96,147"/>
+            <frame number="2" coords="214,160,118,159,23,147"/>
+        </sprite>
+        <sprite name="tower2">
+            <frame number="1" coords="333,0,94,169,47,157"/>
+            <frame number="2" coords="333,170,94,169,47,157"/>
+        </sprite>
+        <sprite name="tower3">
+            <frame number="1" coords="428,0,94,173,47,161"/>
+            <frame number="2" coords="428,174,94,173,47,161"/>
+        </sprite>
+        <sprite name="gray2x3">
+            <frame number="1" coords="523,0,118,181,71,169"/>
+            <frame number="2" coords="523,182,118,181,47,169"/>
+        </sprite>
+        <sprite name="yelow2x3">
+            <frame number="1" coords="642,0,118,201,71,189"/>
+            <frame number="2" coords="642,202,118,201,47,189"/>
+        </sprite>
+        <sprite name="smalltower1">
+            <frame number="1" coords="0,332,94,144,47,132"/>
+            <frame number="2" coords="95,332,94,144,47,132"/>
+        </sprite>
+        <sprite name="smalltower2">
+            <frame number="1" coords="547,364,94,144,47,132"/>
+            <frame number="2" coords="547,509,94,144,47,132"/>
+        </sprite>
+        <sprite name="block">
+            <frame number="1" coords="0,477,118,184,47,172"/>
+            <frame number="2" coords="642,404,118,184,71,172"/>
+        </sprite>
+        <sprite name="brick">
+            <frame number="1" coords="190,331,118,145,47,133"/>
+            <frame number="2" coords="190,477,118,145,71,133"/>
+        </sprite>
+        <sprite name="grandtower">
+            <frame number="1" coords="309,400,118,222,71,210"/>
+            <frame number="2" coords="428,400,118,222,47,210"/>
+        </sprite>
+    </sprites>
+    <sprites name="hs.modern" image="Buildings/hs.modern.gif" caption="графика современных домов" size="">
+        <sprite name="grand">
+            <frame number="1" coords="0,0,142,192,71,180"/>
+            <frame number="2" from="1"/>
+        </sprite>
+        <sprite name="brick1">
+            <frame number="1" coords="143,0,94,141,47,129"/>
+            <frame number="2" coords="143,142,94,141,47,129"/>
+        </sprite>
+        <sprite name="green1">
+            <frame number="1" coords="238,0,118,148,71,136"/>
+            <frame number="2" coords="238,149,118,148,47,136"/>
+        </sprite>
+        <sprite name="green2">
+            <frame number="1" coords="357,0,118,152,71,140"/>
+            <frame number="2" coords="357,153,118,152,47,140"/>
+        </sprite>
+        <sprite name="brick2">
+            <frame number="1" coords="476,0,94,156,47,144"/>
+            <frame number="2" coords="476,157,94,156,47,144"/>
+        </sprite>
+        <sprite name="mansionsmall">
+            <frame number="1" coords="0,193,70,80,47,68"/>
+            <frame number="2" coords="71,193,70,80,23,68"/>
+        </sprite>
+        <sprite name="round">
+            <frame number="1" coords="0,274,94,158,47,146"/>
+            <frame number="2" coords="0,433,94,158,47,146"/>
+        </sprite>
+        <sprite name="castle">
+            <frame number="1" coords="95,299,190,155,120,143"/>
+            <frame number="2" coords="95,455,190,155,71,143"/>
+        </sprite>
+        <sprite name="mansionbig">
+            <frame number="1" coords="286,306,166,117,95,105"/>
+            <frame number="2" coords="286,424,166,117,71,105"/>
+        </sprite>
+        <sprite name="mansionmedium">
+            <frame number="1" coords="453,314,118,116,71,104"/>
+            <frame number="2" coords="453,431,118,116,47,104"/>
+        </sprite>
+    </sprites>
+    <sprites name="hs.stalin" image="Buildings/hs.stalin.gif" caption="графика сталинских домов" size="">
+        <sprite name="tower">
+            <frame number="1" coords="0,0,190,256,143,244"/>
+            <frame number="2" coords="191,0,190,256,47,244"/>
+        </sprite>
+        <sprite name="wide">
+            <frame number="1" coords="0,257,190,166,143,154"/>
+            <frame number="2" coords="191,257,190,166,47,154"/>
+        </sprite>
+        <sprite name="short">
+            <frame number="1" coords="382,0,142,135,94,123"/>
+            <frame number="2" coords="382,136,142,135,47,123"/>
+        </sprite>
+        <sprite name="gray">
+            <frame number="1" coords="477,272,94,118,47,106"/>
+            <frame number="2" from="1"/>
+        </sprite>
+        <sprite name="red">
+            <frame number="1" coords="382,272,94,125,47,113"/>
+            <frame number="2" from="1"/>
+        </sprite>
+    </sprites>
+    <sprites name="munitipal" image="Buildings/munitipal.gif" caption="графика муниципальных предприятий" size="108">
+        <sprite name="cinema">
+            <frame number="1" coords="0,0,213,133,94,121"/>
+            <frame number="2" coords="214,0,214,133,119,121"/>
+        </sprite>
+        <sprite name="hospital">
+            <frame number="1" coords="0,134,189,134,94,121"/>
+            <frame number="2" coords="190,134,189,134,95,121"/>
+        </sprite>
+        <sprite name="institute">
+            <frame number="1" coords="0,269,165,120,70,108"/>
+            <frame number="2" coords="166,269,165,120,95,108"/>
+        </sprite>
+        <sprite name="school">
+            <frame number="1" coords="333,307,142,82,71,70"/>
+            <frame number="2" coords="476,307,142,82,71,70"/>
+        </sprite>
+        <sprite name="station">
+            <frame number="1" coords="429,0,190,130,143,118"/>
+            <frame number="2" coords="429,131,190,130,47,118"/>
+        </sprite>
+        <sprite name="metro">
+            <frame number="1" coords="381,134,46,35,23,23"/>
+            <frame number="2" coords="381,170,46,35,23,23"/>
+        </sprite>
+        <sprite name="theatre">
+            <frame number="1" coords="620,0,214,149,95,137"/>
+            <frame number="2" coords="835,0,214,149,119,137"/>
+        </sprite>
+        <sprite name="stadium">
+            <frame number="1" coords="620,150,238,163,95,151"/>
+            <frame number="2" coords="859,150,238,163,143,151"/>
+        </sprite>
+        <sprite name="bassin" coords="214,0,126,95,93,88"/>
+        <sprite name="policlinic" coords="835,0,190,102,95,90"/>
+        <sprite name="cliniccenter" coords="859,103,190,139,95,127"/>
+        <sprite name="college" coords="0,269,165,120,70,108"/>
+        <sprite name="prison" coords="190,134,190,116,95,104"/>
+        <sprite name="court" coords="429,131,190,115,95,103"/>
+        <sprite name="police" coords="859,243,190,120,95,108"/>
+    </sprites>
+    <sprites name="offices" image="Buildings/offices.gif" caption="графика офисов" size="">
+        <sprite name="tower1">
+            <frame number="1" coords="0,0,140,168,71,156"/>
+            <frame number="2" from="1"/>
+        </sprite>
+        <sprite name="tower2">
+            <frame number="1" coords="141,0,142,201,71,189"/>
+            <frame number="2" coords="141,202,142,201,71,189"/>
+        </sprite>
+        <sprite name="roundtower1">
+            <frame number="1" coords="284,0,142,206,71,194"/>
+            <frame number="2" coords="284,207,142,206,71,194"/>
+        </sprite>
+        <sprite name="roundtower2">
+            <frame number="1" coords="427,0,142,202,71,190"/>
+            <frame number="2" coords="427,203,142,202,71,190"/>
+        </sprite>
+        <sprite name="huge">
+            <frame number="1" coords="570,0,190,271,119,259"/>
+            <frame number="2" coords="761,0,190,271,71,259"/>
+        </sprite>
+        <sprite name="tower3">
+            <frame number="1" coords="0,169,140,210,71,198"/>
+            <frame number="2" coords="689,272,140,210,69,198"/>
+        </sprite>
+        <sprite name="roundtower3">
+            <frame number="1" coords="0,409,142,161,71,149"/>
+            <frame number="2" coords="143,409,142,161,71,149"/>
+        </sprite>
+        <sprite name="center1">
+            <frame number="1" coords="286,420,166,150,71,138"/>
+            <frame number="2" coords="453,420,166,150,95,138"/>
+        </sprite>
+        <sprite name="center2">
+            <frame number="1" coords="570,272,118,113,47,101"/>
+            <frame number="2" coords="620,474,118,113,71,101"/>
+        </sprite>
+        <sprite name="tower4">
+            <frame number="1" coords="830,272,118,143,71,131"/>
+            <frame number="2" coords="830,416,118,143,47,131"/>
+        </sprite>
+    </sprites>
+    <sprites name="trade" image="Buildings/trade.gif" caption="графика магазинов" size="" preload="yes">
+        <sprite name="megastore">
+            <frame number="1" coords="0,0,382,217,191,205"/>
+            <frame number="2" coords="0,218,382,217,191,205"/>
+        </sprite>
+        <sprite name="center1">
+            <frame number="1" coords="383,0,286,149,143,137"/>
+            <frame number="2" coords="383,150,286,149,143,137"/>
+        </sprite>
+        <sprite name="center2">
+            <frame number="1" coords="0,436,238,134,143,122"/>
+            <frame number="2" coords="0,571,238,134,95,122"/>
+        </sprite>
+        <sprite name="center3">
+            <frame number="1" coords="239,436,238,121,143,109"/>
+            <frame number="2" coords="478,436,238,121,95,109"/>
+        </sprite>
+        <sprite name="shop1">
+            <frame number="1" coords="0,706,94,57,47,45"/>
+            <frame number="2" coords="95,706,94,57,47,45"/>
+        </sprite>
+        <sprite name="shop2">
+            <frame number="1" coords="239,670,118,83,47,71"/>
+            <frame number="2" coords="358,670,118,83,71,71"/>
+        </sprite>
+        <sprite name="supermarket1">
+            <frame number="1" coords="383,300,118,120,71,108"/>
+            <frame number="2" coords="502,300,118,120,47,108"/>
+        </sprite>
+        <sprite name="supermarket2">
+            <frame number="1" coords="239,558,166,111,71,99"/>
+            <frame number="2" coords="406,558,166,111,95,99"/>
+        </sprite>
+        <sprite name="supermarket3">
+            <frame number="1" coords="573,558,142,102,71,90"/>
+            <frame number="2" coords="573,661,142,102,71,90"/>
+        </sprite>
+    </sprites>
+    <sprites name="hotels" image="Buildings/hotels.gif" caption="графика отелей">
+        <sprite name="cosmos">
+            <frame number="1" coords="0,0,214,193,166,181"/>
+            <frame number="2" coords="215,0,214,193,46,181"/>
+        </sprite>
+        <sprite name="plaza">
+            <frame number="1" coords="0,194,214,197,143,185"/>
+            <frame number="2" coords="215,194,214,197,71,185"/>
+        </sprite>
+        <sprite name="ancient1">
+            <frame number="1" coords="430,0,166,133,119,121"/>
+            <frame number="2" coords="430,134,166,133,46,121"/>
+        </sprite>
+        <sprite name="ancient2">
+            <frame number="1" coords="454,269,142,140,95,128"/>
+            <frame number="2" coords="454,410,142,140,47,128"/>
+        </sprite>
+        <sprite name="ancient3">
+            <frame number="1" coords="0,392,142,118,95,106"/>
+            <frame number="2" coords="143,392,142,118,47,106"/>
+        </sprite>
+        <sprite name="soviet">
+            <frame number="1" coords="0,511,142,114,95,102"/>
+            <frame number="2" coords="143,511,142,114,47,102"/>
+        </sprite>
+        <sprite name="mini">
+            <frame number="1" coords="286,392,142,105,71,93"/>
+            <frame number="2" coords="286,498,142,105,71,93"/>
+        </sprite>
+    </sprites>
+    <sprites name="hist.moscow" image="Buildings/hist.moscow.gif" caption="графика истор. зданий">
+        <sprite name="cathedral1">
+            <frame number="1" coords="0,0,142,158,71,146"/>
+            <frame number="2" coords="143,0,142,158,71,146"/>
+        </sprite>
+        <sprite name="cathedral2">
+            <frame number="1" coords="286,24,142,134,71,122"/>
+            <frame number="2" from="1"/>
+        </sprite>
+        <sprite name="mausoleum">
+            <frame number="1" coords="0,159,94,61,47,49"/>
+            <frame number="2" coords="95,159,94,61,47,49"/>
+        </sprite>
+        <sprite name="arch">
+            <frame number="1" coords="190,159,70,80,47,68"/>
+            <frame number="2" coords="261,159,70,80,23,68"/>
+        </sprite>
+        <sprite name="tvtower">
+            <frame number="1" coords="429,0,46,251,23,239"/>
+            <frame number="2" from="1"/>
+        </sprite>
+        <sprite name="kremlin">
+            <frame number="1" coords="0,221,57,137,25,122"/>
+            <frame number="2" coords="58,221,57,137,32,122"/>
+            <frame number="3" coords="116,221,57,137,32,122"/>
+            <frame number="4" from="3" flip="hor"/>
+            <frame number="5" coords="174,250,46,108,23,96"/>
+            <frame number="6" coords="221,250,46,108,23,96"/>
+            <frame number="7" coords="362,268,50,90,25,78"/>
+            <frame number="8" from="7"/>
+            <frame number="9" coords="413,271,46,43,23,31"/>
+            <frame number="10" coords="413,315,46,43,23,31"/>
+        </sprite>
+    </sprites>
+    <sprites name="industrial" image="Buildings/industrial.png" caption="индустриальные объекты" size="213">
+        <sprite name="farm" coords="0,0,142,76,71,64"/>
+        <sprite name="animalfarm" coords="143,0,142,77,71,65"/>
+        <sprite name="workhouse" coords="286,0,142,80,71,68"/>
+        <sprite name="manufacture" coords="429,0,142,86,71,74"/>
+        <sprite name="oilpump" coords="578,0,147,189,71,177"/>
+        <sprite name="chemical" coords="0,78,142,106,71,94"/>
+        <sprite name="mine" coords="144,82,142,95,71,83"/>
+        <sprite name="pit" coords="292,88,142,72,71,60"/>
+        <sprite name="steel" coords="435,88,142,90,71,78"/>
+        <sprite name="warehouse" coords="0,185,142,85,71,73"/>
+        <sprite name="hangar" coords="143,185,142,80,71,68"/>
+        <sprite name="mill" coords="573,190,96,83,48,71"/>
+        <sprite name="construction" coords="286,161,142,76,71,64"/>
+        <sprite name="sciencelab" coords="430,179,142,87,71,75"/>
+        <sprite name="fishfarm" coords="0,271,142,96,71,84"/>
+        <sprite name="sawmill" coords="143,266,142,91,71,79"/>
+        <sprite name="atelie" coords="286,238,93,63,46,51"/>
+        <sprite name="bakery" coords="588,274,96,67,47,55"/>
+        <sprite name="mini.animalfarm" coords="392,267,98,53,49,41"/>
+        <sprite name="mini.greenhouse" coords="491,267,96,56,48,44"/>
+        <sprite name="delivery" coords="719,0,140,82,70,70"/>
+    </sprites>
+    <sprites name="industry" image="Buildings/industry.gif" caption="графика предприятий" size="">
+        <sprite name="store1" coords="0,0,142,85,71,73"/>
+        <sprite name="angar1" coords="143,5,142,80,71,68"/>
+        <sprite name="factory1" coords="0,86,190,133,143,121"/>
+        <sprite name="store" coords="0,220,142,96,94,84"/>
+        <sprite name="hangar" coords="0,317,142,88,94,76"/>
+        <sprite name="oilstore" coords="238,406,94,57,47,45"/>
+        <sprite name="chemicals" coords="143,406,94,79,47,67"/>
+        <sprite name="grainstore" coords="287,220,118,110,71,98"/>
+        <sprite name="refrigirator" coords="0,406,142,96,94,84"/>
+        <sprite name="administrative" coords="285,0,70,53,47,41"/>
+        <sprite name="delivery1" coords="392,0,141,97,70,85"/>
+    </sprites>
+    <sprites name="trade" image="Buildings/trade.gif" caption="графика магазинов" size="" preload="yes">
+        <sprite name="megastore">
+            <frame number="1" coords="0,0,382,217,191,205"/>
+            <frame number="2" coords="0,218,382,217,191,205"/>
+        </sprite>
+        <sprite name="center1">
+            <frame number="1" coords="383,0,286,149,143,137"/>
+            <frame number="2" coords="383,150,286,149,143,137"/>
+        </sprite>
+        <sprite name="center2">
+            <frame number="1" coords="0,436,238,134,143,122"/>
+            <frame number="2" coords="0,571,238,134,95,122"/>
+        </sprite>
+        <sprite name="center3">
+            <frame number="1" coords="239,436,238,121,143,109"/>
+            <frame number="2" coords="478,436,238,121,95,109"/>
+        </sprite>
+        <sprite name="shop1">
+            <frame number="1" coords="0,706,94,57,47,45"/>
+            <frame number="2" coords="95,706,94,57,47,45"/>
+        </sprite>
+        <sprite name="shop2">
+            <frame number="1" coords="239,670,118,83,47,71"/>
+            <frame number="2" coords="358,670,118,83,71,71"/>
+        </sprite>
+        <sprite name="supermarket1">
+            <frame number="1" coords="383,300,118,120,71,108"/>
+            <frame number="2" coords="502,300,118,120,47,108"/>
+        </sprite>
+        <sprite name="supermarket2">
+            <frame number="1" coords="239,558,166,111,71,99"/>
+            <frame number="2" coords="406,558,166,111,95,99"/>
+        </sprite>
+        <sprite name="supermarket3">
+            <frame number="1" coords="573,558,142,102,71,90"/>
+            <frame number="2" coords="573,661,142,102,71,90"/>
+        </sprite>
+    </sprites>
+    <sprites name="historic" image="Buildings/historic.png" caption="исторические здания">
+        <sprite name="eifeltower" coords="0,0,92,175,46,163"/>
+    </sprites>
+    <sprites name="wonder" image="Buildings/wonder.png" caption="чудо света">
+        <sprite name="soyuzhouse" coords="0,0,377,618,106,629"/>
+    </sprites>
+</config>
+	

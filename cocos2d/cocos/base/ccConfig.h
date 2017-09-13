@@ -253,7 +253,7 @@ THE SOFTWARE.
 
 /** Use physics integration API. */
 #ifndef CC_USE_PHYSICS
-#define CC_USE_PHYSICS 1
+#define CC_USE_PHYSICS 0
 #endif
 
 /** Use 3d physics integration API. */
@@ -272,7 +272,7 @@ THE SOFTWARE.
 
 /** Use 3D navigation API */
 #ifndef CC_USE_NAVMESH
-#define CC_USE_NAVMESH 1
+#define CC_USE_NAVMESH 0
 #endif
 
 /** Use culling or not. */

@@ -7,7 +7,7 @@ IsoPoint::IsoPoint(float x, float y)
 
 IsoPoint::IsoPoint( int x, int y )
 {
-	setPoint(x*50,y*50);
+	setPoint(x*23,y*23);
 }
 
 void IsoPoint::setPoint(float x, float y)

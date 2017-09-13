@@ -25,10 +25,6 @@ void Scroller::initTouch()
 
 bool Scroller::touchBegan(Touch* touch, Event* event)
 {
-	if( touch->getLocation().x < 138 )
-	{
-		return true;
-	}
 	if( !_moved )
 	{
 		_moved     = true;

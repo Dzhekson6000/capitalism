@@ -128,14 +128,24 @@ SET(GAME_SRC
 	Classes/Scene/MenuScene.cpp
 	Classes/Scene/GameScene.cpp
 	${PLATFORM_SPECIFIC_SRC}
-	Classes/Tools/Scroller.cpp Classes/Model/IsoPoint.cpp Classes/Model/IsoPoint.h)
+	Classes/Tools/Scroller.cpp
+	Classes/Model/IsoPoint.cpp
+	Classes/Model/MapCity.cpp
+	Classes/Model/Config.cpp
+	Classes/Tools/ImageManager.cpp
+	)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
 	Classes/Scene/MenuScene.h
 	Classes/Scene/GameScene.h
 	${PLATFORM_SPECIFIC_HEADERS}
-	Classes/Tools/Scroller.h)
+	Classes/Tools/Scroller.h
+	Classes/Model/IsoPoint.h
+	Classes/Model/MapCity.h
+	Classes/Model/Config.h
+	Classes/Tools/ImageManager.h
+	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})
 

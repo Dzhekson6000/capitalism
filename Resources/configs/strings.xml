@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <strings>
+        <domen name="loader">
+            <loading>Загружается</loading>
+            <load_error>Ошибка загрузки</load_error>
+        </domen>
+    </strings>
+    <strings>
+        <domen name="city">
+            <house>Жилой дом</house>
+            <office>Офисный центр</office>
+            <tradecenter>Торговый центр</tradecenter>
+            <company>Компания</company>
+            <square>Площадь</square>
+            <ga>га</ga>
+            <landcost>Стоимость участка</landcost>
+            <lotOccupied>Участок занят</lotOccupied>
+            <wrongLot>Неправильный участок</wrongLot>
+            <roadRequired>Требуется дорога</roadRequired>
+            <cityRequired>Строительство доступно только в черте города</cityRequired>
+            <cityProhibited>Строительство в черте города запрещено</cityProhibited>
+            <product>Продукт</product>
+            <wealth>Уровень богатства</wealth>
+            <building>cтроится</building>
+            <attraction>Привлекательность</attraction>
+        </domen>
+        <domen name="areas">
+            <trade>Торговая площадь</trade>
+            <office>Офисная площадь</office>
+        </domen>
+        <domen name="products">
+            <oil>Нефть</oil>
+            <diamonds>Алмазы</diamonds>
+            <bauxite>Бокситы</bauxite>
+            <clay>Глина</clay>
+            <wood>Древесина</wood>
+            <ironore>Железная руда</ironore>
+            <gold>Золото</gold>
+            <silver>Серебро</silver>
+            <sand>Песок</sand>
+            <sulfur>Сера</sulfur>
+            <salt>Соль</salt>
+            <soda>Сода</soda>
+            <coal>Уголь</coal>
+        </domen>
+        <domen name="munitipal">
+            <school>Школа</school>
+            <hospital>Больница</hospital>
+            <institute>Институт</institute>
+            <cinema>Кинотеатр</cinema>
+            <theatre>Театр</theatre>
+            <stadium>Стадион</stadium>
+            <metro>Метро</metro>
+            <station>Вокзал</station>
+            <munitipal>Муниципальное здание</munitipal>
+            <monument>Памятник</monument>
+            <bassin>Бассейн</bassin>
+            <policlinic>Поликлиника</policlinic>
+            <court>Суд</court>
+            <police>Полиция</police>
+            <prison>Тюрьма</prison>
+            <cliniccenter>Клинический центр</cliniccenter>
+            <college>Коледж</college>
+        </domen>
+    </strings>
+    <strings>
+        <domen name="area">
+            <square>Площадь</square>
+            <sqMeter>кв.м.</sqMeter>
+            <ga>га</ga>
+            <minSquareRequired>Минимальная площадь</minSquareRequired>
+            <maxSquareRequired>Максимальная площадь</maxSquareRequired>
+            <minWidthRequired>Минимальная ширина</minWidthRequired>
+            <maxWidthRequired>Максимальная ширина</maxWidthRequired>
+            <minLengthRequired>Минимальная длина</minLengthRequired>
+            <maxLengthRequired>Максимальная длина</maxLengthRequired>
+            <wrongAreaType>Не подходящий тип помещения</wrongAreaType>
+            <occupied>Место занято</occupied>
+            <wrong>Ошибка</wrong>
+        </domen>
+    </strings>
+    <strings>
+        <domen name="units">
+            <shop.apparel>Магазин одежды</shop.apparel>
+            <constructionunit.wonder>Чудо-стройка</constructionunit.wonder>
+            <factory.chemicals>Химический завод</factory.chemicals>
+            <warehouse.goods>Склад товаров</warehouse.goods>
+            <mine.diamonds>Алмазная шахта</mine.diamonds>
+            <catering.restaurant>Ресторан</catering.restaurant>
+            <shop.materials>Магазин стройматериалов</shop.materials>
+            <media.radio>Радио</media.radio>
+            <factory.machinery>Машиностроительный завод</factory.machinery>
+            <shop.luxury>Ювелирный магазин</shop.luxury>
+            <shop.electronics>Магазин электроники</shop.electronics>
+            <warehouse.equipment>Склад техники</warehouse.equipment>
+            <media.tv>Телекомпания</media.tv>
+            <greenhouse>Тепличное хозяйство</greenhouse>
+            <factory.steel>Металлургический завод</factory.steel>
+            <animalfarm.mini>Подсобное хозяйство</animalfarm.mini>
+            <fishfarm>Рыбное хозяйство</fishfarm>
+            <media.internet>Интернет СМИ</media.internet>
+            <shop.food>Продуктовый магазин</shop.food>
+            <factory.electronics>Электронный завод</factory.electronics>
+            <greenhouse.mini>Приусадебный участок</greenhouse.mini>
+            <mine.coal>Угольная шахта</mine.coal>
+            <mine.gold>Золотая шахта</mine.gold>
+            <mine.bauxite>Бокситный карьер</mine.bauxite>
+            <constructionunit>Строительное предприятие</constructionunit>
+            <cargounit>Транспортное предприятие</cargounit>
+            <factory.car>Автомобильный завод</factory.car>
+            <shop.homegoods>Универмаг</shop.homegoods>
+            <sawmill>Лесопилка</sawmill>
+            <factory.mill>Мельница</factory.mill>
+            <constructionunit.city>Городская стройка</constructionunit.city>
+            <media.newspaper>Газета</media.newspaper>
+            <factory.consmaterials>Завод стройматериалов</factory.consmaterials>
+            <factory.wood>Деревообрабатывающий завод</factory.wood>
+            <warehouse.chemicals>Склад химикатов</warehouse.chemicals>
+            <warehouse.universal>Универсальный склад</warehouse.universal>
+            <mine.minerals>Шахта минералов</mine.minerals>
+            <mine.ironore>Железнорудная шахта</mine.ironore>
+            <factory.candles>Свечной заводик</factory.candles>
+            <animalfarm>Животноводческая ферма</animalfarm>
+            <factory.food>Пищевой завод</factory.food>
+            <warehouse.food>Склад продуктов</warehouse.food>
+            <mine.sand>Песчаный карьер</mine.sand>
+            <shop.auto>Автомагазин</shop.auto>
+            <mine.oilwell>Нефтяная скважина</mine.oilwell>
+            <factory.atelier.mini>Ателье</factory.atelier.mini>
+            <office>Офис</office>
+            <mine.clay>Глиняный карьер</mine.clay>
+            <factory.bakery.mini>Пекарня</factory.bakery.mini>
+            <sciencelab.institute>Лаборатория</sciencelab.institute>
+            <factory.manufacture>Фабрика</factory.manufacture>
+            <factory.glass>Стекольный завод</factory.glass>
+            <warehouse.ore>Склад материалов</warehouse.ore>
+            <factory.jewelry>Ювелирный завод</factory.jewelry>
+            <farm>Земледельческая ферма</farm>
+        </domen>
+    </strings>
+</config>

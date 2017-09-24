@@ -27,10 +27,13 @@ bool GameScene::init()
 	
 	MapCity* map = new MapCity();
 	map->loadMap(imgmap);
+	map->loadMapObject("maps/moscow.xml");
 	
 	Scroller* scroller = Scroller::create();
 	this->addChild(scroller);
 	map->draw(scroller);
+	
+	
 	//scroller->setScale(2);
 	//scroller->setScale(0.5);
 	

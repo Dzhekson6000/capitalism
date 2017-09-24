@@ -137,7 +137,8 @@ SET(GAME_SRC
 	Classes/Tools/FactoryCells.cpp
 	Classes/Model/Cells/RoadCell.cpp
 	Classes/Model/Cells/RailRoadCell.cpp
-	Classes/Model/Cells/ParkCell.cpp)
+	Classes/Model/Cells/ParkCell.cpp
+	Classes/Model/MapObject.cpp)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -154,6 +155,7 @@ SET(GAME_HEADERS
 	Classes/Model/Cells/RoadCell.h
 	Classes/Model/Cells/RailRoadCell.h
 	Classes/Model/Cells/ParkCell.h
+	Classes/Model/MapObject.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

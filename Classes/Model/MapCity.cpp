@@ -1,8 +1,9 @@
 #include "MapCity.h"
-#include "IsoPoint.h"
 #include "Tools/FactoryCells.h"
+#include "tinyxml2/tinyxml2.h"
 
 USING_NS_CC;
+using namespace tinyxml2;
 
 MapCity::MapCity():
 		_widthMap(300),
@@ -41,6 +42,25 @@ void MapCity::loadMap(cocos2d::Image* map)
 	
 }
 
+void MapCity::loadMapObject(std::string path)
+{
+	XMLDocument xml_doc;
+	xml_doc.LoadFile(FileUtils::getInstance()->fullPathForFilename(path).c_str());
+	
+	XMLNode* root = xml_doc.FirstChildElement("area")->FirstChildElement("objects");
+	
+	for( XMLElement* e = root->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
+	{
+		if( strcmp(e->Value(), "house") == 0)
+		{
+			MapObject* object = MapObject::create();
+			object->parserObject(e);
+			object->initObject();
+			_mapObjects.push_back(object);
+		}
+	}
+}
+
 void MapCity::draw(cocos2d::Node* scene)
 {
 	for( int x = _widthMap-1; x >= 0; x-- )
@@ -58,6 +78,11 @@ void MapCity::draw(cocos2d::Node* scene)
 				CCLOG("Unable to render tile to position (%d,%d)",x,y);
 			}
 		}
+	}
+	
+	for(auto o: _mapObjects)
+	{
+		scene->addChild(o);
 	}
 }
 

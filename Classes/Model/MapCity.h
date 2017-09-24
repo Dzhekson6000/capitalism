@@ -2,6 +2,8 @@
 #define CAPITALISM_MAP_H
 
 #include "cocos2d.h"
+#include "Model/MapObject.h"
+#include <vector>
 
 class MapCity
 {
@@ -14,10 +16,13 @@ private:
 	int _heightMap;
 	int _countChenal;
 	
+	std::vector<MapObject*> _mapObjects;
+	
 	void releaseMap();
 	
 public:
 	void loadMap(cocos2d::Image* map);
+	void loadMapObject(std::string path);
 	void draw(cocos2d::Node* scene);
 	
 	unsigned char *getPixel(int x, int y);

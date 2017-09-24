@@ -92,6 +92,7 @@ void ImageManager::parserSprite(XMLElement* sprite, std::string& path, ImageMana
 				}
 				SpriteFrame* spriteFrame = spriteItem->frames.at(from-1)->clone();
 				spriteFrame->setTexture(spriteItem->frames.at(from-1)->getTexture());
+				spriteFrame->setAnchorPoint(spriteItem->frames.at(from-1)->getAnchorPoint());
 				if(flip=="vert")
 				{
 					spriteFrame->setFlippedY(true);

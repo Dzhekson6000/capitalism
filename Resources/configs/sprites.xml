@@ -257,7 +257,7 @@
         </sprite>
         <sprite name="industrial" coords="322,324,46,24,23,12"/>
     </sprites>
-    <sprites name="hs.hrush" image="Buildings/hs.hrush.gif" caption="графика хрущевок">
+    <sprites name="hs.hrush" image="Buildings/hs.hrush.png" caption="графика хрущевок">
         <sprite name="hrush1">
             <frame number="1" coords="0,0,94,79,23,67"/>
             <frame number="2" coords="95,0,94,79,71,67"/>
@@ -271,7 +271,7 @@
             <frame number="2" coords="451,6,70,73,47,61"/>
         </sprite>
     </sprites>
-    <sprites name="hs.panel" image="Buildings/hs.panel.gif" caption="графика панельных домов" size="">
+    <sprites name="hs.panel" image="Buildings/hs.panel.png" caption="графика панельных домов" size="">
         <sprite name="white">
             <frame number="1" coords="0,0,117,132,22,120"/>
             <frame number="2" coords="0,133,117,132,95,120"/>
@@ -305,7 +305,7 @@
             <frame number="2" coords="332,145,94,128,23,116"/>
         </sprite>
     </sprites>
-    <sprites name="hs.ancient" image="Buildings/hs.ancient.gif" caption="графика старинных домов">
+    <sprites name="hs.ancient" image="Buildings/hs.ancient.png" caption="графика старинных домов">
         <sprite name="mansion1">
             <frame number="1" coords="0,0,142,116,95,104"/>
             <frame number="2" coords="0,117,142,116,47,104"/>
@@ -327,7 +327,7 @@
             <frame number="2" coords="122,332,121,79,47,67"/>
         </sprite>
     </sprites>
-    <sprites name="hs.high" image="Buildings/hs.high.gif" caption="графика высотных домов">
+    <sprites name="hs.high" image="Buildings/hs.high.png" caption="графика высотных домов">
         <sprite name="red2x3">
             <frame number="1" coords="0,0,118,165,71,153"/>
             <frame number="2" coords="0,166,118,165,47,153"/>
@@ -354,7 +354,7 @@
         </sprite>
         <sprite name="yelow2x3">
             <frame number="1" coords="642,0,118,201,71,189"/>
-            <frame number="2" coords="642,202,118,201,47,189"/>
+            <frame number="2" from="1" flip="hor"/>
         </sprite>
         <sprite name="smalltower1">
             <frame number="1" coords="0,332,94,144,47,132"/>
@@ -377,7 +377,7 @@
             <frame number="2" coords="428,400,118,222,47,210"/>
         </sprite>
     </sprites>
-    <sprites name="hs.modern" image="Buildings/hs.modern.gif" caption="графика современных домов" size="">
+    <sprites name="hs.modern" image="Buildings/hs.modern.png" caption="графика современных домов" size="">
         <sprite name="grand">
             <frame number="1" coords="0,0,142,192,71,180"/>
             <frame number="2" from="1"/>
@@ -419,7 +419,7 @@
             <frame number="2" coords="453,431,118,116,47,104"/>
         </sprite>
     </sprites>
-    <sprites name="hs.stalin" image="Buildings/hs.stalin.gif" caption="графика сталинских домов" size="">
+    <sprites name="hs.stalin" image="Buildings/hs.stalin.png" caption="графика сталинских домов" size="">
         <sprite name="tower">
             <frame number="1" coords="0,0,190,256,143,244"/>
             <frame number="2" coords="191,0,190,256,47,244"/>
@@ -441,7 +441,7 @@
             <frame number="2" from="1"/>
         </sprite>
     </sprites>
-    <sprites name="munitipal" image="Buildings/munitipal.gif" caption="графика муниципальных предприятий" size="108">
+    <sprites name="munitipal" image="Buildings/munitipal.png" caption="графика муниципальных предприятий" size="108">
         <sprite name="cinema">
             <frame number="1" coords="0,0,213,133,94,121"/>
             <frame number="2" coords="214,0,214,133,119,121"/>
@@ -482,7 +482,7 @@
         <sprite name="court" coords="429,131,190,115,95,103"/>
         <sprite name="police" coords="859,243,190,120,95,108"/>
     </sprites>
-    <sprites name="offices" image="Buildings/offices.gif" caption="графика офисов" size="">
+    <sprites name="offices" image="Buildings/offices.png" caption="графика офисов" size="">
         <sprite name="tower1">
             <frame number="1" coords="0,0,140,168,71,156"/>
             <frame number="2" from="1"/>
@@ -524,7 +524,7 @@
             <frame number="2" coords="830,416,118,143,47,131"/>
         </sprite>
     </sprites>
-    <sprites name="trade" image="Buildings/trade.gif" caption="графика магазинов" size="" preload="yes">
+    <sprites name="trade" image="Buildings/trade.png" caption="графика магазинов" size="" preload="yes">
         <sprite name="megastore">
             <frame number="1" coords="0,0,382,217,191,205"/>
             <frame number="2" coords="0,218,382,217,191,205"/>
@@ -562,7 +562,7 @@
             <frame number="2" coords="573,661,142,102,71,90"/>
         </sprite>
     </sprites>
-    <sprites name="hotels" image="Buildings/hotels.gif" caption="графика отелей">
+    <sprites name="hotels" image="Buildings/hotels.png" caption="графика отелей">
         <sprite name="cosmos">
             <frame number="1" coords="0,0,214,193,166,181"/>
             <frame number="2" coords="215,0,214,193,46,181"/>
@@ -592,7 +592,7 @@
             <frame number="2" coords="286,498,142,105,71,93"/>
         </sprite>
     </sprites>
-    <sprites name="hist.moscow" image="Buildings/hist.moscow.gif" caption="графика истор. зданий">
+    <sprites name="hist.moscow" image="Buildings/hist.moscow.png" caption="графика истор. зданий">
         <sprite name="cathedral1">
             <frame number="1" coords="0,0,142,158,71,146"/>
             <frame number="2" coords="143,0,142,158,71,146"/>
@@ -649,7 +649,7 @@
         <sprite name="mini.greenhouse" coords="491,267,96,56,48,44"/>
         <sprite name="delivery" coords="719,0,140,82,70,70"/>
     </sprites>
-    <sprites name="industry" image="Buildings/industry.gif" caption="графика предприятий" size="">
+    <sprites name="industry" image="Buildings/industry.png" caption="графика предприятий" size="">
         <sprite name="store1" coords="0,0,142,85,71,73"/>
         <sprite name="angar1" coords="143,5,142,80,71,68"/>
         <sprite name="factory1" coords="0,86,190,133,143,121"/>
@@ -662,7 +662,7 @@
         <sprite name="administrative" coords="285,0,70,53,47,41"/>
         <sprite name="delivery1" coords="392,0,141,97,70,85"/>
     </sprites>
-    <sprites name="trade" image="Buildings/trade.gif" caption="графика магазинов" size="" preload="yes">
+    <sprites name="trade" image="Buildings/trade.png" caption="графика магазинов" size="" preload="yes">
         <sprite name="megastore">
             <frame number="1" coords="0,0,382,217,191,205"/>
             <frame number="2" coords="0,218,382,217,191,205"/>

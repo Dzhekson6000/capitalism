@@ -77,7 +77,7 @@ ELSE()
 	SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 	SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wno-deprecated-declarations -Wno-reorder")
 	IF(CLANG)
-		SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+		SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -fuse-ld=lld")
 	ENDIF()
 ENDIF(MSVC)
 
@@ -165,6 +165,12 @@ SET(BUILD_CPP_EMPTY_TEST OFF CACHE BOOL "turn off build cpp-empty-test")
 SET(BUILD_CPP_TESTS OFF CACHE BOOL "turn off build cpp-tests")
 SET(BUILD_LUA_LIBS OFF CACHE BOOL "turn off build lua related targets")
 SET(BUILD_JS_LIBS OFF CACHE BOOL "turn off build js related targets")
+SET(BUILD_JS_LIBS OFF CACHE BOOL "turn off build js related targets")
+
+SET(USE_CHIPMUNK OFF CACHE BOOL "turn off build USE_CHIPMUNK")
+SET(USE_BULLET OFF CACHE BOOL "Turn off Bullet (3d physics)")
+SET(USE_RECAST OFF CACHE BOOL "Turn off Recast (3d pathfinding)")
+
 ADD_SUBDIRECTORY(${COCOS2D_ROOT})
 
 # MyGame

@@ -298,6 +298,8 @@ protected:
     Texture2D *_texture;
     std::string  _textureFilename;
     PolygonInfo _polygonInfo;
+    CC_SYNTHESIZE(bool, _flippedX, FlippedX);                         /// Whether the sprite is flipped horizontally or not
+    CC_SYNTHESIZE(bool, _flippedY, FlippedY);                         /// Whether the sprite is flipped vertically or not
 };
 
 // end of _2d group

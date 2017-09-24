@@ -1595,6 +1595,9 @@ void Sprite::setSpriteFrame(SpriteFrame *spriteFrame)
     {
         setCenterRect(spriteFrame->getCenterRect());
     }
+    
+    setFlippedX(spriteFrame->getFlippedX());
+    setFlippedY(spriteFrame->getFlippedY());
 }
 
 void Sprite::setDisplayFrameWithAnimationName(const std::string& animationName, ssize_t frameIndex)

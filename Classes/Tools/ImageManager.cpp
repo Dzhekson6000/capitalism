@@ -91,17 +91,18 @@ void ImageManager::parserSprite(XMLElement* sprite, std::string& path, ImageMana
 					flip = e->Attribute("flip");
 				}
 				SpriteFrame* spriteFrame = spriteItem->frames.at(from-1)->clone();
+				spriteFrame->setTexture(spriteItem->frames.at(from-1)->getTexture());
 				if(flip=="vert")
 				{
-					Vec2 offset = spriteFrame->getOffset();
-					offset.x=-offset.x;
-					spriteFrame->setOffset(offset);
+					spriteFrame->setFlippedY(true);
 				}
 				else if(flip=="hor")
 				{
-					Vec2 offset = spriteFrame->getOffset();
-					offset.y=-offset.y;
-					spriteFrame->setOffset(offset);
+					spriteFrame->setFlippedX(true);
+				} else if(flip=="both")
+				{
+					spriteFrame->setFlippedX(true);
+					spriteFrame->setFlippedY(true);
 				}
 				spriteItem->frames.push_back(spriteFrame);
 			}
@@ -143,13 +144,22 @@ cocos2d::SpriteFrame* ImageManager::getFrame(std::string group, std::string spri
 {
 	auto g = _groups.find(group);
 	if ( g == _groups.end() ) {
+		CCLOG("sprite group %s not found", group.c_str());
 		return nullptr;
 	}
 	
 	auto s = g->second->sprites.find(sprite);
 	if ( s == g->second->sprites.end() ) {
+		CCLOG("sprite name %s of group %s not found", sprite.c_str(), group.c_str());
 		return nullptr;
 	}
+	
+	if(frame > s->second->frames.size()-1)
+	{
+		CCLOG("frame %d sprite name %s of group %s not found", frame, sprite.c_str(), group.c_str());
+		return nullptr;
+	}
+	
 	
 	return s->second->frames.at(frame);
 }

@@ -1,6 +1,6 @@
 #include "MapCity.h"
 #include "IsoPoint.h"
-#include "Tools/ImageManager.h"
+#include "Tools/FactoryCells.h"
 
 USING_NS_CC;
 
@@ -41,102 +41,21 @@ void MapCity::loadMap(cocos2d::Image* map)
 	
 }
 
-cocos2d::Sprite* MapCity::createSprite(std::string name)
+void MapCity::draw(cocos2d::Node* scene)
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", name);
-	if( !sf )
+	for( int x = _widthMap-1; x >= 0; x-- )
 	{
-		return nullptr;
-	}
-	return Sprite::createWithSpriteFrame(sf);
-	
-}
-
-cocos2d::Sprite* MapCity::getCell(int x, int y, unsigned char* pixel)
-{
-	cocos2d::Sprite* ret = nullptr;
-	int type = *(pixel + 2);
-	switch( type )
-	{
-		case 0:
-			ret = createSprite("ground");
-			break;
-		case 1:
-			ret = createSprite("tundra");
-			break;
-		case 2:
-			ret = createSprite("dryground");
-			break;
-		case 4:
-			ret = createSprite("road");
-			break;
-		case 8:
-			ret = createSprite("railroad");
-			break;
-		case 12:
-			ret = createSprite("crossage");
-			break;
-		case 128:
-			ret = createSprite("grass");
-			break;
-		case 129:
-			ret = createSprite("desert");
-			break;
-		case 130:
-			ret = createSprite("plage");
-			break;
-		case 131:
-			ret = createSprite("city");
-			break;
-		case 132:
-			ret = createSprite("court");
-			break;
-		case 133:
-			ret = createSprite("park");
-			break;
-		case 134:
-			ret = createSprite("asphault");
-			break;
-		case 135:
-			ret = createSprite("square");
-			break;
-		case 136:
-			ret = createSprite("industrial");
-			break;
-		case 255:
-			ret = createSprite("water");
-			break;
-		
-		case 36:
-			ret = createSprite("ground");
-			cocos2d::Sprite* s = createSprite("tree");
-			s->setPositionNormalized(ret->getAnchorPoint());
-			ret->addChild(s);
-			break;
-	}
-	
-	if( !ret )
-	{
-		CCLOG("Not found tiles: %d", type);
-		return nullptr;
-	}
-	
-	IsoPoint point(x, y);
-	ret->setPosition(Vec2(point.getX(), point.getY()));
-	
-	return ret;
-}
-
-void MapCity::draw(cocos2d::Layer* scene)
-{
-	for( int i = _widthMap-1; i >= 0; i-- )
-	{
-		for( int j = _heightMap-1; j >= 0; j-- )
+		for( int y = _heightMap-1; y >= 0; y-- )
 		{
-			Sprite* sprite = getCell(i, j-120, getPixel(i, j));
-			if( sprite )
+			IsoPoint point(x, y);
+			Cell* cell = FactoryCells::getInstance()->createCell(this, point, getType(x, y));
+			if( cell )
 			{
-				scene->addChild(sprite, 0);
+				scene->addChild(cell);
+			}
+			else
+			{
+				CCLOG("Unable to render tile to position (%d,%d)",x,y);
 			}
 		}
 	}
@@ -145,4 +64,11 @@ void MapCity::draw(cocos2d::Layer* scene)
 unsigned char* MapCity::getPixel(int x, int y)
 {
 	return _map->getData() + (x + y*_widthMap)*_countChenal;
+}
+
+int MapCity::getType(int x, int y)
+{
+	int type = *(getPixel(x, y)+2);
+	if(type==132) type = 4;//TODO: временный хак что бы не рисовать парковки
+	return type;
 }

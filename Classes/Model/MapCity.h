@@ -16,12 +16,12 @@ private:
 	
 	void releaseMap();
 	
-	cocos2d::Sprite* createSprite(std::string name);
-	cocos2d::Sprite* getCell(int x, int y,unsigned char* pixel);
-	unsigned char *getPixel(int x, int y);
 public:
 	void loadMap(cocos2d::Image* map);
-	void draw(cocos2d::Layer* scene);
+	void draw(cocos2d::Node* scene);
+	
+	unsigned char *getPixel(int x, int y);
+	int getType(int x, int y);
 };
 
 

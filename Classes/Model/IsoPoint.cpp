@@ -19,12 +19,12 @@ void IsoPoint::setPoint(float x, float y)
 
 int IsoPoint::getXCell()
 {
-	return floor(_xOriginal/50);
+	return floor(_xOriginal/23);
 }
 
 int IsoPoint::getYCell()
 {
-	return floor(_yOriginal/50);
+	return floor(_yOriginal/23);
 }
 
 void IsoPoint::setXCell(int x)

@@ -133,7 +133,11 @@ SET(GAME_SRC
 	Classes/Model/MapCity.cpp
 	Classes/Model/Config.cpp
 	Classes/Tools/ImageManager.cpp
-	)
+	Classes/Model/Cell.cpp
+	Classes/Tools/FactoryCells.cpp
+	Classes/Model/Cells/RoadCell.cpp
+	Classes/Model/Cells/RailRoadCell.cpp
+	Classes/Model/Cells/ParkCell.cpp)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -145,6 +149,11 @@ SET(GAME_HEADERS
 	Classes/Model/MapCity.h
 	Classes/Model/Config.h
 	Classes/Tools/ImageManager.h
+	Classes/Model/Cell.h
+	Classes/Tools/FactoryCells.h
+	Classes/Model/Cells/RoadCell.h
+	Classes/Model/Cells/RailRoadCell.h
+	Classes/Model/Cells/ParkCell.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

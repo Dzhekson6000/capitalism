@@ -12,11 +12,9 @@ public:
 	
 	virtual bool init();
 	
-	virtual bool TouchBegan(Touch* touch, Event* event);
-	virtual void TouchEnded(Touch* touch, Event* event);
-	
 	CREATE_FUNC(MenuScene);
 private:
+	MenuScene();
 	EventListenerTouchOneByOne* _touchListener;
 	
 };

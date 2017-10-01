@@ -1,6 +1,5 @@
 #include "AppDelegate.h"
 #include "Scene/MenuScene.h"
-#include "Scene/GameScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -98,7 +97,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = GameScene::createScene();
+    auto scene = MenuScene::createScene();
 
     // run
     director->runWithScene(scene);

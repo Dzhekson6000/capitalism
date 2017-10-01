@@ -1,7 +1,7 @@
 #include "GameScene.h"
-#include "Model/MapCity.h"
+#include "Model/Map/MapCity.h"
 #include "Model/Config.h"
-#include "Tools/Scroller.h"
+#include "View/Scroller.h"
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -35,7 +35,7 @@ bool GameScene::init()
 	
 	
 	//scroller->setScale(2);
-	//scroller->setScale(0.5);
+	scroller->setScale(0.5);
 	
 	return true;
 }

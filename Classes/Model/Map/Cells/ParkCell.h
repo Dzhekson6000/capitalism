@@ -1,7 +1,7 @@
 #ifndef CAPITALISM_PARKCELL_H
 #define CAPITALISM_PARKCELL_H
 
-#include "Model/Cell.h"
+#include "Model/Map/Cell.h"
 
 class ParkCell: public Cell
 {

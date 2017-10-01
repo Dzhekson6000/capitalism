@@ -1,11 +1,16 @@
 #include "MenuScene.h"
-#include "SimpleAudioEngine.h"
+#include "View/Ui/Button.h"
 #include "GameScene.h"
 
+USING_NS_CC;
 
 Scene* MenuScene::createScene()
 {
 	return MenuScene::create();
+}
+
+MenuScene::MenuScene()
+{
 }
 
 bool MenuScene::init()
@@ -18,27 +23,28 @@ bool MenuScene::init()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin      = Director::getInstance()->getVisibleOrigin();
 	
-	auto sprite = Sprite::create("menu.jpg");
-	sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-	this->addChild(sprite, 0);
+	auto button = Button::create();
 	
-	_touchListener = EventListenerTouchOneByOne::create();
-	_touchListener->onTouchBegan = CC_CALLBACK_2(MenuScene::TouchBegan,this);
-	_touchListener->onTouchEnded = CC_CALLBACK_2(MenuScene::TouchEnded,this);
-	getEventDispatcher()->addEventListenerWithFixedPriority(_touchListener, 100);
+	button->setTitleText("Game Scene");
+	button->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+	
+	button->addTouchEventListener([&](Ref* sender, ui::Widget::TouchEventType type){
+		switch (type)
+		{
+			case ui::Widget::TouchEventType::BEGAN:
+				break;
+			case ui::Widget::TouchEventType::ENDED:
+				Director::getInstance()->replaceScene(GameScene::createScene());
+				break;
+			default:
+				break;
+		}
+	});
+	
+	this->addChild(button);
 	
 	return true;
 }
 
-bool MenuScene::TouchBegan(Touch* touch, Event* event)
-{
-	return true;
-}
-
-void MenuScene::TouchEnded(Touch* touch, Event* event)
-{
-	Director::getInstance()->replaceScene(GameScene::createScene());
-	getEventDispatcher()->removeAllEventListeners();
-}
 
 

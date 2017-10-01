@@ -132,34 +132,36 @@ SET(GAME_SRC
 	Classes/Scene/MenuScene.cpp
 	Classes/Scene/GameScene.cpp
 	${PLATFORM_SPECIFIC_SRC}
-	Classes/Tools/Scroller.cpp
+	Classes/View/Scroller.cpp
 	Classes/Model/IsoPoint.cpp
-	Classes/Model/MapCity.cpp
+	Classes/Model/Map/MapCity.cpp
 	Classes/Model/Config.cpp
 	Classes/Tools/ImageManager.cpp
-	Classes/Model/Cell.cpp
-	Classes/Tools/FactoryCells.cpp
-	Classes/Model/Cells/RoadCell.cpp
-	Classes/Model/Cells/RailRoadCell.cpp
-	Classes/Model/Cells/ParkCell.cpp
-	Classes/Model/MapObject.cpp)
+	Classes/Model/Map/Cell.cpp
+	Classes/Model/Map/FactoryCells.cpp
+	Classes/Model/Map/Cells/RoadCell.cpp
+	Classes/Model/Map/Cells/RailRoadCell.cpp
+	Classes/Model/Map/Cells/ParkCell.cpp
+	Classes/Model/Map/MapObject.cpp
+	Classes/View/Ui/Button.cpp)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
 	Classes/Scene/MenuScene.h
 	Classes/Scene/GameScene.h
 	${PLATFORM_SPECIFIC_HEADERS}
-	Classes/Tools/Scroller.h
+	Classes/View/Scroller.h
 	Classes/Model/IsoPoint.h
-	Classes/Model/MapCity.h
+	Classes/Model/Map/MapCity.h
 	Classes/Model/Config.h
 	Classes/Tools/ImageManager.h
-	Classes/Model/Cell.h
-	Classes/Tools/FactoryCells.h
-	Classes/Model/Cells/RoadCell.h
-	Classes/Model/Cells/RailRoadCell.h
-	Classes/Model/Cells/ParkCell.h
-	Classes/Model/MapObject.h
+	Classes/Model/Map/Cell.h
+	Classes/Model/Map/FactoryCells.h
+	Classes/Model/Map/Cells/RoadCell.h
+	Classes/Model/Map/Cells/RailRoadCell.h
+	Classes/Model/Map/Cells/ParkCell.h
+	Classes/Model/Map/MapObject.h
+	Classes/View/Ui/Button.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

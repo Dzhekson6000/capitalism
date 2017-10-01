@@ -1,5 +1,5 @@
 #include "MapCity.h"
-#include "Tools/FactoryCells.h"
+#include "FactoryCells.h"
 #include "tinyxml2/tinyxml2.h"
 
 USING_NS_CC;

@@ -1,7 +1,7 @@
 #ifndef CAPITALISM_RAILROADCELL_H
 #define CAPITALISM_RAILROADCELL_H
 
-#include "Model/Cell.h"
+#include "Model/Map/Cell.h"
 
 class RailRoadCell: public Cell
 {

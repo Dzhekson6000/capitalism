@@ -1,7 +1,7 @@
 #ifndef CAPITALISM_FACTORYCELLS_H
 #define CAPITALISM_FACTORYCELLS_H
 
-#include "Model/Cell.h"
+#include "Model/Map/Cell.h"
 
 class FactoryCells
 {

@@ -1,8 +1,8 @@
 #include "FactoryCells.h"
 #include "Tools/ImageManager.h"
-#include "Model/Cells/RoadCell.h"
-#include "Model/Cells/RailRoadCell.h"
-#include "Model/Cells/ParkCell.h"
+#include "Model/Map/Cells/RoadCell.h"
+#include "Model/Map/Cells/RailRoadCell.h"
+#include "Model/Map/Cells/ParkCell.h"
 
 FactoryCells* FactoryCells::_factoryCells = nullptr;
 

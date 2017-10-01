@@ -2,7 +2,7 @@
 #define CAPITALISM_MAP_H
 
 #include "cocos2d.h"
-#include "Model/MapObject.h"
+#include "MapObject.h"
 #include <vector>
 
 class MapCity

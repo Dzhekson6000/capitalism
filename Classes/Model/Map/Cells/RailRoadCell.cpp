@@ -1,5 +1,5 @@
 #include "RailRoadCell.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 
 RailRoadCell::RailRoadCell()
 {
@@ -9,7 +9,7 @@ RailRoadCell::RailRoadCell()
 bool RailRoadCell::initTile()
 {
 	int frame = getFrame();
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), frame);
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), frame);
 	if( !sf )
 	{
 		return false;
@@ -25,7 +25,7 @@ bool RailRoadCell::initTile()
 
 void RailRoadCell::addGround()
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", "ground");
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", "ground");
 	if( !sf )
 	{
 		return;

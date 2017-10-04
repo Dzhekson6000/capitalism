@@ -77,7 +77,7 @@ ELSE()
 
 	set(LDFLAGS "${LDFLAGS} -fuse-ld=lld")
 
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -stdlib=libc++")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -stdlib=libc++")
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
 
@@ -136,14 +136,14 @@ SET(GAME_SRC
 	Classes/Model/IsoPoint.cpp
 	Classes/Model/Map/MapCity.cpp
 	Classes/Model/Config.cpp
-	Classes/Tools/ImageManager.cpp
+	Classes/Tools/TileImageManager.cpp
 	Classes/Model/Map/Cell.cpp
 	Classes/Model/Map/FactoryCells.cpp
 	Classes/Model/Map/Cells/RoadCell.cpp
 	Classes/Model/Map/Cells/RailRoadCell.cpp
 	Classes/Model/Map/Cells/ParkCell.cpp
 	Classes/Model/Map/MapObject.cpp
-	Classes/View/Ui/Button.cpp)
+	Classes/View/Ui/Button.cpp Classes/View/Ui/ItemBuilding.cpp Classes/View/Ui/ItemBuilding.h Classes/View/Ui/Buildings.cpp Classes/View/Ui/Buildings.h)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -154,7 +154,7 @@ SET(GAME_HEADERS
 	Classes/Model/IsoPoint.h
 	Classes/Model/Map/MapCity.h
 	Classes/Model/Config.h
-	Classes/Tools/ImageManager.h
+	Classes/Tools/TileImageManager.h
 	Classes/Model/Map/Cell.h
 	Classes/Model/Map/FactoryCells.h
 	Classes/Model/Map/Cells/RoadCell.h

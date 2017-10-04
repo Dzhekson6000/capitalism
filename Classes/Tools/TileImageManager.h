@@ -9,10 +9,10 @@
 
 using namespace tinyxml2;
 
-class ImageManager
+class TileImageManager
 {
 public:
-	static ImageManager* getInstance();
+	static TileImageManager* getInstance();
 	
 	struct SpriteItem
 	{
@@ -24,18 +24,20 @@ public:
 		std::unordered_map<std::string, SpriteItem*> sprites;
 	};
 	
+	typedef std::unordered_map<std::string, Group*> GroupsType;
+	
 	void parserSprites(XMLElement* sprites);
 	
 	cocos2d::SpriteFrame* getFrame(std::string group, std::string sprite, int frame = 0);
 private:
-	static ImageManager* _imageManager;
+	static TileImageManager* _imageManager;
 	
-	ImageManager();
-	~ImageManager();
+	TileImageManager();
+	~TileImageManager();
 	
 	CC_SYNTHESIZE(std::string, _spritesRoot, SpritesRoot);
 	
-	std::unordered_map<std::string, Group*> _groups;
+	CC_SYNTHESIZE_READONLY(GroupsType, _groups, Groups);
 	
 	void parserSprite(XMLElement* sprite, std::string& path, Group* group);
 	bool parseCoords(std::string coords, cocos2d::Rect& rect, cocos2d::Vec2& vec);

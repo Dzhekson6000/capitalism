@@ -2,6 +2,8 @@
 #include "Model/Map/MapCity.h"
 #include "Model/Config.h"
 #include "View/Scroller.h"
+#include "View/Ui/Buildings.h"
+
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -18,24 +20,22 @@ bool GameScene::init()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin      = Director::getInstance()->getVisibleOrigin();
 	
-	
 	Config* config = new Config();
 	config->loadConfigFile("configs/sprites.xml");
 	
-	Image* imgmap = new Image();
-	imgmap->initWithImageFile("maps/moscow.png");
-	
-	MapCity* map = new MapCity();
-	map->loadMap(imgmap);
-	map->loadMapObject("maps/moscow.xml");
-	
 	Scroller* scroller = Scroller::create();
 	this->addChild(scroller);
+	
+	MapCity* map = new MapCity();
+	map->loadMap("maps/moscow.png");
+	map->loadMapObject("maps/moscow.xml");
 	map->draw(scroller);
 	
 	
-	//scroller->setScale(2);
-	scroller->setScale(0.5);
+	//UI
+	auto buildings = Buildings::create();
+	buildings->setContentSize(Size(100,visibleSize.height));
+	addChild(buildings);
 	
 	return true;
 }

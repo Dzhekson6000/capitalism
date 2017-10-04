@@ -22,6 +22,7 @@ private:
 	
 public:
 	void loadMap(cocos2d::Image* map);
+	void loadMap(std::string mapPath);
 	void loadMapObject(std::string path);
 	void draw(cocos2d::Node* scene);
 	

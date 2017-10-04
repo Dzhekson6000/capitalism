@@ -1,5 +1,5 @@
 #include "Cell.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 
 const std::unordered_map<int, std::string> Cell::_cellsName
 		                                     {
@@ -28,14 +28,13 @@ Cell::Cell()
 
 bool Cell::initTile()
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type));
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type));
 	if( !sf )
 	{
 		return false;
 	}
 	
 	return Sprite::initWithSpriteFrame(sf);
-	
 }
 
 int Cell::getFrame()

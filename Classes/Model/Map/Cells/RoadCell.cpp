@@ -1,5 +1,5 @@
 #include "RoadCell.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 
 RoadCell::RoadCell()
 {
@@ -8,7 +8,7 @@ RoadCell::RoadCell()
 
 bool RoadCell::initTile()
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), getFrame());
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), getFrame());
 	if( !sf )
 	{
 		return false;

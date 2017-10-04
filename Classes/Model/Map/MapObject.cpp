@@ -1,5 +1,5 @@
 #include "MapObject.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 
 MapObject::MapObject()
 {
@@ -33,7 +33,7 @@ void MapObject::parserObject(tinyxml2::XMLElement* object)
 
 bool MapObject::initObject()
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame(_group, _name, 1);
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame(_group, _name, 1);
 	if( !sf )
 	{
 		return false;

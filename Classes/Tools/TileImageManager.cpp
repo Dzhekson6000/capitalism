@@ -1,29 +1,29 @@
-#include "ImageManager.h"
+#include "TileImageManager.h"
 
 USING_NS_CC;
 
-ImageManager* ImageManager::_imageManager = nullptr;
+TileImageManager* TileImageManager::_imageManager = nullptr;
 
-ImageManager* ImageManager::getInstance()
+TileImageManager* TileImageManager::getInstance()
 {
 	if (_imageManager == nullptr)
 	{
-		_imageManager = new ImageManager();
+		_imageManager = new TileImageManager();
 	}
 	return _imageManager;
 }
 
-ImageManager::ImageManager()
+TileImageManager::TileImageManager()
 {
 	
 }
 
-ImageManager::~ImageManager()
+TileImageManager::~TileImageManager()
 {
 	releaseImage();
 }
 
-void ImageManager::releaseImage()
+void TileImageManager::releaseImage()
 {
 	for(auto group: _groups)
 	{
@@ -40,7 +40,7 @@ void ImageManager::releaseImage()
 	_groups.clear();
 }
 
-void ImageManager::parserSprites(XMLElement* sprites)
+void TileImageManager::parserSprites(XMLElement* sprites)
 {
 	std::string name = sprites->Attribute("name");
 	std::string path = _spritesRoot + "/" + sprites->Attribute("image");
@@ -53,7 +53,7 @@ void ImageManager::parserSprites(XMLElement* sprites)
 	}
 }
 
-void ImageManager::parserSprite(XMLElement* sprite, std::string& path, ImageManager::Group* group)
+void TileImageManager::parserSprite(XMLElement* sprite, std::string& path, TileImageManager::Group* group)
 {
 	SpriteItem* spriteItem = new SpriteItem();
 	std::string name = sprite->Attribute("name");
@@ -113,7 +113,7 @@ void ImageManager::parserSprite(XMLElement* sprite, std::string& path, ImageMana
 	group->sprites.insert(make_pair(name, spriteItem));
 }
 
-bool ImageManager::parseCoords(std::string coords, cocos2d::Rect & rect, cocos2d::Vec2& vec)
+bool TileImageManager::parseCoords(std::string coords, cocos2d::Rect & rect, cocos2d::Vec2& vec)
 {
 	std::string delimiter = ",";
 	std::string s[6];
@@ -141,7 +141,7 @@ bool ImageManager::parseCoords(std::string coords, cocos2d::Rect & rect, cocos2d
 	return true;
 }
 
-cocos2d::SpriteFrame* ImageManager::getFrame(std::string group, std::string sprite, int frame)
+cocos2d::SpriteFrame* TileImageManager::getFrame(std::string group, std::string sprite, int frame)
 {
 	auto g = _groups.find(group);
 	if ( g == _groups.end() ) {

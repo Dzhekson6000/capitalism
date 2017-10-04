@@ -1,5 +1,5 @@
 #include "FactoryCells.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 #include "Model/Map/Cells/RoadCell.h"
 #include "Model/Map/Cells/RailRoadCell.h"
 #include "Model/Map/Cells/ParkCell.h"
@@ -46,7 +46,7 @@ Cell* FactoryCells::createCell(MapCity* map, IsoPoint point, int type)
 
 void FactoryCells::addTreeCell(Cell* cell)
 {
-	SpriteFrame* sf = ImageManager::getInstance()->getFrame("tiles", "tree");
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", "tree");
 	if( !sf )
 	{
 		return;

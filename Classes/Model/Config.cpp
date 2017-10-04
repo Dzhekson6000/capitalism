@@ -1,7 +1,7 @@
 #include "Config.h"
 #include "cocos2d.h"
 #include "tinyxml2/tinyxml2.h"
-#include "Tools/ImageManager.h"
+#include "Tools/TileImageManager.h"
 
 USING_NS_CC;
 using namespace tinyxml2;
@@ -27,11 +27,11 @@ bool Config::loadConfigFile(const std::string &path)
 	{
 		if( strcmp(e->Value(), "sprites_root") == 0)
 		{
-			ImageManager::getInstance()->setSpritesRoot(e->GetText());
+			TileImageManager::getInstance()->setSpritesRoot(e->GetText());
 		}
 		else if( strcmp(e->Value(), "sprites") == 0)
 		{
-			ImageManager::getInstance()->parserSprites(e);
+			TileImageManager::getInstance()->parserSprites(e);
 		}
 	}
 	

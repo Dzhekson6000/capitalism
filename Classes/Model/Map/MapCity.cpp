@@ -42,6 +42,13 @@ void MapCity::loadMap(cocos2d::Image* map)
 	
 }
 
+void MapCity::loadMap(std::string mapPath)
+{
+	Image* imgmap = new Image();
+	imgmap->initWithImageFile(mapPath);
+	loadMap(imgmap);
+}
+
 void MapCity::loadMapObject(std::string path)
 {
 	XMLDocument xml_doc;

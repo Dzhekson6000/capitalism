@@ -1,5 +1,6 @@
 #include "Buildings.h"
 #include <Tools/TileImageManager.h>
+#include "View/Ui/ItemBuilding.h"
 
 USING_NS_CC;
 
@@ -37,8 +38,12 @@ bool Buildings::initIconBuilding()
 		
 		for(auto sprite: group.second->sprites)
 		{
-			Sprite* icon = Sprite::createWithSpriteFrame(sprite.second->frames[0]);
-			icon->setPosition(50, y);
+			
+			ItemBuilding* icon = ItemBuilding::create();
+			icon->initWithSpriteFrame(sprite.second->frames[0]);
+			icon->setGroupName(group.first);
+			icon->setObjectName(sprite.first);
+			icon->setPosition(Vec2(50, y));
 			icon->setScale(std::min(100/icon->getContentSize().width, 100/icon->getContentSize().height));
 			y+=icon->getContentSize().height*icon->getScale();
 			addChild(icon);

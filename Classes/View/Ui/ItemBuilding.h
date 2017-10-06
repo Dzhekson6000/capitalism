@@ -9,6 +9,8 @@ public:
 	bool initWithSpriteFrame(cocos2d::SpriteFrame* spriteFrame);
 	
 	CREATE_FUNC(ItemBuilding);
+	CC_SYNTHESIZE(std::string, _objectName, ObjectName);
+	CC_SYNTHESIZE(std::string, _groupName,GroupName);
 };
 
 

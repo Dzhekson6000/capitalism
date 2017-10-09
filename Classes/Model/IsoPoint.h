@@ -15,7 +15,7 @@ public:
 	IsoPoint(){};
 	IsoPoint(float x, float y);
 	IsoPoint(int x, int y);
-	void setPoint(float x, float y);
+	void setIsoPoint(float x, float y);
 	
 	int getXCell();
 	int getYCell();

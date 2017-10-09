@@ -2,15 +2,15 @@
 
 IsoPoint::IsoPoint(float x, float y)
 {
-	setPoint(x,y);
+	setIsoPoint(x,y);
 }
 
 IsoPoint::IsoPoint( int x, int y )
 {
-	setPoint(x*23,y*23);
+	setIsoPoint(x*23,y*23);
 }
 
-void IsoPoint::setPoint(float x, float y)
+void IsoPoint::setIsoPoint(float x, float y)
 {
 	_xOriginal = x;
 	_yOriginal = y;

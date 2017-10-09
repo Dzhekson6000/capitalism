@@ -9,65 +9,73 @@ bool Scroller::init()
 		return false;
 	}
 	
-	_moved     = false;
-	_notScroll = false;
+	_isMoving  = false;
 	
-	initTouch();
-	return true;
-}
-
-void Scroller::initTouch()
-{
+	// init touch
 	_touchListener = EventListenerTouchOneByOne::create();
 	_touchListener->onTouchBegan = CC_CALLBACK_2(Scroller::touchBegan, this);
 	_touchListener->onTouchMoved = CC_CALLBACK_2(Scroller::touchMoved, this);
 	_touchListener->onTouchEnded = CC_CALLBACK_2(Scroller::touchEnded, this);
 	getEventDispatcher()->addEventListenerWithFixedPriority(_touchListener, 100);
+	
+	return true;
 }
 
 bool Scroller::touchBegan(Touch* touch, Event* event)
 {
-	if( !_moved )
-	{
-		_moved     = true;
-		_xPosition = touch->getLocation().x;
-		_yPosition = touch->getLocation().y;
-	}
-	
 	_offsetPoint = touch->getLocation();
 	return true;
 }
 
 void Scroller::touchMoved(Touch* touch, Event* event)
 {
-	auto size = Director::getInstance()->getWinSize();
-	
-	if( touch->getLocation().x < 0 || touch->getLocation().x > size.width )
+	Point loc = touch->getLocation();
+	if( !inWindow(loc))
 	{
 		return;
 	}
 	
-	if( _moved && isScrollMap(touch, _offsetPoint))
+	if(isScrollMap(loc, _offsetPoint))
 	{
-		this->setPositionX(this->getPositionX() + (touch->getLocation().x - _xPosition));
-		this->setPositionY(this->getPositionY() + (touch->getLocation().y - _yPosition));
+		this->setPositionX(this->getPositionX() + (loc.x - _offsetPoint.x));
+		this->setPositionY(this->getPositionY() + (loc.y - _offsetPoint.y));
 		
-		_xPosition = touch->getLocation().x;
-		_yPosition = touch->getLocation().y;
-		
+		_offsetPoint=loc;
+		_isMoving= true;
 	}
 	
 }
 
-bool Scroller::isScrollMap(Touch* touch, const Point point)
-{
-	return (std::abs(point.x - touch->getLocation().x) > 20 || std::abs(
-			point.y - touch->getLocation()
-			               .y) > 20) && !_notScroll;
-}
-
 void Scroller::touchEnded(Touch* touch, Event* event)
 {
-	_offsetPoint = touch->getLocation();
-	_moved       = false;
+	if(_isMoving)
+	{
+		_isMoving=false;
+	}
+	else
+	{
+		onClick(touch->getLocation());
+	}
+}
+
+bool Scroller::inWindow(const cocos2d::Vec2 &point)
+{
+	auto size = Director::getInstance()->getWinSize();
+	if( point.x < 0 || point.x > size.width )
+	{
+		return false;
+	}
+	return true;
+}
+
+bool Scroller::isScrollMap(cocos2d::Point &touch, const Point point)
+{
+	return (std::abs(point.x - touch.x) > 20 ||
+			std::abs(point.y - touch.y) > 20);
+}
+
+void Scroller::onClick(const cocos2d::Point point)
+{
+	Point offset = getPosition();
+	CCLOG("Click (%f, %f)", point.x - offset.x, point.y - offset.y);
 }

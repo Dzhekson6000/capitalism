@@ -6,21 +6,22 @@
 class Scroller:public cocos2d::Layer
 {
 private:
-	void initTouch();
 	cocos2d::EventListenerTouchOneByOne* _touchListener;
 	
-	bool  _moved;
-	float _xPosition;
-	float _yPosition;
+	bool  _isMoving;
 	cocos2d::Point _offsetPoint;
-
+	
+	bool inWindow(const cocos2d::Point &point);
+	
 public:
-	virtual bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
-	virtual void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
-	virtual void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+	void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
+	void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+	
+	virtual void onClick(const cocos2d::Point point);
+	
 	virtual bool init();
-	bool isScrollMap(cocos2d::Touch* touch, const cocos2d::Point point);
-	bool  _notScroll;
+	bool isScrollMap(cocos2d::Point &touch, const cocos2d::Point point);
 	
 	CREATE_FUNC(Scroller);
 };

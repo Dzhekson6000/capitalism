@@ -1,5 +1,7 @@
 #include "Scroller.h"
 
+USING_NS_CC;
+
 bool Scroller::init()
 {
 	if( !Layer::init())

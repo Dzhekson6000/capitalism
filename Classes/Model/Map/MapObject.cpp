@@ -1,5 +1,5 @@
 #include "MapObject.h"
-#include "Tools/TileImageManager.h"
+#include "Controller/TileImageManager.h"
 
 MapObject::MapObject()
 {

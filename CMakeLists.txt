@@ -72,12 +72,13 @@ ELSE()
 	IF(CMAKE_BUILD_TYPE MATCHES Debug)
 		ADD_DEFINITIONS(-DCOCOS2D_DEBUG=1)
 	ENDIF()
-	set(CMAKE_C_COMPILER "/usr/bin/clang" CACHE string "clang compiler" FORCE)
-	set(CMAKE_CXX_COMPILER "/usr/bin/clang++" CACHE string "clang compiler" FORCE)
 
-	set(LDFLAGS "${LDFLAGS} -fuse-ld=lld")
+	if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+		set(LDFLAGS "${LDFLAGS} -fuse-ld=lld")
+	endif()
 
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -stdlib=libc++")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
 
@@ -134,16 +135,16 @@ SET(GAME_SRC
 	${PLATFORM_SPECIFIC_SRC}
 	Classes/View/Scroller.cpp
 	Classes/Model/IsoPoint.cpp
-	Classes/Model/Map/MapCity.cpp
+	Classes/Controller/LoaderMap.cpp
 	Classes/Model/Config.cpp
-	Classes/Tools/TileImageManager.cpp
+	Classes/Controller/TileImageManager.cpp
 	Classes/Model/Map/Cell.cpp
-	Classes/Model/Map/FactoryCells.cpp
+	Classes/Controller/FactoryCells.cpp
 	Classes/Model/Map/Cells/RoadCell.cpp
 	Classes/Model/Map/Cells/RailRoadCell.cpp
 	Classes/Model/Map/Cells/ParkCell.cpp
 	Classes/Model/Map/MapObject.cpp
-	Classes/View/Ui/Button.cpp Classes/View/Ui/ItemBuilding.cpp Classes/View/Ui/ItemBuilding.h Classes/View/Ui/Buildings.cpp Classes/View/Ui/Buildings.h)
+	Classes/View/Ui/Button.cpp Classes/View/Ui/ItemBuilding.cpp Classes/View/Ui/ItemBuilding.h Classes/View/Ui/Buildings.cpp Classes/View/Ui/Buildings.h Classes/Model/Map/World.cpp Classes/Model/Map/World.h Classes/Model/Map/MapCity.cpp Classes/Model/Map/MapCity.h Classes/Controller/LoaderConfig.cpp Classes/Controller/LoaderConfig.h)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -152,11 +153,11 @@ SET(GAME_HEADERS
 	${PLATFORM_SPECIFIC_HEADERS}
 	Classes/View/Scroller.h
 	Classes/Model/IsoPoint.h
-	Classes/Model/Map/MapCity.h
+	Classes/Controller/LoaderMap.h
 	Classes/Model/Config.h
-	Classes/Tools/TileImageManager.h
+	Classes/Controller/TileImageManager.h
 	Classes/Model/Map/Cell.h
-	Classes/Model/Map/FactoryCells.h
+	Classes/Controller/FactoryCells.h
 	Classes/Model/Map/Cells/RoadCell.h
 	Classes/Model/Map/Cells/RailRoadCell.h
 	Classes/Model/Map/Cells/ParkCell.h

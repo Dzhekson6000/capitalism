@@ -1,9 +1,8 @@
 #include "GameScene.h"
-#include "Model/Map/MapCity.h"
-#include "Model/Config.h"
-#include "View/Scroller.h"
+#include "Controller/LoaderConfig.h"
+#include "Model/Map/World.h"
+#include "Controller/LoaderMap.h"
 #include "View/Ui/Buildings.h"
-
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -20,16 +19,16 @@ bool GameScene::init()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin      = Director::getInstance()->getVisibleOrigin();
 	
-	Config* config = new Config();
-	config->loadConfigFile("configs/sprites.xml");
+	LoaderConfig loaderConfig;
+	loaderConfig.loadConfigFile("configs/sprites.xml");
 	
-	Scroller* scroller = Scroller::create();
-	this->addChild(scroller);
+	auto world = World::create();
+	this->addChild(world);
 	
-	MapCity* map = new MapCity();
+	LoaderMap* map = new LoaderMap(world);
 	map->loadMap("maps/moscow.png");
-	map->loadMapObject("maps/moscow.xml");
-	map->draw(scroller);
+	//map->loadMapObject("maps/moscow.xml");
+	map->draw();
 	
 	
 	//UI

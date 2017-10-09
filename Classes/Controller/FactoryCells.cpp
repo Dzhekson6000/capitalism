@@ -1,5 +1,5 @@
 #include "FactoryCells.h"
-#include "Tools/TileImageManager.h"
+#include "TileImageManager.h"
 #include "Model/Map/Cells/RoadCell.h"
 #include "Model/Map/Cells/RailRoadCell.h"
 #include "Model/Map/Cells/ParkCell.h"

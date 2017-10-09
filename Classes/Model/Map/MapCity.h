@@ -1,34 +1,31 @@
-#ifndef CAPITALISM_MAP_H
-#define CAPITALISM_MAP_H
+#ifndef CAPITALISM_MAPCITY_H
+#define CAPITALISM_MAPCITY_H
 
 #include "cocos2d.h"
 #include "MapObject.h"
-#include <vector>
 
 class MapCity
 {
+private:
+	CC_SYNTHESIZE(int, _widthMap,Width);
+	CC_SYNTHESIZE(int, _heightMap, Height);
+	CC_SYNTHESIZE(int, _countChenal, CountChenal);
+	
+	CC_SYNTHESIZE_READONLY(std::vector<MapObject*>, _mapObjects, MapObject);
+	
+	CC_SYNTHESIZE(cocos2d::Image*, _map, Landscape);
 public:
 	MapCity();
 	~MapCity();
-private:
-	cocos2d::Image *_map;
-	int _widthMap;
-	int _heightMap;
-	int _countChenal;
 	
-	std::vector<MapObject*> _mapObjects;
+	void release();
 	
-	void releaseMap();
-	
-public:
-	void loadMap(cocos2d::Image* map);
-	void loadMap(std::string mapPath);
-	void loadMapObject(std::string path);
-	void draw(cocos2d::Node* scene);
+	void addObject(MapObject* object);
 	
 	unsigned char *getPixel(int x, int y);
 	int getType(int x, int y);
+
 };
 
 
-#endif //CAPITALISM_MAP_H
+#endif //CAPITALISM_MAPCITY_H

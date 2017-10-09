@@ -7,9 +7,7 @@
 #include "Model/IsoPoint.h"
 #include "MapCity.h"
 
-USING_NS_CC;
-
-class Cell:public Sprite
+class Cell:public cocos2d::Sprite
 {
 public:
 	

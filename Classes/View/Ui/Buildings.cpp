@@ -1,5 +1,5 @@
 #include "Buildings.h"
-#include <Tools/TileImageManager.h>
+#include <Controller/TileImageManager.h>
 #include "View/Ui/ItemBuilding.h"
 
 USING_NS_CC;

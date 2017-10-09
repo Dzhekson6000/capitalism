@@ -1,5 +1,5 @@
 #include "Cell.h"
-#include "Tools/TileImageManager.h"
+#include "Controller/TileImageManager.h"
 
 const std::unordered_map<int, std::string> Cell::_cellsName
 		                                     {

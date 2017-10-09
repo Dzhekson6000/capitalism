@@ -45,5 +45,5 @@ bool MapObject::initObject()
 void MapObject::setIsoPoint(const IsoPoint isoPoint)
 {
 	_isoPoint = isoPoint;
-	setPosition(Vec2(_isoPoint.getX(), _isoPoint.getY()));
+	setPosition(_isoPoint);
 }

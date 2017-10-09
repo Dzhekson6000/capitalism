@@ -3,30 +3,24 @@
 
 #include "cocos2d.h"
 
-class IsoPoint
+class IsoPoint: public cocos2d::Point
 {
 private:
-	//isometric coordinates
-	float _x;
-	float _y;
-	//real coordinates
-	float _xOriginal;
-	float _yOriginal;
 	void updateIsometric();
-
 public:
+	//real coordinates
+	CC_SYNTHESIZE_READONLY(float, _xOriginal, XOriginal);
+	CC_SYNTHESIZE_READONLY(float, _yOriginal, YOriginal);
+	
 	IsoPoint(){};
 	IsoPoint(float x, float y);
 	IsoPoint(int x, int y);
-	float getX(){return _x; };
-	float getY(){return _y; };
-	float getXOriginal(){return _xOriginal; };
-	float getYOriginal(){return _yOriginal; };
+	void setPoint(float x, float y);
+	
 	int getXCell();
 	int getYCell();
 	void setXCell(int x);
 	void setYCell(int y);
-	void setPoint(float x, float y);
 };
 
 

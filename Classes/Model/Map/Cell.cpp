@@ -74,7 +74,7 @@ bool Cell::checkSameType(int x, int y)
 void Cell::setIsoPoint(const IsoPoint isoPoint)
 {
 	_isoPoint = isoPoint;
-	setPosition(Vec2(_isoPoint.getX(), _isoPoint.getY()));
+	setPosition(_isoPoint);
 }
 
 std::string Cell::getNameCellOfPixel(const unsigned char* pixel)

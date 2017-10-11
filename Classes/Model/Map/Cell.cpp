@@ -63,7 +63,8 @@ int Cell::getFrame()
 
 int Cell::getTypeOffset(int x, int y)
 {
-	return _map->getType(_isoPoint.getXCell()+x, _isoPoint.getYCell()+y);
+	Point p = _isoPoint.getCell();
+	return _map->getType(p.x+x, p.y+y);
 }
 
 bool Cell::checkSameType(int x, int y)

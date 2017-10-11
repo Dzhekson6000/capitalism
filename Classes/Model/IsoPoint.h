@@ -5,22 +5,18 @@
 
 class IsoPoint: public cocos2d::Point
 {
-private:
-	void updateIsometric();
 public:
-	//real coordinates
-	CC_SYNTHESIZE_READONLY(float, _xOriginal, XOriginal);
-	CC_SYNTHESIZE_READONLY(float, _yOriginal, YOriginal);
-	
-	IsoPoint(){};
-	IsoPoint(float x, float y);
+	IsoPoint();
+	IsoPoint(cocos2d::Point point);
 	IsoPoint(int x, int y);
-	void setIsoPoint(float x, float y);
+	IsoPoint(float x, float y);
 	
-	int getXCell();
-	int getYCell();
-	void setXCell(int x);
-	void setYCell(int y);
+	cocos2d::Point getCell();
+	
+	void isoToScreen(float x, float y);
+	void screenToIso(float x, float y);
+	
+	CC_SYNTHESIZE_READONLY(cocos2d::Point, _isoPoint, Original);
 };
 
 

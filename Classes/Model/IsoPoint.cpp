@@ -1,46 +1,38 @@
 #include "IsoPoint.h"
 
+IsoPoint::IsoPoint()
+{}
+
+IsoPoint::IsoPoint(cocos2d::Point point):IsoPoint(point.x,point.y)
+{}
+
+IsoPoint::IsoPoint( int x, int y ):IsoPoint((float)x*23,(float)y*23)
+{
+}
+
 IsoPoint::IsoPoint(float x, float y)
 {
-	setIsoPoint(x,y);
+	isoToScreen(x,y);
 }
 
-IsoPoint::IsoPoint( int x, int y )
+void IsoPoint::isoToScreen(float x, float y)
 {
-	setIsoPoint(x*23,y*23);
+	_isoPoint.x = x;
+	_isoPoint.y = y;
+	this->x = x-y;
+	this->y = (x+y)/2;
 }
 
-void IsoPoint::setIsoPoint(float x, float y)
+void IsoPoint::screenToIso(float x, float y)
 {
-	_xOriginal = x;
-	_yOriginal = y;
-	updateIsometric();
+	this->x = x;
+	this->y = y;
+	_isoPoint.x = y + x / 2;
+	_isoPoint.y = y - x / 2;
+	
 }
 
-void IsoPoint::updateIsometric()
+cocos2d::Point IsoPoint::getCell()
 {
-	x = _xOriginal-_yOriginal;
-	y = (_xOriginal+_yOriginal)/2;
-}
-
-int IsoPoint::getXCell()
-{
-	return floor(_xOriginal/23);
-}
-
-int IsoPoint::getYCell()
-{
-	return floor(_yOriginal/23);
-}
-
-void IsoPoint::setXCell(int x)
-{
-	_xOriginal = x*23;
-	updateIsometric();
-}
-
-void IsoPoint::setYCell(int y)
-{
-	_yOriginal = y*23;
-	updateIsometric();
+	return cocos2d::Point(floor(_isoPoint.x/23+0.5f),floor(_isoPoint.y/23+0.5f));
 }

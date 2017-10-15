@@ -144,7 +144,14 @@ SET(GAME_SRC
 	Classes/Model/Map/Cells/RailRoadCell.cpp
 	Classes/Model/Map/Cells/ParkCell.cpp
 	Classes/Model/Map/MapObject.cpp
-	Classes/View/Ui/Button.cpp Classes/View/Ui/ItemBuilding.cpp Classes/View/Ui/ItemBuilding.h Classes/View/Ui/Buildings.cpp Classes/View/Ui/Buildings.h Classes/Model/Map/World.cpp Classes/Model/Map/World.h Classes/Model/Map/MapCity.cpp Classes/Model/Map/MapCity.h Classes/Controller/LoaderConfig.cpp Classes/Controller/LoaderConfig.h)
+	Classes/View/Ui/Button.cpp
+	Classes/View/Ui/ItemBuilding.cpp
+	Classes/View/Ui/Buildings.cpp
+	Classes/Model/Map/World.cpp
+	Classes/Model/Map/MapCity.cpp
+	Classes/Controller/LoaderConfig.cpp
+	Classes/Controller/BuildingController.cpp
+	)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -163,6 +170,12 @@ SET(GAME_HEADERS
 	Classes/Model/Map/Cells/ParkCell.h
 	Classes/Model/Map/MapObject.h
 	Classes/View/Ui/Button.h
+	Classes/View/Ui/ItemBuilding.h
+	Classes/View/Ui/Buildings.h
+	Classes/Model/Map/World.h
+	Classes/Model/Map/MapCity.h
+	Classes/Controller/LoaderConfig.h
+	Classes/Controller/BuildingController.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

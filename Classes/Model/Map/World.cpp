@@ -1,18 +1,23 @@
 #include "World.h"
+#include "Controller/BuildingController.h"
+World::World():_map(nullptr)
+{
+}
 
-World::World():
-_map(nullptr)
+World::~World()
 {
 }
 
 bool World::init()
 {
-	if(!Scroller::init())
+	if( !Scroller::init())
 	{
 		return false;
 	}
 	
-	_landscape=Layer::create();
+	BuildingController::getInstance()->setWorld(this);
+	
+	_landscape = Layer::create();
 	addChild(_landscape);
 	
 	return true;

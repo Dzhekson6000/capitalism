@@ -9,6 +9,7 @@ class World: public Scroller
 {
 private:
 	World();
+	~World();
 	bool init();
 	
 	Layer* _landscape;

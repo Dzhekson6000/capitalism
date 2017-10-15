@@ -1,4 +1,5 @@
 #include "ItemBuilding.h"
+#include "Controller/BuildingController.h"
 
 USING_NS_CC;
 
@@ -11,7 +12,8 @@ bool ItemBuilding::initWithSpriteFrame(cocos2d::SpriteFrame* spriteFrame)
 			case ui::Widget::TouchEventType::BEGAN:
 				break;
 			case ui::Widget::TouchEventType::ENDED:
-				CCLOG("Click to %s:%s",_groupName.c_str(), _objectName.c_str());
+				BuildingController::getInstance()->onSelectItem(_groupName, _objectName);
+				BuildingController::getInstance()->setBuildingMode(true);
 				break;
 			default:
 				break;

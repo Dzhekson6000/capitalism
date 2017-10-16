@@ -32,7 +32,12 @@ void IsoPoint::screenToIso(float x, float y)
 	
 }
 
-cocos2d::Point IsoPoint::getCell()
+void IsoPoint::reductionToCell()
+{
+	isoToScreen(floor(_isoPoint.x/23+0.5f)*23, floor(_isoPoint.y/23+0.5f)*23);
+}
+
+cocos2d::Point IsoPoint::getCell() const
 {
 	return cocos2d::Point(floor(_isoPoint.x/23+0.5f),floor(_isoPoint.y/23+0.5f));
 }

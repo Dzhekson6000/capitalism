@@ -2,6 +2,7 @@
 #include "Controller/LoaderConfig.h"
 #include "Model/Map/World.h"
 #include "Controller/LoaderMap.h"
+#include "Controller/LoaderMapObject.h"
 #include "View/Ui/Buildings.h"
 
 cocos2d::Scene* GameScene::createScene()
@@ -25,11 +26,13 @@ bool GameScene::init()
 	auto world = World::create();
 	this->addChild(world);
 	
-	LoaderMap* map = new LoaderMap(world);
-	map->loadMap("maps/moscow.png");
-	//map->loadMapObject("maps/moscow.xml");
-	map->draw();
+	LoaderMap loaderMap(world);
+	loaderMap.loadMap("maps/moscow.png");
 	
+	LoaderMapObject loaderMapObject(world);
+	loaderMapObject.loadMapObjectFile("maps/test.xml");
+	
+	loaderMap.draw();
 	
 	//UI
 	auto buildings = Buildings::create();

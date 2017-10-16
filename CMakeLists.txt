@@ -151,7 +151,7 @@ SET(GAME_SRC
 	Classes/Model/Map/MapCity.cpp
 	Classes/Controller/LoaderConfig.cpp
 	Classes/Controller/BuildingController.cpp
-	)
+	Classes/Controller/LoaderMapObject.cpp)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -176,6 +176,7 @@ SET(GAME_HEADERS
 	Classes/Model/Map/MapCity.h
 	Classes/Controller/LoaderConfig.h
 	Classes/Controller/BuildingController.h
+	Classes/Controller/LoaderMapObject.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

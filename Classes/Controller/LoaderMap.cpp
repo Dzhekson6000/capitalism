@@ -43,32 +43,12 @@ void LoaderMap::loadMap(std::string mapPath)
 	loadMap(imgmap);
 }
 
-void LoaderMap::loadMapObject(std::string path)
-{
-	MapCity* map = _world->getMap();
-	XMLDocument xml_doc;
-	xml_doc.LoadFile(FileUtils::getInstance()->fullPathForFilename(path).c_str());
-	
-	XMLNode* root = xml_doc.FirstChildElement("area")->FirstChildElement("objects");
-	
-	for( XMLElement* e = root->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
-	{
-		if( strcmp(e->Value(), "house") == 0)
-		{
-			MapObject* object = MapObject::create();
-			object->parserObject(e);
-			object->initObject();
-			map->addObject(object);
-		}
-	}
-}
-
 void LoaderMap::draw()
 {
 	MapCity* map = _world->getMap();
-	for( int x = map->getWidth()-1; x >= 0; x-- )
+	for( int x = 50/*map->getWidth()*/-1; x >= 0; x-- )
 	{
-		for( int y = map->getHeight()-1; y >= 0; y-- )
+		for( int y = 50/*map->getHeight()*/-1; y >= 0; y-- )
 		{
 			IsoPoint point(x, y);
 			Cell* cell = FactoryCells::getInstance()->createCell(map, point, map->getType(x, y));

@@ -3,22 +3,20 @@
 
 #include "Model/IsoPoint.h"
 #include "cocos2d.h"
-#include "tinyxml2/tinyxml2.h"
 
 USING_NS_CC;
 
 class MapObject:public Sprite
 {
 public:
-	int _id;
-	int _width;
-	int _length;
-	int _height;
+	CC_SYNTHESIZE(int, _id, IdTile);
+	CC_SYNTHESIZE(int, _width, WidthTile);
+	CC_SYNTHESIZE(int, _length, LengthTile);
+	CC_SYNTHESIZE(int, _height, HeightTile);
+
+	CC_SYNTHESIZE(std::string, _group, GroupTile);
+	CC_SYNTHESIZE(std::string, _name, NameTile);
 	
-	std::string _group;
-	std::string _name;
-	
-	void parserObject(tinyxml2::XMLElement* object);
 	virtual bool initObject();
 	
 	void setIsoPoint(const IsoPoint isoPoint);

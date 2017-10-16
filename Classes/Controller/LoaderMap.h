@@ -2,7 +2,6 @@
 #define CAPITALISM_LOADERMAP_H
 
 #include "cocos2d.h"
-#include <vector>
 #include "Model/Map/World.h"
 
 class LoaderMap
@@ -16,7 +15,6 @@ private:
 public:
 	void loadMap(cocos2d::Image* mapImage);
 	void loadMap(std::string mapPath);
-	void loadMapObject(std::string path);
 	void draw();
 };
 

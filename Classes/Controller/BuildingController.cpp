@@ -1,4 +1,5 @@
 #include "BuildingController.h"
+#include "Controller/TileImageManager.h"
 
 BuildingController* BuildingController::_buildingController = nullptr;
 
@@ -25,15 +26,21 @@ BuildingController::~BuildingController()
 
 void BuildingController::onSelectItem(std::string groupName, std::string objectName)
 {
-	
+	_groupName = groupName;
+	_objectName = objectName;
+	setBuildingMode(true);
 }
 
 void BuildingController::onMouseMove(Event* event)
 {
 	EventMouse* e = (EventMouse*)event;
-	std::string str = "MousePosition X:";
-	str = str + std::to_string(e->getCursorX()) + " Y:" + std::to_string(e->getCursorY());
-	//CCLOG(str.c_str());
+	Point point(e->getCursorX(),e->getCursorY());
+	point.y+=Director::getInstance()->getVisibleSize().height;
+	Point pointRelativeWorld = _world->getOffsetPoint(point);
+	IsoPoint iso;
+	iso.screenToIso(pointRelativeWorld.x, pointRelativeWorld.y);
+	iso.reductionToCell();
+	_object->setIsoPoint(iso);
 }
 
 void BuildingController::setBuildingMode(bool buildingMode)
@@ -46,10 +53,18 @@ void BuildingController::setBuildingMode(bool buildingMode)
 	if(buildingMode)
 	{
 		initMouseEvent();
+		_object=MapObject::create();
+		_object->setGroupTile(_groupName);
+		_object->setNameTile(_objectName);
+		_object->initObject();
+		_world->getMap()->addObject(_object);
+		_world->addChild(_object);
 	}
 	else
 	{
 		clearMouseEvent();
+		_world->getMap()->removeObject(_object);
+		_world->removeChild(_object);
 	}
 	_buildingMode=buildingMode;
 	

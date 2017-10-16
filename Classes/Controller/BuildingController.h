@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "Model/Map/World.h"
+#include "Model/Map/MapObject.h"
 
 USING_NS_CC;
 
@@ -30,6 +31,8 @@ private:
 	bool _buildingMode;
 	EventDispatcher* _eventDispatcher;
 	EventListenerMouse* _mouseListener;
+	MapObject* _object;
+	
 };
 
 

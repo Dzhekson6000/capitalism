@@ -2,6 +2,7 @@
 #define CAPITALISM_SCROLLER_H
 
 #include "cocos2d.h"
+#include "Model/IsoPoint.h"
 
 class Scroller:public cocos2d::Layer
 {
@@ -19,6 +20,7 @@ public:
 	void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
 	
 	virtual void onClick(const cocos2d::Point point);
+	cocos2d::Point getOffsetPoint(const cocos2d::Point point);
 	
 	virtual bool init();
 	bool isScrollMap(cocos2d::Point &touch, const cocos2d::Point point);

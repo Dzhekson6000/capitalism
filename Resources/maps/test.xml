@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<area left="0" top="0" width="300" length="300">
+	<objects>
+		<house id="673519" x="0" y="0" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="1773" w="4.0"/>
+			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
+		</house>
+		<house id="673519" x="3" y="3" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="1773" w="4.0"/>
+			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
+		</house>
+		<house id="673519" x="3" y="0" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="1773" w="4.0"/>
+			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
+		</house>
+		<house id="673519" x="0" y="3" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
+			<inh type="Жители" q="1773" w="4.0"/>
+			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
+		</house>
+	</objects>
+</area>

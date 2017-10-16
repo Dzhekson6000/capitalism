@@ -21,6 +21,7 @@ public:
 	void release();
 	
 	void addObject(MapObject* object);
+	void removeObject(MapObject* object);
 	
 	unsigned char *getPixel(int x, int y);
 	int getType(int x, int y);

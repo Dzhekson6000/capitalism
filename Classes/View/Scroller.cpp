@@ -84,3 +84,9 @@ void Scroller::onClick(const cocos2d::Point point)
 	
 	CCLOG("Click (%f, %f)", cell.x, cell.y);
 }
+
+Point Scroller::getOffsetPoint(const cocos2d::Point point)
+{
+	Point ret = point - getPosition();
+	return ret;
+}

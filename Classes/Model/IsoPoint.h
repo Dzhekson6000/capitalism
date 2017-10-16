@@ -11,10 +11,11 @@ public:
 	IsoPoint(int x, int y);
 	IsoPoint(float x, float y);
 	
-	cocos2d::Point getCell();
+	cocos2d::Point getCell() const;
 	
 	void isoToScreen(float x, float y);
 	void screenToIso(float x, float y);
+	void reductionToCell();
 	
 	CC_SYNTHESIZE_READONLY(cocos2d::Point, _isoPoint, Original);
 };

@@ -66,19 +66,21 @@ IF(MSVC)
 		SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:libcmt")
 	ENDIF()
 	ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS
-					-wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
-					-wd4514 -wd4056 -wd4996 -wd4099)
+			-wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
+			-wd4514 -wd4056 -wd4996 -wd4099)
 ELSE()
 	IF(CMAKE_BUILD_TYPE MATCHES Debug)
 		ADD_DEFINITIONS(-DCOCOS2D_DEBUG=1)
 	ENDIF()
 
-	if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
-		set(LDFLAGS "${LDFLAGS} -fuse-ld=lld")
-	endif()
+	IF(NOT (CMAKE_CXX_COMPILER MATCHES clang AND CMAKE_C_COMPILER MATCHES clang))
+		MESSAGE(FATAL_ERROR "Please, generate cmake file witch -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++")
+	ENDIF()
+	#set(CMAKE_C_COMPILER "/usr/bin/clang" CACHE string "clang compiler" FORCE)
+	#set(CMAKE_CXX_COMPILER "/usr/bin/clang++" CACHE string "clang compiler" FORCE)
 
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -stdlib=libc++")
+
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
 

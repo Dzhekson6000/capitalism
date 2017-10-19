@@ -80,6 +80,7 @@ ELSE()
 	#set(CMAKE_CXX_COMPILER "/usr/bin/clang++" CACHE string "clang compiler" FORCE)
 
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -stdlib=libc++")
+	set(LIBRARIES ${LIBRARIES} c++experimental)
 
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
@@ -153,7 +154,7 @@ SET(GAME_SRC
 	Classes/Model/Map/MapCity.cpp
 	Classes/Controller/LoaderConfig.cpp
 	Classes/Controller/BuildingController.cpp
-	Classes/Controller/LoaderMapObject.cpp)
+	Classes/Controller/LoaderMapObject.cpp Classes/View/Ui/SpritesHeetLoader.cpp Classes/View/Ui/SpritesHeetLoader.h)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -206,7 +207,7 @@ ELSE()
 	ADD_EXECUTABLE(${APP_NAME} ${GAME_SRC} ${GAME_HEADERS})
 ENDIF()
 
-TARGET_LINK_LIBRARIES(${APP_NAME} cocos2d)
+TARGET_LINK_LIBRARIES(${APP_NAME} cocos2d ${LIBRARIES})
 
 SET(APP_BIN_DIR "${CMAKE_BINARY_DIR}/bin")
 

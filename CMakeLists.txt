@@ -74,12 +74,14 @@ ELSE()
 	ENDIF()
 
 	IF(NOT (CMAKE_CXX_COMPILER MATCHES clang AND CMAKE_C_COMPILER MATCHES clang))
-		MESSAGE(FATAL_ERROR "Please, generate cmake file witch -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++")
+		MESSAGE(WARNING_ERROR "Please, generate cmake file witch -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++")
 	ENDIF()
-	#set(CMAKE_C_COMPILER "/usr/bin/clang" CACHE string "clang compiler" FORCE)
-	#set(CMAKE_CXX_COMPILER "/usr/bin/clang++" CACHE string "clang compiler" FORCE)
 
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -stdlib=libc++")
+	IF(CMAKE_CXX_COMPILER MATCHES clang AND CMAKE_C_COMPILER MATCHES clang)
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+	ENDIF()
+
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 	set(LIBRARIES ${LIBRARIES} c++experimental)
 
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
@@ -138,7 +140,7 @@ SET(GAME_SRC
 	${PLATFORM_SPECIFIC_SRC}
 	Classes/View/Scroller.cpp
 	Classes/Model/IsoPoint.cpp
-	Classes/Controller/LoaderMap.cpp
+	Classes/Controller/Loader/LoaderMap.cpp
 	Classes/Model/Config.cpp
 	Classes/Controller/TileImageManager.cpp
 	Classes/Model/Map/Cell.cpp
@@ -152,9 +154,9 @@ SET(GAME_SRC
 	Classes/View/Ui/Buildings.cpp
 	Classes/Model/Map/World.cpp
 	Classes/Model/Map/MapCity.cpp
-	Classes/Controller/LoaderConfig.cpp
+	Classes/Controller/Loader/LoaderConfig.cpp
 	Classes/Controller/BuildingController.cpp
-	Classes/Controller/LoaderMapObject.cpp Classes/View/Ui/SpritesHeetLoader.cpp Classes/View/Ui/SpritesHeetLoader.h)
+	Classes/Controller/Loader/LoaderMapObject.cpp Classes/Controller/Loader/SpritesHeetLoader.cpp Classes/Controller/Loader/SpritesHeetLoader.h)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -163,7 +165,7 @@ SET(GAME_HEADERS
 	${PLATFORM_SPECIFIC_HEADERS}
 	Classes/View/Scroller.h
 	Classes/Model/IsoPoint.h
-	Classes/Controller/LoaderMap.h
+	Classes/Controller/Loader/LoaderMap.h
 	Classes/Model/Config.h
 	Classes/Controller/TileImageManager.h
 	Classes/Model/Map/Cell.h
@@ -177,9 +179,9 @@ SET(GAME_HEADERS
 	Classes/View/Ui/Buildings.h
 	Classes/Model/Map/World.h
 	Classes/Model/Map/MapCity.h
-	Classes/Controller/LoaderConfig.h
+	Classes/Controller/Loader/LoaderConfig.h
 	Classes/Controller/BuildingController.h
-	Classes/Controller/LoaderMapObject.h
+	Classes/Controller/Loader/LoaderMapObject.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

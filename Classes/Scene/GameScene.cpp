@@ -1,8 +1,8 @@
 #include "GameScene.h"
-#include "Controller/LoaderConfig.h"
+#include "Controller/Loader/LoaderConfig.h"
 #include "Model/Map/World.h"
-#include "Controller/LoaderMap.h"
-#include "Controller/LoaderMapObject.h"
+#include "Controller/Loader/LoaderMap.h"
+#include "Controller/Loader/LoaderMapObject.h"
 #include "View/Ui/Buildings.h"
 
 cocos2d::Scene* GameScene::createScene()

@@ -1,5 +1,5 @@
 #include "LoaderMap.h"
-#include "FactoryCells.h"
+#include "Controller/FactoryCells.h"
 #include "tinyxml2/tinyxml2.h"
 
 using namespace tinyxml2;

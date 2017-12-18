@@ -3,6 +3,9 @@
 
 #include "ui/CocosGUI.h"
 
+/**
+ * View класс с постройками
+ */
 class Buildings: public cocos2d::ui::ScrollView
 {
 private:

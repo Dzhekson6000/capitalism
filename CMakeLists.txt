@@ -149,9 +149,9 @@ SET(GAME_SRC
 	Classes/Model/Map/Cells/RailRoadCell.cpp
 	Classes/Model/Map/Cells/ParkCell.cpp
 	Classes/Model/Map/MapObject.cpp
-	Classes/View/Ui/Button.cpp
-	Classes/View/Ui/ItemBuilding.cpp
-	Classes/View/Ui/Buildings.cpp
+	Classes/View/Ui/buildings/Button.cpp
+	Classes/View/Ui/buildings/ItemBuilding.cpp
+	Classes/View/Ui/buildings/Buildings.cpp
 	Classes/Model/Map/World.cpp
 	Classes/Model/Map/MapCity.cpp
 	Classes/Controller/Loader/LoaderConfig.cpp
@@ -174,9 +174,9 @@ SET(GAME_HEADERS
 	Classes/Model/Map/Cells/RailRoadCell.h
 	Classes/Model/Map/Cells/ParkCell.h
 	Classes/Model/Map/MapObject.h
-	Classes/View/Ui/Button.h
-	Classes/View/Ui/ItemBuilding.h
-	Classes/View/Ui/Buildings.h
+	Classes/View/Ui/buildings/Button.h
+	Classes/View/Ui/buildings/ItemBuilding.h
+	Classes/View/Ui/buildings/Buildings.h
 	Classes/Model/Map/World.h
 	Classes/Model/Map/MapCity.h
 	Classes/Controller/Loader/LoaderConfig.h

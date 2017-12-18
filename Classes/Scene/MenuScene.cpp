@@ -1,5 +1,5 @@
 #include "MenuScene.h"
-#include "View/Ui/Button.h"
+#include "View/Ui/buildings/Button.h"
 #include "GameScene.h"
 
 USING_NS_CC;

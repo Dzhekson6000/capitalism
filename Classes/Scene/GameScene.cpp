@@ -3,7 +3,7 @@
 #include "Model/Map/World.h"
 #include "Controller/Loader/LoaderMap.h"
 #include "Controller/Loader/LoaderMapObject.h"
-#include "View/Ui/Buildings.h"
+#include "View/Ui/buildings/Buildings.h"
 
 cocos2d::Scene* GameScene::createScene()
 {

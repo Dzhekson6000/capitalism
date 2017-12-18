@@ -13,8 +13,21 @@ public:
 	
 	cocos2d::Point getCell() const;
 	
+	/**
+	 * конвертация изометрических координат в экранные
+	 * @param x изометрический X
+	 * @param y изометрический Y
+	 */
 	void isoToScreen(float x, float y);
+	/**
+	 * конвертация экранных координат в изометрические
+	 * @param x изометрический X
+	 * @param y изометрический Y
+	 */
 	void screenToIso(float x, float y);
+	/**
+	 * сокращение координат до размеров клетки
+	 */
 	void reductionToCell();
 	
 	CC_SYNTHESIZE_READONLY(cocos2d::Point, _isoPoint, Original);

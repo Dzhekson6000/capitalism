@@ -46,6 +46,7 @@ Cell* FactoryCells::createCell(MapCity* map, IsoPoint point, int type)
 
 void FactoryCells::addTreeCell(Cell* cell)
 {
+	/* TODO: нужно переделать и вынести добавление деревьев в Cell. Что бы было типо cell.tree = true*/
 	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", "tree");
 	if( !sf )
 	{

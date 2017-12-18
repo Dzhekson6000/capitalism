@@ -10,8 +10,22 @@ class LoaderMapObject
 public:
 	LoaderMapObject(World* world);
 public:
+	/**
+	 * загружает объекты из файла
+	 * @param path путь к xml файл файлу с объектами
+	 */
 	void loadMapObjectFile(std::string path);
+	/**
+	 * загружает объекты из файла
+	 * @param doc xml элемент файла
+	 */
 	void loadMapObjectFile(tinyxml2::XMLDocument& doc);
+	
+	/**
+	 * Создаёт и возвращает объект из xml элемента объекта
+	 * @param object xml элемента объекта
+	 * @return созданный объект
+	 */
 	MapObject* createObjectOfXML(tinyxml2::XMLElement* object);
 
 private:

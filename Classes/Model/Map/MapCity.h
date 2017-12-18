@@ -18,12 +18,30 @@ public:
 	MapCity();
 	~MapCity();
 	
+	/**
+	 * выгрузка карты и объектов
+	 */
 	void release();
 	
+	/**
+	 * добавление объекта
+	 * @param object
+	 */
 	void addObject(MapObject* object);
+	/**
+	 * удаление объекта
+	 * @param object
+	 */
 	void removeObject(MapObject* object);
 	
+	
 	unsigned char *getPixel(int x, int y);
+	/**
+	 * получение номера типа тайла
+	 * @param x
+	 * @param y
+	 * @return номер тайла
+	 */
 	int getType(int x, int y);
 
 };

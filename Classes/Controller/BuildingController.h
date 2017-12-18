@@ -12,6 +12,12 @@ class BuildingController
 public:
 	static BuildingController* getInstance();
 	
+	/**
+	 * Функция вызывает при выборе объекта для строительства
+	 *
+	 * @param groupName из какой группы объект
+	 * @param objectName имя объекта
+	 */
 	void onSelectItem(std::string groupName, std::string objectName);
 	
 	void onMouseMove(Event* event);
@@ -25,12 +31,18 @@ private:
 	BuildingController();
 	~BuildingController();
 	
+	EventListenerMouse* _mouseListener;
+	/**
+	 * Функция привязывающая строющийся объект к мыши
+	 */
 	void initMouseEvent();
+	/**
+	 * Функция отвязывающая строющийся объект от мыши
+	 */
 	void clearMouseEvent();
 	
 	bool _buildingMode;
 	EventDispatcher* _eventDispatcher;
-	EventListenerMouse* _mouseListener;
 	MapObject* _object;
 	
 };

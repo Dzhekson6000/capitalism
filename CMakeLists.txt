@@ -78,7 +78,8 @@ ELSE()
 	ENDIF()
 
 	IF(CMAKE_CXX_COMPILER MATCHES clang AND CMAKE_C_COMPILER MATCHES clang)
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -fno-limit-debug-info")
+		set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-limit-debug-info")
 	ENDIF()
 
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
@@ -156,7 +157,10 @@ SET(GAME_SRC
 	Classes/Model/Map/MapCity.cpp
 	Classes/Controller/Loader/LoaderConfig.cpp
 	Classes/Controller/BuildingController.cpp
-	Classes/Controller/Loader/LoaderMapObject.cpp Classes/Controller/Loader/SpritesHeetLoader.cpp Classes/Controller/Loader/SpritesHeetLoader.h)
+	Classes/Controller/Loader/LoaderMapObject.cpp
+	Classes/Controller/Loader/SpritesHeetLoader.cpp
+	Classes/tools/ConvertingImgMapToTMX.cpp
+	)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -182,6 +186,8 @@ SET(GAME_HEADERS
 	Classes/Controller/Loader/LoaderConfig.h
 	Classes/Controller/BuildingController.h
 	Classes/Controller/Loader/LoaderMapObject.h
+	Classes/Controller/Loader/SpritesHeetLoader.h
+	Classes/tools/ConvertingImgMapToTMX.h
 	)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})

@@ -1,0 +1,11 @@
+#ifndef CAPITALISM_СUTORIGINALATLAS_H
+#define CAPITALISM_СUTORIGINALATLAS_H
+
+
+class СutOriginalAtlas
+{
+
+};
+
+
+#endif //CAPITALISM_СUTORIGINALATLAS_H

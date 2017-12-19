@@ -11,8 +11,6 @@ private:
 	CC_SYNTHESIZE(int, _heightMap, Height);
 	CC_SYNTHESIZE(int, _countChenal, CountChenal);
 	
-	CC_SYNTHESIZE_READONLY(std::vector<MapObject*>, _mapObjects, MapObject);
-	
 	CC_SYNTHESIZE(cocos2d::Image*, _map, Landscape);
 public:
 	MapCity();
@@ -23,19 +21,9 @@ public:
 	 */
 	void release();
 	
-	/**
-	 * добавление объекта
-	 * @param object
-	 */
-	void addObject(MapObject* object);
-	/**
-	 * удаление объекта
-	 * @param object
-	 */
-	void removeObject(MapObject* object);
-	
 	
 	unsigned char *getPixel(int x, int y);
+	
 	/**
 	 * получение номера типа тайла
 	 * @param x

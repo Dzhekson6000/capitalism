@@ -62,9 +62,4 @@ void LoaderMap::draw()
 			}
 		}
 	}
-	
-	for(auto o: map->getMapObject())
-	{
-		_world->addChild(o);
-	}
 }

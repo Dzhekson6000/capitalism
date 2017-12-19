@@ -57,14 +57,12 @@ void BuildingController::setBuildingMode(bool buildingMode)
 		_object->setGroupTile(_groupName);
 		_object->setNameTile(_objectName);
 		_object->initObject();
-		_world->getMap()->addObject(_object);
-		_world->addChild(_object);
+		_world->addObject(_object);
 	}
 	else
 	{
 		clearMouseEvent();
-		_world->getMap()->removeObject(_object);
-		_world->removeChild(_object);
+		_world->removeObject(_object);
 	}
 	_buildingMode=buildingMode;
 	

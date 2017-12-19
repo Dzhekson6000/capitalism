@@ -160,7 +160,7 @@ SET(GAME_SRC
 	Classes/Controller/Loader/LoaderMapObject.cpp
 	Classes/Controller/Loader/SpritesHeetLoader.cpp
 	Classes/tools/ConvertingImgMapToTMX.cpp
-	)
+	Classes/tools/СutOriginalAtlas.cpp Classes/tools/СutOriginalAtlas.h)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h

@@ -3,7 +3,7 @@
 MapCity::MapCity():
 	_map(nullptr)
 {
-	
+
 }
 
 MapCity::~MapCity()
@@ -17,28 +17,6 @@ void MapCity::release()
 	{
 		delete _map;
 		_map = nullptr;
-	}
-	
-	for(auto obj: _mapObjects)
-	{
-		delete obj;
-	}
-}
-
-void MapCity::addObject(MapObject* object)
-{
-	_mapObjects.push_back(object);
-}
-
-void MapCity::removeObject(MapObject* object)
-{
-	for( auto iter = _mapObjects.begin(); iter != _mapObjects.end(); ++iter )
-	{
-		if( *iter == object )
-		{
-			_mapObjects.erase( iter );
-			break;
-		}
 	}
 }
 

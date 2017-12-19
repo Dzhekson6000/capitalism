@@ -16,6 +16,7 @@ private:
 	bool init();
 	
 	Layer* _landscape;
+	Layer* _objects; ///объекты(постройки) и деревья
 public:
 	CREATE_FUNC(World);
 	
@@ -24,6 +25,17 @@ public:
 	 * @param cell тайл который нужно добавить
 	 */
 	void addLandscapeTile(Cell* cell);
+	
+	/**
+	 * добавление объекта
+	 * @param object
+	 */
+	void addObject(MapObject* object);
+	/**
+	 * удаление объекта
+	 * @param object
+	 */
+	void removeObject(MapObject* object);
 	
 	CC_SYNTHESIZE(MapCity*, _map, Map)
 };

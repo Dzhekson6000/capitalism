@@ -15,14 +15,13 @@ void LoaderMapObject::loadMapObjectFile(std::string path)
 
 void LoaderMapObject::loadMapObjectFile(tinyxml2::XMLDocument &doc)
 {
-	MapCity* map = _world->getMap();
 	XMLNode* root = doc.FirstChildElement("area")->FirstChildElement("objects");
 	
 	for( XMLElement* e = root->FirstChildElement(); e != NULL; e = e->NextSiblingElement())
 	{
 		if( strcmp(e->Value(), "house") == 0)
 		{
-			map->addObject(createObjectOfXML(e));
+			_world->addObject(createObjectOfXML(e));
 		}
 	}
 }

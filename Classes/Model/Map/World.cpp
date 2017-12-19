@@ -1,5 +1,6 @@
 #include "World.h"
 #include "Controller/BuildingController.h"
+
 World::World():_map(nullptr)
 {
 }

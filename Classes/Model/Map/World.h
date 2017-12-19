@@ -16,7 +16,7 @@ private:
 	bool init();
 	
 	Layer* _landscape;
-	Layer* _objects; ///объекты(постройки) и деревья
+	Layer* _objects; ///< объекты(постройки) и деревья
 public:
 	CREATE_FUNC(World);
 	

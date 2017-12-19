@@ -19,6 +19,8 @@ public:
 	 * @param y изометрический Y
 	 */
 	void isoToScreen(float x, float y);
+	
+	void screenToIso(const cocos2d::Point &point);
 	/**
 	 * @brief конвертация экранных координат в изометрические
 	 * @param x изометрический X

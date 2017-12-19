@@ -5,7 +5,7 @@ BuildingController* BuildingController::_buildingController = nullptr;
 
 BuildingController* BuildingController::getInstance()
 {
-	if (_buildingController == nullptr)
+	if( _buildingController == nullptr )
 	{
 		_buildingController = new BuildingController();
 	}
@@ -26,34 +26,35 @@ BuildingController::~BuildingController()
 
 void BuildingController::onSelectItem(std::string groupName, std::string objectName)
 {
-	_groupName = groupName;
+	_groupName  = groupName;
 	_objectName = objectName;
 	setBuildingMode(true);
 }
 
 void BuildingController::onMouseMove(Event* event)
 {
-	EventMouse* e = (EventMouse*)event;
-	Point point(e->getCursorX(),e->getCursorY());
-	point.y+=Director::getInstance()->getVisibleSize().height;
+	Point point(((EventMouse*)event)->getCursorX(), ((EventMouse*)event)->getCursorY());
+	point.y += Director::getInstance()->getVisibleSize().height;
+	
 	Point pointRelativeWorld = _world->getOffsetPoint(point);
+	
 	IsoPoint iso;
-	iso.screenToIso(pointRelativeWorld.x, pointRelativeWorld.y);
+	iso.screenToIso(pointRelativeWorld);
 	iso.reductionToCell();
 	_object->setIsoPoint(iso);
 }
 
 void BuildingController::setBuildingMode(bool buildingMode)
 {
-	if(_buildingMode == buildingMode)
+	if( _buildingMode == buildingMode )
 	{
 		return;
 	}
 	
-	if(buildingMode)
+	if( buildingMode )
 	{
 		initMouseEvent();
-		_object=MapObject::create();
+		_object = MapObject::create();
 		_object->setGroupTile(_groupName);
 		_object->setNameTile(_objectName);
 		_object->initObject();
@@ -64,8 +65,20 @@ void BuildingController::setBuildingMode(bool buildingMode)
 		clearMouseEvent();
 		_world->removeObject(_object);
 	}
-	_buildingMode=buildingMode;
+	_buildingMode = buildingMode;
 	
+}
+
+bool BuildingController::getBuildingMode()
+{
+	return _buildingMode;
+}
+
+void BuildingController::onClick()
+{
+	clearMouseEvent();
+	_buildingMode = false;
+	_object = nullptr;
 }
 
 void BuildingController::initMouseEvent()

@@ -1,5 +1,6 @@
 #include <Model/IsoPoint.h>
 #include "Scroller.h"
+#include "Controller/BuildingController.h"
 
 USING_NS_CC;
 
@@ -81,6 +82,12 @@ void Scroller::onClick(const cocos2d::Point point)
 	IsoPoint offset;
 	offset.screenToIso(p.x,p.y);
 	Point cell = offset.getCell();
+	
+	BuildingController* bc = BuildingController::getInstance();
+	if(bc->getBuildingMode())
+	{
+		bc->onClick();
+	}
 	
 	CCLOG("Click (%f, %f)", cell.x, cell.y);
 }

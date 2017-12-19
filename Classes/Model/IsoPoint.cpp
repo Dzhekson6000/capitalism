@@ -23,6 +23,11 @@ void IsoPoint::isoToScreen(float x, float y)
 	this->y = (x+y)/2;
 }
 
+void IsoPoint::screenToIso(const cocos2d::Point &point)
+{
+	screenToIso(point.x, point.y);
+}
+
 void IsoPoint::screenToIso(float x, float y)
 {
 	this->x = x;

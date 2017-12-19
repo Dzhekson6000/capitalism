@@ -34,6 +34,9 @@ public:
 	 * @param buildingMode
 	 */
 	void setBuildingMode(bool buildingMode);
+	bool getBuildingMode();
+	
+	void onClick();
 	
 	CC_SYNTHESIZE(std::string, _objectName, ObjectName);
 	CC_SYNTHESIZE(std::string, _groupName,GroupName);
@@ -53,9 +56,9 @@ private:
 	 */
 	void clearMouseEvent();
 	
-	bool _buildingMode;
+	bool _buildingMode; ///< true = строим объект
 	EventDispatcher* _eventDispatcher;
-	MapObject* _object;
+	MapObject* _object; ///< объект который строим
 	
 };
 

@@ -20,7 +20,19 @@ public:
 	 */
 	void onSelectItem(std::string groupName, std::string objectName);
 	
+	/**
+	 * @brief событие перемещение мыши
+	 * @details изменяем позицию строющегося объекта
+	 * @param event
+	 */
 	void onMouseMove(Event* event);
+	
+	/**
+	 * @brief указываем строим ли бы объект или нет
+	 * @details если true создаётся строющийся объекта инициализируется слушатеь,
+	 *  если false удаляется объекта и слушатель
+	 * @param buildingMode
+	 */
 	void setBuildingMode(bool buildingMode);
 	
 	CC_SYNTHESIZE(std::string, _objectName, ObjectName);

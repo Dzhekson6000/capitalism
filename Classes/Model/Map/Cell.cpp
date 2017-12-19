@@ -1,6 +1,7 @@
 #include "Cell.h"
 #include "Controller/TileImageManager.h"
 
+//TODO:: нужно перенести это в конфиг файл и загружать все именна из конфига
 const std::unordered_map<int, std::string> Cell::_cellsName
 		                                     {
 				                                     { 0,"ground"},

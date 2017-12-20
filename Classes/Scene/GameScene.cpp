@@ -36,7 +36,7 @@ bool GameScene::init()
 	
 	//UI
 	auto buildings = Buildings::create();
-	buildings->setContentSize(Size(100,visibleSize.height));
+	buildings->setContentSize(Size(100, visibleSize.height));
 	addChild(buildings);
 	
 	return true;

@@ -2,23 +2,41 @@
 #define CAPITALISM_BUTTON_H
 
 #include "ui/CocosGUI.h"
+#include "Controller/Loader/LoaderSpriteSheets.h"
+
+#include <vector>
 
 class Button: public cocos2d::ui::Button
 {
 public:
-	enum class Color
+	enum Color
 	{
-		BLUE,
-		GREEN,
-		GREY,
-		RED,
-		YELLOW
+		BLUE = 0,
+		GRAY = 1,
+		GREEN = 2,
+		OGANGE = 3,
+		RED = 4,
+		YELLOW = 5
 	};
 	
-	static Button* create(Color color = Color::BLUE);
+	enum class WidgetType
+	{
+		BUTTON,
+		CHECKMARK,
+		CROSS,
+		TICK,
+		CIRCLE,
+		PANEL,
+		SLIDERDOWN,
+		SLIDERLEFT,
+		SLIDERRIGHT,
+		SLIDERUP
+	};
+	static Button* create(WidgetType type = WidgetType::BUTTON, Color color = Color::BLUE);
 private:
-	bool init(Color color);
-	
+	static std::vector<std::string> _colors;
+private:
+	bool _init(WidgetType type, Color color);
 };
 
 

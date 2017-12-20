@@ -23,7 +23,7 @@ bool MenuScene::init()
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin      = Director::getInstance()->getVisibleOrigin();
 	
-	auto button = Button::create();
+	auto button = Button::create(Button::WidgetType::BUTTON, Button::Color::YELLOW);
 	
 	button->setTitleText("Game Scene");
 	button->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));

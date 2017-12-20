@@ -1,9 +1,19 @@
 #include "Button.h"
 
-Button* Button::create(Button::Color color)
+std::vector<std::string> Button::_colors =
+		                         {
+				                         "blue_",
+				                         "gray_",
+				                         "green_",
+				                         "orange_",
+				                         "red_",
+				                         "yellow_"
+		                         };
+
+Button* Button::create(WidgetType type, Color color)
 {
 	Button *pRet = new(std::nothrow) Button();
-    if (pRet && pRet->init(color))
+    if (pRet && pRet->_init(type, color))
     {
         pRet->autorelease();
         return pRet;
@@ -15,8 +25,10 @@ Button* Button::create(Button::Color color)
     }
 }
 
-bool Button::init(Button::Color color)
+bool Button::_init(WidgetType type, Color color)
 {
+	LoaderSpriteSheets* spriteSheets = LoaderSpriteSheets::GetInstance();
+	
 	//TODO:: пока что просто используем 1 цвет
-	return cocos2d::ui::Button::init("ui/PNG/blue_button04.png", "ui/PNG/blue_button03.png");
+	return cocos2d::ui::Button::init(_colors[color] + "button04.png", _colors[color] + "button03.png", _colors[color] + "button04.png", TextureResType::PLIST);
 }

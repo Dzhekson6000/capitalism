@@ -81,9 +81,8 @@ ELSE()
 		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -fno-limit-debug-info")
 		set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-limit-debug-info")
 	ENDIF()
-
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
-	set(LIBRARIES ${LIBRARIES} c++experimental)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+	#set(LIBRARIES ${LIBRARIES} c++experimental)
 
 	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
 	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
@@ -158,9 +157,9 @@ SET(GAME_SRC
 	Classes/Controller/Loader/LoaderConfig.cpp
 	Classes/Controller/BuildingController.cpp
 	Classes/Controller/Loader/LoaderMapObject.cpp
-	Classes/Controller/Loader/SpritesHeetLoader.cpp
 	Classes/tools/ConvertingImgMapToTMX.cpp
-	Classes/tools/СutOriginalAtlas.cpp Classes/tools/СutOriginalAtlas.h)
+	Classes/tools/CutOriginalAtlas.cpp
+	Classes/Controller/Loader/LoaderSpriteSheets.cpp)
 
 SET(GAME_HEADERS
 	Classes/AppDelegate.h
@@ -186,9 +185,9 @@ SET(GAME_HEADERS
 	Classes/Controller/Loader/LoaderConfig.h
 	Classes/Controller/BuildingController.h
 	Classes/Controller/Loader/LoaderMapObject.h
-	Classes/Controller/Loader/SpritesHeetLoader.h
 	Classes/tools/ConvertingImgMapToTMX.h
-	)
+	Classes/tools/CutOriginalAtlas.h
+	Classes/Controller/Loader/LoaderSpriteSheets.h)
 
 set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})
 

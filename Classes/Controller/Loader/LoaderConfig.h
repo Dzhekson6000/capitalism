@@ -6,6 +6,11 @@
 class LoaderConfig
 {
 public:
+	/**
+	 * @brief загрузка файлов конфигурации
+	 * @param path путь до конфига
+	 * @return статус выполнения
+	 */
 	bool loadConfigFile(const std::string& path);
 };
 

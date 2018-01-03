@@ -66,8 +66,8 @@ IF(MSVC)
 		SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /NODEFAULTLIB:libcmt")
 	ENDIF()
 	ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS
-			-wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
-			-wd4514 -wd4056 -wd4996 -wd4099)
+					-wd4251 -wd4244 -wd4334 -wd4005 -wd4820 -wd4710
+					-wd4514 -wd4056 -wd4996 -wd4099)
 ELSE()
 	IF(CMAKE_BUILD_TYPE MATCHES Debug)
 		ADD_DEFINITIONS(-DCOCOS2D_DEBUG=1)
@@ -78,17 +78,17 @@ ELSE()
 	ENDIF()
 
 	IF(CMAKE_CXX_COMPILER MATCHES clang AND CMAKE_C_COMPILER MATCHES clang)
-		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -fno-limit-debug-info")
-		set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-limit-debug-info")
+		SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -fno-limit-debug-info")
+		SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-limit-debug-info")
 	ENDIF()
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+	SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 	#set(LIBRARIES ${LIBRARIES} c++experimental)
 
-	set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
-	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
+	SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -g3 -O0")
+	SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -g0 -O3")
 
-	set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall -g3 -O0")
-	set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -g0 -O3")
+	SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall -g3 -O0")
+	SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -g0 -O3")
 ENDIF(MSVC)
 
 SET(PLATFORM_SPECIFIC_SRC)
@@ -133,63 +133,10 @@ IF(WIN32)
 	)
 ENDIF(WIN32)
 
-SET(GAME_SRC
-	Classes/AppDelegate.cpp
-	Classes/Scene/MenuScene.cpp
-	Classes/Scene/GameScene.cpp
-	${PLATFORM_SPECIFIC_SRC}
-	Classes/View/Scroller.cpp
-	Classes/Model/IsoPoint.cpp
-	Classes/Controller/Loader/LoaderMap.cpp
-	Classes/Model/Config.cpp
-	Classes/Controller/TileImageManager.cpp
-	Classes/Model/Map/Cell.cpp
-	Classes/Controller/FactoryCells.cpp
-	Classes/Model/Map/Cells/RoadCell.cpp
-	Classes/Model/Map/Cells/RailRoadCell.cpp
-	Classes/Model/Map/Cells/ParkCell.cpp
-	Classes/Model/Map/MapObject.cpp
-	Classes/View/Ui/buildings/Button.cpp
-	Classes/View/Ui/buildings/ItemBuilding.cpp
-	Classes/View/Ui/buildings/Buildings.cpp
-	Classes/Model/Map/World.cpp
-	Classes/Model/Map/MapCity.cpp
-	Classes/Controller/Loader/LoaderConfig.cpp
-	Classes/Controller/BuildingController.cpp
-	Classes/Controller/Loader/LoaderMapObject.cpp
-	Classes/tools/ConvertingImgMapToTMX.cpp
-	Classes/tools/CutOriginalAtlas.cpp
-	Classes/Controller/Loader/LoaderSpriteSheets.cpp)
+SET(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})
+SET(GAME_SRC ${PLATFORM_SPECIFIC_SRC})
 
-SET(GAME_HEADERS
-	Classes/AppDelegate.h
-	Classes/Scene/MenuScene.h
-	Classes/Scene/GameScene.h
-	${PLATFORM_SPECIFIC_HEADERS}
-	Classes/View/Scroller.h
-	Classes/Model/IsoPoint.h
-	Classes/Controller/Loader/LoaderMap.h
-	Classes/Model/Config.h
-	Classes/Controller/TileImageManager.h
-	Classes/Model/Map/Cell.h
-	Classes/Controller/FactoryCells.h
-	Classes/Model/Map/Cells/RoadCell.h
-	Classes/Model/Map/Cells/RailRoadCell.h
-	Classes/Model/Map/Cells/ParkCell.h
-	Classes/Model/Map/MapObject.h
-	Classes/View/Ui/buildings/Button.h
-	Classes/View/Ui/buildings/ItemBuilding.h
-	Classes/View/Ui/buildings/Buildings.h
-	Classes/Model/Map/World.h
-	Classes/Model/Map/MapCity.h
-	Classes/Controller/Loader/LoaderConfig.h
-	Classes/Controller/BuildingController.h
-	Classes/Controller/Loader/LoaderMapObject.h
-	Classes/tools/ConvertingImgMapToTMX.h
-	Classes/tools/CutOriginalAtlas.h
-	Classes/Controller/Loader/LoaderSpriteSheets.h)
-
-set(GAME_HEADERS ${PLATFORM_SPECIFIC_HEADERS})
+ADD_SUBDIRECTORY("Classes")
 
 # Configure libcocos2d
 SET(BUILD_CPP_EMPTY_TEST OFF CACHE BOOL "turn off build cpp-empty-test")

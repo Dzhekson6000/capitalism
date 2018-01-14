@@ -115,8 +115,8 @@ void TileImageManager::parserSprite(XMLElement* sprite, std::string& path, TileI
 
 bool TileImageManager::parseCoords(std::string coords, cocos2d::Rect & rect, cocos2d::Vec2& vec)
 {
-	std::string delimiter = ",";
 	std::string s[6];
+	std::string delimiter = ",";
 	
 	int i = 0;
 	size_t pos = 0;

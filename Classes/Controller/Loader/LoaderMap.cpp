@@ -34,21 +34,10 @@ void LoaderMap::loadMap(cocos2d::Image* mapImage)
 	}
 	
 	map->setLandscape(mapImage);
-}
 
-void LoaderMap::loadMap(std::string mapPath)
-{
-	Image* imgmap = new Image();
-	imgmap->initWithImageFile(mapPath);
-	loadMap(imgmap);
-}
-
-void LoaderMap::draw()
-{
-	MapCity* map = _world->getMap();
-	for( int x = 50/*map->getWidth()*/-1; x >= 0; x-- )
+	for( int x = 0; x < map->getWidth(); ++x )
 	{
-		for( int y = 50/*map->getHeight()*/-1; y >= 0; y-- )
+		for( int y = 0; y < map->getHeight(); ++y )
 		{
 			IsoPoint point(x, y);
 			Cell* cell = FactoryCells::getInstance()->createCell(map, point, map->getType(x, y));
@@ -62,4 +51,12 @@ void LoaderMap::draw()
 			}
 		}
 	}
+	
+}
+
+void LoaderMap::loadMap(std::string mapPath)
+{
+	Image* imgmap = new Image();
+	imgmap->initWithImageFile(mapPath);
+	loadMap(imgmap);
 }

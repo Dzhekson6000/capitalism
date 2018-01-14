@@ -4,6 +4,9 @@
 #include "cocos2d.h"
 #include "MapObject.h"
 
+/**
+ * Класс города. Хранит в себе карту города.
+ */
 class MapCity
 {
 private:

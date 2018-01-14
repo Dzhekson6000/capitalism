@@ -21,6 +21,19 @@ public:
 	CREATE_FUNC(World);
 	
 	/**
+	 * загружает карту
+	 * создаёт и добавляет тайлы в мир рисуя карту
+	 * @param mapPath путь к картинки карты
+	 */
+	void loadMap(std::string mapPath);
+	
+	/**
+	 * загружает объекты из файла
+	 * @param path путь к xml файл файлу с объектами
+	 */
+	void loadMapObject(std::string path);
+	
+	/**
 	 * добавление тайла ландшафта
 	 * @param cell тайл который нужно добавить
 	 */

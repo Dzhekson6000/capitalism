@@ -18,19 +18,17 @@ private:
 public:
 	/**
 	 * загружает карту
+	 * создаёт и добавляет тайлы в мир рисуя карту
 	 * @param mapImage картинка карты
 	 */
 	void loadMap(cocos2d::Image* mapImage);
 	/**
 	 * загружает карту
+	 * создаёт и добавляет тайлы в мир рисуя карту
 	 * @param mapPath путь к картинки карты
 	 */
 	void loadMap(std::string mapPath);
 	
-	/**
-	 * создаёт и добавляет тайлы в мир рисуя карту
-	 */
-	void draw();
 };
 
 

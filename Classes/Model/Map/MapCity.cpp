@@ -22,7 +22,7 @@ void MapCity::release()
 
 unsigned char* MapCity::getPixel(int x, int y)
 {
-	return _map->getData() + (x + ( _heightMap - y - 1)*_widthMap)*_countChenal;
+	return _map->getData() + (x + y*_widthMap)*_countChenal;
 }
 
 int MapCity::getType(int x, int y)

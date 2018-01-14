@@ -80,7 +80,7 @@ void Scroller::onClick(const cocos2d::Point point)
 {
 	Point p = point - getPosition();
 	IsoPoint offset;
-	offset.screenToIso(p.x,p.y);
+	offset.initOfScreen(p.x,p.y);
 	Point cell = offset.getCell();
 	
 	BuildingController* bc = BuildingController::getInstance();

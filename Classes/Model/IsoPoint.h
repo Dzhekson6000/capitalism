@@ -11,22 +11,11 @@ public:
 	IsoPoint(int x, int y);
 	IsoPoint(float x, float y);
 	
+	void initOfIso(const float x, const float y);
+	void initOfScreen(const float x, const float y);
+	
 	cocos2d::Point getCell() const;
 	
-	/**
-	 * @brief конвертация изометрических координат в экранные
-	 * @param x изометрический X
-	 * @param y изометрический Y
-	 */
-	void isoToScreen(float x, float y);
-	
-	void screenToIso(const cocos2d::Point &point);
-	/**
-	 * @brief конвертация экранных координат в изометрические
-	 * @param x изометрический X
-	 * @param y изометрический Y
-	 */
-	void screenToIso(float x, float y);
 	/**
 	 * @brief сокращение координат до размеров клетки
 	 */

@@ -1,48 +1,44 @@
 #include "IsoPoint.h"
+#include "tools/IsoTools.h"
+#include "Config.h"
 
 IsoPoint::IsoPoint()
-{}
+{
+}
 
-IsoPoint::IsoPoint(cocos2d::Point point):IsoPoint(point.x,point.y)
-{}
+IsoPoint::IsoPoint(cocos2d::Point point)
+{
+	initOfScreen(point.x, point.y);
+}
 
-IsoPoint::IsoPoint( int x, int y ):IsoPoint((float)x*23,(float)y*23)
+IsoPoint::IsoPoint(int x, int y):IsoPoint((float)x*Config::TILE_SIZE, (float)y*Config::TILE_SIZE)
 {
 }
 
 IsoPoint::IsoPoint(float x, float y)
 {
-	isoToScreen(x,y);
+	initOfIso(x, y);
 }
 
-void IsoPoint::isoToScreen(float x, float y)
+void IsoPoint::initOfIso(const float x, const float y)
 {
-	_isoPoint.x = x;
-	_isoPoint.y = y;
-	this->x = x-y;
-	this->y = (x+y)/2;
+	this->_isoPoint = cocos2d::Point(x, y);
+	IsoTools::isoToScreen(x, y, this->x, this->y);
 }
 
-void IsoPoint::screenToIso(const cocos2d::Point &point)
-{
-	screenToIso(point.x, point.y);
-}
-
-void IsoPoint::screenToIso(float x, float y)
+void IsoPoint::initOfScreen(const float x, const float y)
 {
 	this->x = x;
 	this->y = y;
-	_isoPoint.x = y + x / 2;
-	_isoPoint.y = y - x / 2;
-	
+	IsoTools::screenToIso(x, y, _isoPoint.x, _isoPoint.y);
 }
 
 void IsoPoint::reductionToCell()
 {
-	isoToScreen(floor(_isoPoint.x/23+0.5f)*23, floor(_isoPoint.y/23+0.5f)*23);
+	initOfIso(floor(_isoPoint.x/Config::TILE_SIZE + 0.5f)*Config::TILE_SIZE, floor(_isoPoint.y/Config::TILE_SIZE + 0.5f)*Config::TILE_SIZE);
 }
 
 cocos2d::Point IsoPoint::getCell() const
 {
-	return cocos2d::Point(floor(_isoPoint.x/23+0.5f),floor(_isoPoint.y/23+0.5f));
+	return cocos2d::Point(floor(_isoPoint.x/Config::TILE_SIZE + 0.5f), floor(_isoPoint.y/Config::TILE_SIZE + 0.5f));
 }

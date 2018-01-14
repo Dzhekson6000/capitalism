@@ -39,7 +39,7 @@ void BuildingController::onMouseMove(Event* event)
 	Point pointRelativeWorld = _world->getOffsetPoint(point);
 	
 	IsoPoint iso;
-	iso.screenToIso(pointRelativeWorld);
+	iso.initOfScreen(pointRelativeWorld.x,pointRelativeWorld.y);
 	iso.reductionToCell();
 	_object->setIsoPoint(iso);
 }

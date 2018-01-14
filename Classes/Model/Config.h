@@ -4,6 +4,8 @@
 class Config
 {
 public:
+	static constexpr float TILE_SIZE = 23.0;
+	
 	Config();
 	~Config();
 };

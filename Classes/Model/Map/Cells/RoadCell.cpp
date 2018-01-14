@@ -8,13 +8,13 @@ RoadCell::RoadCell()
 
 bool RoadCell::initTile()
 {
-	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), getFrame());
-	if( !sf )
-	{
-		return false;
-	}
+	std::string name = "tiles/";
+	name+=getNameCellOfType(_type);
+	name+="/";
+	name+=std::to_string(1);
+	name+=".png";
 	
-	return Sprite::initWithSpriteFrame(sf);
+	return Sprite::initWithSpriteFrameName(name);
 }
 
 int RoadCell::getFrame()

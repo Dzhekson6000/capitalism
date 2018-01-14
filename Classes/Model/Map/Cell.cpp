@@ -29,13 +29,11 @@ Cell::Cell()
 
 bool Cell::initTile()
 {
-	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type));
-	if( !sf )
-	{
-		return false;
-	}
+	std::string name = "tiles/";
+	name+=getNameCellOfType(_type);
+	name+="/1.png";
 	
-	return Sprite::initWithSpriteFrame(sf);
+	return Sprite::initWithSpriteFrameName(name);
 }
 
 int Cell::getFrame()

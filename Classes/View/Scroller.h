@@ -9,8 +9,8 @@ class Scroller:public cocos2d::Layer
 private:
 	cocos2d::EventListenerTouchOneByOne* _touchListener;
 	
-	bool  _isMoving;
-	cocos2d::Point _offsetPoint;
+	bool  _isMoving; ///< true = идёт перемещение карты
+	cocos2d::Point _offsetPoint; ///< временная переменная что бы фиксировать СУЩЕСТВЕННОЕ смещение
 	
 	/**
 	 * фукция проверки нахождения точки в окне
@@ -23,6 +23,18 @@ public:
 	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
 	void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
 	void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+	
+	/**
+	 * @brief функция перемещения карты по X
+	 * @param offset параметр смещения
+	 */
+	void moveX(float offset);
+	
+	/**
+	 * @brief функция перемещения карты по X
+	 * @param offset параметр смещения
+	 */
+	void moveY(float offset);
 	
 	/**
 	 * событие клика

@@ -60,6 +60,16 @@ void Scroller::touchEnded(Touch* touch, Event* event)
 	}
 }
 
+void Scroller::moveX(float offset)
+{
+	this->setPositionX(this->getPositionX() + offset);
+}
+
+void Scroller::moveY(float offset)
+{
+	this->setPositionY(this->getPositionY() + offset);
+}
+
 bool Scroller::inWindow(const cocos2d::Vec2 &point)
 {
 	auto size = Director::getInstance()->getWinSize();

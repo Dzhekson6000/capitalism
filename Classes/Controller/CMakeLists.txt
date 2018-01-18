@@ -8,6 +8,7 @@ SET(GAME_SRC ${GAME_SRC}
 	Classes/Controller/TileImageManager.cpp
 	Classes/Controller/FactoryCells.cpp
 	Classes/Controller/BuildingController.cpp
+	Classes/Controller/KeyboardController.cpp
 	PARENT_SCOPE
 	)
 
@@ -15,4 +16,5 @@ SET(GAME_HEADERS ${GAME_HEADERS}
 	Classes/Controller/TileImageManager.h
 	Classes/Controller/FactoryCells.h
 	Classes/Controller/BuildingController.h
+	Classes/Controller/KeyboardController.h
 	PARENT_SCOPE)

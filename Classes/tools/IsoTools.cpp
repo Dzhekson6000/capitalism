@@ -1,5 +1,7 @@
 #include "IsoTools.h"
 #include "Model/Camera.h"
+#include "Model/Config.h"
+#include <cmath>
 
 void IsoTools::isoToScreen(const float isoX, const float isoY, float &x, float &y)
 {
@@ -48,3 +50,12 @@ void IsoTools::screenToIso(const float x, const float y, float &isoX, float &iso
 	}
 }
 
+int IsoTools::getCellOfNumber(const float size)
+{
+	return floor(size/Config::TILE_SIZE + 0.5f);
+}
+
+float IsoTools::getNumberOfCell(const int cell)
+{
+	return cell*Config::TILE_SIZE;
+}

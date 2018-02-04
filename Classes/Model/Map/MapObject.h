@@ -6,16 +6,15 @@
 
 USING_NS_CC;
 
+/**
+ * Класс объекта карты. Все тайлы и спрайты на карте это объекты.
+ */
 class MapObject:public Sprite
 {
 public:
-	CC_SYNTHESIZE(int, _id, IdTile);
-	CC_SYNTHESIZE(int, _width, WidthTile);
-	CC_SYNTHESIZE(int, _length, LengthTile);
-	CC_SYNTHESIZE(int, _height, HeightTile);
-
 	CC_SYNTHESIZE(std::string, _group, GroupTile);
 	CC_SYNTHESIZE(std::string, _name, NameTile);
+	CC_SYNTHESIZE(int, _frame, FrameTile);
 	
 	/**
 	 * инициализация объекта. тут загрузка изображения объекта.
@@ -28,7 +27,13 @@ public:
 	 * @param isoPoint
 	 */
 	void setIsoPoint(const IsoPoint isoPoint);
-CC_SYNTHESIZE_READONLY(IsoPoint, _isoPoint, IsoPoint);
+	CC_SYNTHESIZE_READONLY(IsoPoint, _isoPoint, IsoPoint);
+	
+	/**
+	 * @brief рисует текст поверх объекта
+	 * @param text
+	 */
+	void printDebugCell(std::string text);
 	
 	CREATE_FUNC(MapObject)
 protected:

@@ -22,6 +22,20 @@ public:
 	 * @param isoY изометрический Y
 	 */
 	static void screenToIso(const float x, const float y, float &isoX, float &isoY);
+	
+	/**
+	 * Возвращает количество клеток общей длиной в size
+	 * @param size расстояние
+	 * @return количество клеток
+	 */
+	static int getCellOfNumber(const float size);
+	
+	/**
+	 * Возвращает расстояние занимаемое клетками
+	 * @param cell количество клеток
+	 * @return расстояние
+	 */
+	static float getNumberOfCell(const int cell);
 };
 
 

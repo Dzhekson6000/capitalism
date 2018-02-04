@@ -6,14 +6,18 @@ ADD_SUBDIRECTORY("Cells")
 
 SET(GAME_SRC ${GAME_SRC}
 	Classes/Model/Map/Cell.cpp
+	Classes/Model/Map/TypesCell.cpp
 	Classes/Model/Map/MapObject.cpp
 	Classes/Model/Map/World.cpp
 	Classes/Model/Map/MapCity.cpp
+	Classes/Model/Map/GroupObject.cpp
 	PARENT_SCOPE)
 
 SET(GAME_HEADERS ${GAME_HEADERS}
 	Classes/Model/Map/Cell.h
+	Classes/Model/Map/TypesCell.h
 	Classes/Model/Map/MapObject.h
 	Classes/Model/Map/World.h
 	Classes/Model/Map/MapCity.h
+	Classes/Model/Map/GroupObject.h
 	PARENT_SCOPE)

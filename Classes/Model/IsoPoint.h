@@ -14,6 +14,8 @@ public:
 	void initOfIso(const float x, const float y);
 	void initOfScreen(const float x, const float y);
 	
+	void updateScreen();
+	
 	cocos2d::Point getCell() const;
 	
 	/**

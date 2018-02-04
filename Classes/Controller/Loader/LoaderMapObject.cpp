@@ -34,10 +34,10 @@ MapObject* LoaderMapObject::createObjectOfXML(tinyxml2::XMLElement* object)
 	auto width = atoi(object->Attribute("w"));
 	auto length = atoi(object->Attribute("l"));
 	auto height = atoi(object->Attribute("h"));
-	ret->setIdTile(id);
-	ret->setWidthTile(width);
-	ret->setLengthTile(length);
-	ret->setHeightTile(height);
+	//ret->setIdTile(id);
+	//ret->setWidthTile(width);
+	//ret->setLengthTile(length);
+	//ret->setHeightTile(height);
 	
 	std::string delimiter = ":";
 	std::string img = object->Attribute("img");

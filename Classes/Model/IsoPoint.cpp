@@ -1,6 +1,6 @@
 #include "IsoPoint.h"
 #include "tools/IsoTools.h"
-#include "Config.h"
+#include "Model/Config.h"
 
 IsoPoint::IsoPoint()
 {
@@ -11,7 +11,11 @@ IsoPoint::IsoPoint(cocos2d::Point point)
 	initOfScreen(point.x, point.y);
 }
 
-IsoPoint::IsoPoint(int x, int y):IsoPoint((float)x*Config::TILE_SIZE, (float)y*Config::TILE_SIZE)
+IsoPoint::IsoPoint(int x, int y):
+		IsoPoint(
+				(float)IsoTools::getNumberOfCell(x),
+				(float)IsoTools::getNumberOfCell(y)
+		)
 {
 }
 
@@ -33,12 +37,23 @@ void IsoPoint::initOfScreen(const float x, const float y)
 	IsoTools::screenToIso(x, y, _isoPoint.x, _isoPoint.y);
 }
 
+void IsoPoint::updateScreen()
+{
+	IsoTools::isoToScreen(_isoPoint.x, _isoPoint.y, this->x, this->y);
+}
+
 void IsoPoint::reductionToCell()
 {
-	initOfIso(floor(_isoPoint.x/Config::TILE_SIZE + 0.5f)*Config::TILE_SIZE, floor(_isoPoint.y/Config::TILE_SIZE + 0.5f)*Config::TILE_SIZE);
+	initOfIso(
+			IsoTools::getCellOfNumber(_isoPoint.x)*Config::TILE_SIZE,
+			IsoTools::getCellOfNumber(_isoPoint.y)*Config::TILE_SIZE
+	);
 }
 
 cocos2d::Point IsoPoint::getCell() const
 {
-	return cocos2d::Point(floor(_isoPoint.x/Config::TILE_SIZE + 0.5f), floor(_isoPoint.y/Config::TILE_SIZE + 0.5f));
+	return cocos2d::Point(
+			IsoTools::getCellOfNumber(_isoPoint.x),
+			IsoTools::getCellOfNumber(_isoPoint.y)
+	);
 }

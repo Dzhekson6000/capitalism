@@ -3,10 +3,10 @@
 
 #include "View/Scroller.h"
 #include "Model/Map/MapCity.h"
-#include "Model/Map/Cell.h"
+#include "GroupObject.h"
 
 /**
- * класс который хранит в себе всей тайлы ландшафта и объекты
+ * класс который описывает отображаемый мир.
  */
 class World: public Scroller
 {
@@ -15,8 +15,10 @@ private:
 	~World();
 	bool init();
 	
-	Layer* _landscape;
-	Layer* _objects; ///< объекты(постройки) и деревья
+	GroupObject* _objects; ///<  объекты(тайлы, постройки и деревья)
+	
+protected:
+	void onMove() override;
 public:
 	CREATE_FUNC(World);
 	
@@ -37,13 +39,16 @@ public:
 	 * добавление тайла ландшафта
 	 * @param cell тайл который нужно добавить
 	 */
-	void addLandscapeTile(Cell* cell);
+	void addLandscapeTile(MapObject* cell);
+	
+	GroupObject* getObjects();
 	
 	/**
 	 * добавление объекта
 	 * @param object
 	 */
 	void addObject(MapObject* object);
+	
 	/**
 	 * удаление объекта
 	 * @param object

@@ -1,39 +1,19 @@
 #include "Cell.h"
-#include "Controller/TileImageManager.h"
-
-//TODO:: нужно перенести это в конфиг файл и загружать все именна из конфига
-const std::unordered_map<int, std::string> Cell::_cellsName
-		                                     {
-				                                     { 0,"ground"},
-				                                     { 1,"tundra"},
-				                                     { 2,"dryground"},
-				                                     { 4, "road"},
-				                                     { 8,"railroad"},
-				                                     { 12,"crossage"},
-				                                     { 128,"grass"},
-				                                     { 129,"desert"},
-				                                     { 130,"plage"},
-				                                     { 131,"city"},
-				                                     { 132,"court"},
-				                                     { 133,"park"},
-				                                     { 134,"asphault"},
-				                                     { 135,"square"},
-				                                     { 136,"industrial"},
-				                                     { 255,"water"},
-				                                     { 36,"tree"}
-		                                     };
+#include "TypesCell.h"
 
 Cell::Cell()
 {
 }
 
-bool Cell::initTile()
+bool Cell::initObject()
 {
-	std::string name = "tiles/";
-	name+=getNameCellOfType(_type);
-	name+="/1.png";
+	_group = "tiles";
+	_name = TypesCell::getNameCellOfType(_type);
+	_frame = 1;
 	
-	return Sprite::initWithSpriteFrameName(name);
+	//printDebugCell(std::to_string((int)_isoPoint.getCell().x)+":"+std::to_string((int)_isoPoint.getCell().y));
+	
+	return MapObject::initObject();
 }
 
 int Cell::getFrame()
@@ -69,34 +49,4 @@ int Cell::getTypeOffset(int x, int y)
 bool Cell::checkSameType(int x, int y)
 {
 	return getTypeOffset(x, y) == _type;
-}
-
-void Cell::setIsoPoint(const IsoPoint isoPoint)
-{
-	_isoPoint = isoPoint;
-	setPosition(_isoPoint);
-}
-
-std::string Cell::getNameCellOfPixel(const unsigned char* pixel)
-{
-	return getNameCellOfType(*(pixel + 2));
-}
-
-std::string Cell::getNameCellOfType(const int type)
-{
-	auto name = _cellsName.find(type);
-	if(name == _cellsName.end())
-	{
-		CCLOG("Cell name id %d not found", type);
-		return "";
-	}
-	return name->second;
-}
-
-void Cell::printDebugCell(std::string text)
-{
-	auto label = Label::createWithTTF(text.c_str(), "fonts/arial.ttf", 14);
-	label->setTextColor(Color4B::RED);
-	label->setPositionNormalized(getAnchorPoint());
-	addChild(label, 2);
 }

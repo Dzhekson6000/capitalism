@@ -44,6 +44,7 @@ void Scroller::touchMoved(Touch* touch, Event* event)
 		
 		_offsetPoint=loc;
 		_isMoving= true;
+		onMove();
 	}
 	
 }
@@ -62,11 +63,13 @@ void Scroller::touchEnded(Touch* touch, Event* event)
 
 void Scroller::moveX(float offset)
 {
+	onMove();
 	this->setPositionX(this->getPositionX() + offset);
 }
 
 void Scroller::moveY(float offset)
 {
+	onMove();
 	this->setPositionY(this->getPositionY() + offset);
 }
 

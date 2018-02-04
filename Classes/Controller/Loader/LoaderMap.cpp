@@ -1,6 +1,7 @@
 #include "LoaderMap.h"
 #include "Controller/FactoryCells.h"
 #include "tinyxml2/tinyxml2.h"
+#include "tools/IsoTools.h"
 
 using namespace tinyxml2;
 
@@ -16,14 +17,22 @@ LoaderMap::~LoaderMap()
 void LoaderMap::loadMap(cocos2d::Image* mapImage)
 {
 	MapCity* map = _world->getMap();
-	if(!map)
+	if( !map )
 	{
-		map=new MapCity();
+		map = new MapCity();
 		_world->setMap(map);
 	}
 	map->release();
-	map->setWidth(mapImage->getWidth());
-	map->setHeight(mapImage->getHeight());
+	map->setSize(Size(mapImage->getWidth(), mapImage->getHeight()));
+	
+	
+	_world->getObjects()->setSizeGroup(
+			Size(//Note:нужен размер в координатах, а не в клетках
+					IsoTools::getNumberOfCell(mapImage->getWidth()),
+					IsoTools::getNumberOfCell(mapImage->getHeight())
+			)
+	);
+	
 	if( mapImage->hasAlpha())
 	{
 		map->setCountChenal(4);
@@ -34,10 +43,10 @@ void LoaderMap::loadMap(cocos2d::Image* mapImage)
 	}
 	
 	map->setLandscape(mapImage);
-
-	for( int x = 0; x < map->getWidth(); ++x )
+	
+	for( int x = 0; x < map->getSize().width; ++x )
 	{
-		for( int y = 0; y < map->getHeight(); ++y )
+		for( int y = 0; y < map->getSize().height; ++y )
 		{
 			IsoPoint point(x, y);
 			Cell* cell = FactoryCells::getInstance()->createCell(map, point, map->getType(x, y));
@@ -47,7 +56,7 @@ void LoaderMap::loadMap(cocos2d::Image* mapImage)
 			}
 			else
 			{
-				CCLOG("Unable to render tile to position (%d,%d)",x,y);
+				CCLOG("Unable to render tile to position (%d,%d)", x, y);
 			}
 		}
 	}

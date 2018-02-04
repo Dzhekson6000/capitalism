@@ -10,11 +10,11 @@
 class MapCity
 {
 private:
-	CC_SYNTHESIZE(int, _widthMap,Width);
-	CC_SYNTHESIZE(int, _heightMap, Height);
 	CC_SYNTHESIZE(int, _countChenal, CountChenal);
 	
 	CC_SYNTHESIZE(cocos2d::Image*, _map, Landscape);
+	
+	Size _size;
 public:
 	MapCity();
 	~MapCity();
@@ -34,7 +34,9 @@ public:
 	 * @return номер тайла
 	 */
 	int getType(int x, int y);
-
+	
+	Size getSize() const;
+	void setSize(const Size& size);
 };
 
 

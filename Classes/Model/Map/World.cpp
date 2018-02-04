@@ -2,6 +2,7 @@
 #include "Controller/BuildingController.h"
 #include "Controller/Loader/LoaderMap.h"
 #include "Controller/Loader/LoaderMapObject.h"
+#include "tools/IsoTools.h"
 
 World::World():_map(nullptr)
 {
@@ -9,7 +10,7 @@ World::World():_map(nullptr)
 
 World::~World()
 {
-	if(_map)
+	if( _map )
 	{
 		delete _map;
 	}
@@ -24,10 +25,7 @@ bool World::init()
 	
 	BuildingController::getInstance()->setWorld(this);
 	
-	_landscape = Layer::create();
-	addChild(_landscape);
-	
-	_objects = Layer::create();
+	_objects = GroupObject::create();
 	addChild(_objects);
 	
 	return true;
@@ -37,6 +35,8 @@ void World::loadMap(std::string mapPath)
 {
 	LoaderMap loaderMap(this);
 	loaderMap.loadMap(mapPath);
+	
+	_objects->updateInvisible(getPosition());
 }
 
 void World::loadMapObject(std::string path)
@@ -45,17 +45,27 @@ void World::loadMapObject(std::string path)
 	//loaderMapObject.loadMapObjectFile(path);
 }
 
-void World::addLandscapeTile(Cell* cell)
+void World::addLandscapeTile(MapObject* cell)
 {
-	_landscape->addChild(cell);
+	_objects->addObject(cell);
+}
+
+GroupObject* World::getObjects()
+{
+	return _objects;
 }
 
 void World::addObject(MapObject* object)
 {
-	_objects->addChild(object);
+	//_objects->addChild(object);
 }
 
 void World::removeObject(MapObject* object)
 {
-	_objects->removeChild(object);
+	//_objects->removeChild(object);
+}
+
+void World::onMove()
+{
+	_objects->updateInvisible(getPosition());
 }

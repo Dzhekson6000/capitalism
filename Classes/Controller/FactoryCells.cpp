@@ -3,6 +3,7 @@
 #include "Model/Map/Cells/RoadCell.h"
 #include "Model/Map/Cells/RailRoadCell.h"
 #include "Model/Map/Cells/ParkCell.h"
+#include "Model/Map/TypesCell.h"
 
 FactoryCells* FactoryCells::_factoryCells = nullptr;
 
@@ -29,16 +30,16 @@ Cell* FactoryCells::createCell(MapCity* map, IsoPoint point, int type)
 	ret->setMap(map);
 	ret->setIsoPoint(point);
 	
-	if(Cell::getNameCellOfType(type) == "tree")
+	if(TypesCell::getNameCellOfType(type) == "tree")
 	{
 		ret->setType(0);
-		ret->initTile();
+		ret->initObject();
 		//addTreeCell(ret);
 	}
 	else
 	{
 		ret->setType(type);
-		ret->initTile();
+		ret->initObject();
 	}
 	
 	return ret;

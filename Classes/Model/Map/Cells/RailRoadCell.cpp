@@ -1,5 +1,6 @@
 #include "RailRoadCell.h"
 #include "Controller/TileImageManager.h"
+#include "Model/Map/TypesCell.h"
 
 RailRoadCell::RailRoadCell()
 {
@@ -9,7 +10,7 @@ RailRoadCell::RailRoadCell()
 bool RailRoadCell::initTile()
 {
 	int frame = getFrame();
-	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), frame);
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", TypesCell::getNameCellOfType(_type), frame);
 	if( !sf )
 	{
 		return false;

@@ -1,5 +1,4 @@
 #include "MapObject.h"
-#include "Controller/TileImageManager.h"
 
 MapObject::MapObject()
 {
@@ -8,13 +7,14 @@ MapObject::MapObject()
 
 bool MapObject::initObject()
 {
-	SpriteFrame* sf = TileImageManager::getInstance()->getFrame(_group, _name, 1);
-	if( !sf )
+	std::string fileName = _group+"/"+_name;
+	if(_frame!=0)
 	{
-		return false;
+		fileName+="/"+std::to_string(_frame);
 	}
+	fileName+=".png";
 	
-	return Sprite::initWithSpriteFrame(sf);
+	return Sprite::initWithSpriteFrameName(fileName);
 }
 
 void MapObject::setIsoPoint(const IsoPoint isoPoint)
@@ -22,4 +22,12 @@ void MapObject::setIsoPoint(const IsoPoint isoPoint)
 	_isoPoint = isoPoint;
 	setLocalZOrder(10000-(isoPoint.getCell().x + isoPoint.getCell().y));//TODO: временный хак что бы правильно рисовать по Z. могут быть косяки при большой карте
 	setPosition(_isoPoint);
+}
+
+void MapObject::printDebugCell(std::string text)
+{
+	auto label = Label::createWithTTF(text.c_str(), "fonts/arial.ttf", 14);
+	label->setTextColor(Color4B::RED);
+	label->setPositionNormalized(getAnchorPoint());
+	addChild(label, 2);
 }

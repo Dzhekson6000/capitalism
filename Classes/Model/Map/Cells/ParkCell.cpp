@@ -1,5 +1,6 @@
 #include "ParkCell.h"
 #include "Controller/TileImageManager.h"
+#include "Model/Map/TypesCell.h"
 
 ParkCell::ParkCell()
 {
@@ -9,7 +10,7 @@ ParkCell::ParkCell()
 bool ParkCell::initTile()
 {
 	int frame = getFrame();
-	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", getNameCellOfType(_type), frame);
+	SpriteFrame* sf = TileImageManager::getInstance()->getFrame("tiles", TypesCell::getNameCellOfType(_type), frame);
 	if( !sf )
 	{
 		return false;

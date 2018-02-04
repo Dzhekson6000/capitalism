@@ -1,61 +1,31 @@
 #ifndef CAPITALISM_CELL_H
 #define CAPITALISM_CELL_H
 
-#include <string>
-#include <unordered_map>
-#include "cocos2d.h"
-#include "Model/IsoPoint.h"
+#include "MapObject.h"
 #include "MapCity.h"
 
-class Cell:public cocos2d::Sprite
+class Cell:public MapObject
 {
 public:
-	/**
-	 * @brief Инициализация
-	 * @details загружает спрайт фрейм и инициализирует спрайт.
-	 * @return
-	 */
-	virtual bool initTile();
+	CREATE_FUNC(Cell)
+	bool initObject() override;
 	
-	/**
-	 * @brief устанавливает координаты положения
-	 * @param isoPoint
-	 */
-	void setIsoPoint(const IsoPoint isoPoint);
-	
-	/**
-	 * @brief возвращает имя по пикселю
-	 * @param pixel
-	 * @return
-	 */
-	static std::string getNameCellOfPixel(const unsigned char* pixel);
-	/**
-	 * @brief возвращает имя по номеру типа
-	 * @param type
-	 * @return
-	 */
-	static std::string getNameCellOfType(const int type);
 private:
-	/**
-	 * @brief имя клетки
-	 */
-	static const std::unordered_map<int, std::string> _cellsName;
 	
 	/**
-	 * @brief возвращает номер типо относительно положения этой клетки
+	 * @brief возвращает номер типа относительно положения этой клетки
 	 * @param x
 	 * @param y
 	 * @return
 	 */
 	int getTypeOffset(int x, int y);
 	
-CC_SYNTHESIZE_READONLY(IsoPoint, _isoPoint, IsoPoint);
-CC_SYNTHESIZE(int , _type, Type);
-CC_SYNTHESIZE(MapCity*, _map, Map);
-
-CREATE_FUNC(Cell)
+	CC_SYNTHESIZE(int , _type, Type);
+	CC_SYNTHESIZE(MapCity*, _map, Map);
 
 protected:
+	Cell();
+	
 	/**
 	 * @return номер характерезующий его относительно соседних клеток
 	 */
@@ -68,13 +38,7 @@ protected:
 	 * @return
 	 */
 	virtual bool checkSameType(int x, int y);
-	Cell();
 	
-	/**
-	 * @brief рисует текст на текущей клетке
-	 * @param text
-	 */
-	void printDebugCell(std::string text);
 };
 
 

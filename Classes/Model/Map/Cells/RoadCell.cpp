@@ -1,5 +1,5 @@
 #include "RoadCell.h"
-#include "Controller/TileImageManager.h"
+#include "Model/Map/TypesCell.h"
 
 RoadCell::RoadCell()
 {
@@ -9,7 +9,7 @@ RoadCell::RoadCell()
 bool RoadCell::initTile()
 {
 	std::string name = "tiles/";
-	name+=getNameCellOfType(_type);
+	name+=TypesCell::getNameCellOfType(_type);
 	name+="/";
 	name+=std::to_string(1);
 	name+=".png";

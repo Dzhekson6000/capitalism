@@ -18,6 +18,12 @@ private:
 	 * @return true если в окне
 	 */
 	bool inWindow(const cocos2d::Point &point);
+
+protected:
+	/**
+	 * событие перемещения
+	 */
+	virtual void onMove(){};
 	
 public:
 	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);

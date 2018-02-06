@@ -27,7 +27,16 @@ public:
 	 */
 	void removeObject(MapObject* object);
 	
+	/**
+	 * функция обновления видимости, нужно вызывать при изменение offset
+	 * @param offset смещение скроллера
+	 */
 	void updateInvisible(const Point& offset);
+	
+	/**
+	 * ищет и обновляет все точки в объектах
+	 */
+	void updateIsoPoints();
 	
 	/**
 	 * рекурсивно ищет GroupObject
@@ -58,7 +67,7 @@ public:
 	GroupObject* createGroupObject(Point point);
 	
 	/**
-	 * @param point позиция карты
+	 * @param point позиция карты в экранных координатах
 	 * @return true если группа видна
 	 */
 	bool isVisible(const Point point) const;

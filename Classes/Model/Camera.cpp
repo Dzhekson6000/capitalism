@@ -29,3 +29,31 @@ void Camera::setDirection(Camera::Direction direction)
 {
 	_direction = direction;
 }
+
+void Camera::rotationLeft()
+{
+	int direction = static_cast<int>(_direction);
+	if(direction==0)
+	{
+		direction = 3;
+	}
+	else
+	{
+		--direction;
+	}
+	_direction = static_cast<Direction>(direction);
+}
+
+void Camera::rotationRight()
+{
+	int direction = static_cast<int>(_direction);
+	if(direction==3)
+	{
+		direction = 0;
+	}
+	else
+	{
+		++direction;
+	}
+	_direction = static_cast<Direction>(direction);
+}

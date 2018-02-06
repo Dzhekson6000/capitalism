@@ -1,5 +1,6 @@
 #include "GameScene.h"
 #include "View/Ui/buildings/Buildings.h"
+#include "Model/Camera.h"
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -34,6 +35,24 @@ bool GameScene::init()
 	buildings->setContentSize(Size(100, visibleSize.height));
 	addChild(buildings);*/
 	
+	//вращение камеры
+	_keyboardController.addCallback(
+			EventKeyboard::KeyCode::KEY_Q,
+			[this]()
+			{
+				::Camera::getInstance()->rotationLeft();
+				_world->updateIsoPoints();
+			}
+	);
+	_keyboardController.addCallback(
+			EventKeyboard::KeyCode::KEY_E,
+			[this]()
+			{
+				::Camera::getInstance()->rotationRight();
+				_world->updateIsoPoints();
+			}
+	);
+	
 	return true;
 }
 
@@ -41,21 +60,21 @@ void GameScene::update(float delta)
 {
 	Node::update(delta);
 	
-	if(_keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_W))
+	if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_W))
 	{
-		_world->moveY(-10);
+		_world->move(Point(0,-10));
 	}
-	else if(_keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_S))
+	else if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_S))
 	{
-		_world->moveY(10);
+		_world->move(Point(0,10));
 	}
 	
-	if(_keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_A))
+	if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_A))
 	{
-		_world->moveX(10);
+		_world->move(Point(10,0));
 	}
-	else if(_keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_D))
+	else if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_D))
 	{
-		_world->moveX(-10);
+		_world->move(Point(-10,0));
 	}
 }

@@ -59,6 +59,31 @@ GroupObject* GroupObject::findGroupObject(Point cell)
 	return nullptr;
 }
 
+void GroupObject::updateIsoPoints()
+{
+	if(
+			_size.width <= IsoTools::getNumberOfCell(10) &&
+			_size.height <= IsoTools::getNumberOfCell(10)
+			)
+	{//это листок дерева
+		
+		for( auto mapObject: getChildren())//перебираем все тайлы и объекты карты
+		{
+			MapObject* object = (MapObject*)mapObject;
+			object->updateIsoPoint();
+		}
+	}
+	else
+	{//это узел дерева, нужно рекурсивно спуститься к листьям
+		for( auto groupObject: getChildren())
+		{
+			((GroupObject*)groupObject)->updateIsoPoints();
+		}
+	}
+	
+	_isoPoint.updateScreen();
+}
+
 GroupObject* GroupObject::findSubGroupObject(Point point)
 {
 	for( auto groupObject: getChildren())
@@ -74,30 +99,77 @@ GroupObject* GroupObject::findSubGroupObject(Point point)
 
 bool GroupObject::isVisible(const Point point) const
 {
+	auto size = Director::getInstance()->getWinSize();
 	
-	auto     size = Director::getInstance()->getWinSize();
-	IsoPoint pointEnd;
-	pointEnd.initOfIso(
-			_isoPoint.getOriginal().x + _size.width,
-			_isoPoint.getOriginal().y + _size.height
+	//Screen:
+	/* A ****** B
+	 * * ****** *
+	 * * ****** *
+	 * * ****** *
+	 * C ****** D*/
+	
+	IsoPoint pointA;
+	IsoPoint pointB;
+	IsoPoint pointC;
+	IsoPoint pointD;
+	
+	pointA.initOfScreen(
+			-point.x,
+			-point.y + size.height
+	
+	);
+	pointB.initOfScreen(
+			-point.x + size.width,
+			-point.y + size.height
+	
+	);
+	pointC.initOfScreen(-point);
+	pointD.initOfScreen(
+			-point.x + size.width,
+			-point.y
 	);
 	
-	if( _isoPoint.x > -point.x + size.width )//справо
+	auto resultX = std::minmax(
+			{
+					pointA.getOriginal().x,
+					pointB.getOriginal().x,
+					pointC.getOriginal().x,
+					pointD.getOriginal().x
+			});
+	auto resultY = std::minmax(
+			{
+					pointA.getOriginal().y,
+					pointB.getOriginal().y,
+					pointC.getOriginal().y,
+					pointD.getOriginal().y
+			});
+	
+	Rect isoScreen(
+			Point(resultX.first, resultY.first),
+			Size(resultX.second - resultX.first, resultY.second - resultY.first)
+	);
+	Rect group(_isoPoint.getOriginal(), _size);
+	
+	if(_isoPoint.getOriginal().x > resultX.second)
 	{
 		return false;
 	}
-	if( pointEnd.x < -point.x - 50/*фикс что бы рисовалось пораньше*/ )//слево
+	if(_isoPoint.getOriginal().x + _size.width < resultX.first)
 	{
 		return false;
 	}
-	if( _isoPoint.y - _size.height/2 > -point.y + size.height  + 50/*фикс что бы рисовалось пораньше*/  )//верх
+	
+	if(_isoPoint.getOriginal().y > resultY.second)
 	{
 		return false;
 	}
-	if( pointEnd.y + _size.height/2 < -point.y )//низ
+	if(_isoPoint.getOriginal().y + _size.height < resultY.first)
 	{
 		return false;
 	}
+	
+	
+	
 	return true;
 }
 

@@ -1,6 +1,7 @@
 #include <Model/IsoPoint.h>
 #include "Scroller.h"
 #include "Controller/BuildingController.h"
+#include "Model/Config.h"
 
 USING_NS_CC;
 
@@ -11,7 +12,7 @@ bool Scroller::init()
 		return false;
 	}
 	
-	_isMoving  = false;
+	_isMoving = false;
 	
 	// init touch
 	_touchListener = EventListenerTouchOneByOne::create();
@@ -37,23 +38,20 @@ void Scroller::touchMoved(Touch* touch, Event* event)
 		return;
 	}
 	
-	if(isScrollMap(loc, _offsetPoint))
+	if( isScrollMap(loc, _offsetPoint))
 	{
-		this->setPositionX(this->getPositionX() + (loc.x - _offsetPoint.x));
-		this->setPositionY(this->getPositionY() + (loc.y - _offsetPoint.y));
-		
-		_offsetPoint=loc;
-		_isMoving= true;
-		onMove();
+		move(loc-_offsetPoint);
+		_offsetPoint = loc;
+		_isMoving    = true;
 	}
 	
 }
 
 void Scroller::touchEnded(Touch* touch, Event* event)
 {
-	if(_isMoving)
+	if( _isMoving )
 	{
-		_isMoving=false;
+		_isMoving = false;
 	}
 	else
 	{
@@ -61,16 +59,10 @@ void Scroller::touchEnded(Touch* touch, Event* event)
 	}
 }
 
-void Scroller::moveX(float offset)
+void Scroller::move(const cocos2d::Point offset)
 {
+	this->setPosition(this->getPosition() + offset);
 	onMove();
-	this->setPositionX(this->getPositionX() + offset);
-}
-
-void Scroller::moveY(float offset)
-{
-	onMove();
-	this->setPositionY(this->getPositionY() + offset);
 }
 
 bool Scroller::inWindow(const cocos2d::Vec2 &point)
@@ -85,19 +77,21 @@ bool Scroller::inWindow(const cocos2d::Vec2 &point)
 
 bool Scroller::isScrollMap(cocos2d::Point &touch, const Point point)
 {
-	return (std::abs(point.x - touch.x) > 20 ||
-			std::abs(point.y - touch.y) > 20);
+	return (
+			std::abs(point.x - touch.x) > Config::SENSITIVITY_SCROLL ||
+			std::abs(point.y - touch.y) > Config::SENSITIVITY_SCROLL
+	);
 }
 
 void Scroller::onClick(const cocos2d::Point point)
 {
-	Point p = point - getPosition();
+	Point    p = point - getPosition();
 	IsoPoint offset;
-	offset.initOfScreen(p.x,p.y);
+	offset.initOfScreen(p.x, p.y);
 	Point cell = offset.getCell();
 	
 	BuildingController* bc = BuildingController::getInstance();
-	if(bc->getBuildingMode())
+	if( bc->getBuildingMode())
 	{
 		bc->onClick();
 	}
@@ -107,6 +101,5 @@ void Scroller::onClick(const cocos2d::Point point)
 
 Point Scroller::getOffsetPoint(const cocos2d::Point point)
 {
-	Point ret = point - getPosition();
-	return ret;
+	return point - getPosition();
 }

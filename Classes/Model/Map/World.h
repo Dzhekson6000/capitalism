@@ -1,14 +1,14 @@
 #ifndef CAPITALISM_WORLD_H
 #define CAPITALISM_WORLD_H
 
-#include "View/Scroller.h"
+#include "View/IsoScroller.h"
 #include "Model/Map/MapCity.h"
 #include "GroupObject.h"
 
 /**
  * класс который описывает отображаемый мир.
  */
-class World: public Scroller
+class World: public IsoScroller
 {
 private:
 	World();
@@ -16,7 +16,7 @@ private:
 	bool init();
 	
 	GroupObject* _objects; ///<  объекты(тайлы, постройки и деревья)
-	
+CC_SYNTHESIZE(MapCity*, _map, Map)
 protected:
 	void onMove() override;
 public:
@@ -34,6 +34,8 @@ public:
 	 * @param path путь к xml файл файлу с объектами
 	 */
 	void loadMapObject(std::string path);
+	
+	void updateIsoPoints() override;
 	
 	/**
 	 * добавление тайла ландшафта
@@ -55,7 +57,6 @@ public:
 	 */
 	void removeObject(MapObject* object);
 	
-	CC_SYNTHESIZE(MapCity*, _map, Map)
 };
 
 

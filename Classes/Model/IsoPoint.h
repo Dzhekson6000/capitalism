@@ -11,10 +11,14 @@ public:
 	IsoPoint(int x, int y);
 	IsoPoint(float x, float y);
 	
+	void initOfIso(const cocos2d::Point point);
+	void initOfScreen(const cocos2d::Point point);
+	
 	void initOfIso(const float x, const float y);
 	void initOfScreen(const float x, const float y);
 	
 	void updateScreen();
+	void updateIso();
 	
 	cocos2d::Point getCell() const;
 	

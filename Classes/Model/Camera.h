@@ -1,7 +1,6 @@
 #ifndef CAPITALISM_CAMERA_H
 #define CAPITALISM_CAMERA_H
 
-
 class Camera
 {
 public:
@@ -17,7 +16,8 @@ public:
 	
 	Direction getDirection();
 	void setDirection(Direction direction);
-	
+	void rotationLeft();
+	void rotationRight();
 private:
 	static Camera* _camera;
 	
@@ -25,6 +25,7 @@ private:
 	~Camera();
 	
 	Direction _direction;
+	
 };
 
 

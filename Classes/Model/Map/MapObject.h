@@ -30,6 +30,11 @@ public:
 	CC_SYNTHESIZE_READONLY(IsoPoint, _isoPoint, IsoPoint);
 	
 	/**
+	 * функция обновляет позицию объекта
+	 */
+	void updateIsoPoint();
+	
+	/**
 	 * @brief рисует текст поверх объекта
 	 * @param text
 	 */

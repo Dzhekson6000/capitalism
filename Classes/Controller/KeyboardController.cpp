@@ -14,6 +14,16 @@ KeyboardController::~KeyboardController()
 	Director::getInstance()->getEventDispatcher()->removeEventListener(_listener);
 }
 
+void KeyboardController::addCallback(EventKeyboard::KeyCode keyCode, std::function<void()> func)
+{
+	_keysCallback.insert(std::make_pair(keyCode, func));
+}
+
+void KeyboardController::removeCallback(EventKeyboard::KeyCode keyCode, std::function<void()> func)
+{
+	_keysCallback.erase(keyCode);
+}
+
 void KeyboardController::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* event)
 {
 	if( _keys.find(keyCode) == _keys.end())
@@ -24,6 +34,10 @@ void KeyboardController::onKeyPressed(EventKeyboard::KeyCode keyCode, Event* eve
 
 void KeyboardController::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event)
 {
+	for(auto callback: _keysCallback)
+	{
+		if(callback.first==keyCode)callback.second();
+	}
 	_keys.erase(keyCode);
 }
 

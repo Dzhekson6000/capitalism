@@ -3,6 +3,7 @@
 #include "Controller/Loader/LoaderMap.h"
 #include "Controller/Loader/LoaderMapObject.h"
 #include "tools/IsoTools.h"
+#include "Model/Camera.h"
 
 World::World():_map(nullptr)
 {
@@ -18,7 +19,7 @@ World::~World()
 
 bool World::init()
 {
-	if( !Scroller::init())
+	if( !IsoScroller::init())
 	{
 		return false;
 	}
@@ -43,6 +44,12 @@ void World::loadMapObject(std::string path)
 {
 	//LoaderMapObject loaderMapObject(this);
 	//loaderMapObject.loadMapObjectFile(path);
+}
+
+void World::updateIsoPoints()
+{
+	IsoScroller::updateIsoPoints();
+	_objects->updateIsoPoints();
 }
 
 void World::addLandscapeTile(MapObject* cell)

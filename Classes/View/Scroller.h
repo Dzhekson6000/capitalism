@@ -9,7 +9,7 @@ class Scroller:public cocos2d::Layer
 private:
 	cocos2d::EventListenerTouchOneByOne* _touchListener;
 	
-	bool  _isMoving; ///< true = идёт перемещение карты
+	bool           _isMoving; ///< true = идёт перемещение карты
 	cocos2d::Point _offsetPoint; ///< временная переменная что бы фиксировать СУЩЕСТВЕННОЕ смещение
 	
 	/**
@@ -18,47 +18,6 @@ private:
 	 * @return true если в окне
 	 */
 	bool inWindow(const cocos2d::Point &point);
-
-protected:
-	/**
-	 * событие перемещения
-	 */
-	virtual void onMove(){};
-	
-public:
-	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
-	void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
-	void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
-	
-	/**
-	 * @brief функция перемещения карты по X
-	 * @param offset параметр смещения
-	 */
-	void moveX(float offset);
-	
-	/**
-	 * @brief функция перемещения карты по X
-	 * @param offset параметр смещения
-	 */
-	void moveY(float offset);
-	
-	/**
-	 * событие клика
-	 * @param point клетка по которой совершён клик
-	 */
-	virtual void onClick(const cocos2d::Point point);
-	/**
-	 * смещение относительно текущего положения
-	 * @param point
-	 * @return возвращаем смещение
-	 */
-	cocos2d::Point getOffsetPoint(const cocos2d::Point point);
-	
-	/**
-	 * инициализация, создание слушателей
-	 * @return true = ok, false = error
-	 */
-	virtual bool init();
 	
 	/**
 	 * функция что бы отличать нажатия от перетаскивания
@@ -68,7 +27,41 @@ public:
 	 */
 	bool isScrollMap(cocos2d::Point &touch, const cocos2d::Point point);
 	
+	/**
+ * смещение относительно текущего положения
+ * @param point
+ * @return возвращаем смещение
+ */
+	cocos2d::Point getOffsetPoint(const cocos2d::Point point);
+	
+	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+	void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
+	void touchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+protected:
+	/**
+	 * событие перемещения
+	 */
+	virtual void onMove(){};
+	
+	/**
+ * событие клика
+ * @param point клетка по которой совершён клик
+ */
+	virtual void onClick(const cocos2d::Point point);
+public:
 	CREATE_FUNC(Scroller);
+	/**
+	 * инициализация, создание слушателей
+	 * @return true = ok, false = error
+	 */
+	virtual bool init();
+	
+	/**
+	 * @brief функция перемещения карты
+	 * @param offset параметр смещения
+	 */
+	void move(const cocos2d::Point offset);
+	
 };
 
 #endif //CAPITALISM_SCROLLER_H

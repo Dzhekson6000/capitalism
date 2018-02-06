@@ -24,6 +24,16 @@ IsoPoint::IsoPoint(float x, float y)
 	initOfIso(x, y);
 }
 
+void IsoPoint::initOfIso(const cocos2d::Point point)
+{
+	initOfIso(point.x, point.y);
+}
+
+void IsoPoint::initOfScreen(const cocos2d::Point point)
+{
+	initOfScreen(point.x,point.y);
+}
+
 void IsoPoint::initOfIso(const float x, const float y)
 {
 	this->_isoPoint = cocos2d::Point(x, y);
@@ -40,6 +50,11 @@ void IsoPoint::initOfScreen(const float x, const float y)
 void IsoPoint::updateScreen()
 {
 	IsoTools::isoToScreen(_isoPoint.x, _isoPoint.y, this->x, this->y);
+}
+
+void IsoPoint::updateIso()
+{
+	IsoTools::screenToIso(this->x, this->y, _isoPoint.x, _isoPoint.y);
 }
 
 void IsoPoint::reductionToCell()

@@ -36,7 +36,7 @@ void BuildingController::onMouseMove(Event* event)
 	Point point(((EventMouse*)event)->getCursorX(), ((EventMouse*)event)->getCursorY());
 	point.y += Director::getInstance()->getVisibleSize().height;
 	
-	Point pointRelativeWorld = _world->getOffsetPoint(point);
+	Point pointRelativeWorld; //= _world->getOffsetPoint(point);
 	
 	IsoPoint iso;
 	iso.initOfScreen(pointRelativeWorld.x,pointRelativeWorld.y);

@@ -24,6 +24,12 @@ void MapObject::setIsoPoint(const IsoPoint isoPoint)
 	setPosition(_isoPoint);
 }
 
+void MapObject::updateIsoPoint()
+{
+	_isoPoint.updateScreen();
+	setPosition(_isoPoint);
+}
+
 void MapObject::printDebugCell(std::string text)
 {
 	auto label = Label::createWithTTF(text.c_str(), "fonts/arial.ttf", 14);

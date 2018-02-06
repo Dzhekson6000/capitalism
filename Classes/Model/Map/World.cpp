@@ -37,7 +37,7 @@ void World::loadMap(std::string mapPath)
 	LoaderMap loaderMap(this);
 	loaderMap.loadMap(mapPath);
 	
-	_objects->updateInvisible(getPosition());
+	_objects->updateInvisible(*this);
 }
 
 void World::loadMapObject(std::string path)
@@ -74,5 +74,17 @@ void World::removeObject(MapObject* object)
 
 void World::onMove()
 {
-	_objects->updateInvisible(getPosition());
+	_objects->updateInvisible(*this);
+}
+
+void World::setScale(float scale)
+{
+	//пытаемся отцентровать
+	float dScale = getScale()-scale;
+	setPositionX(getPositionX() + getContentSize().width/2*dScale);
+	setPositionY(getPositionY() + getContentSize().height/2*dScale);
+	
+	
+	IsoScroller::setScale(scale);
+	_objects->updateInvisible(*this);
 }

@@ -56,6 +56,7 @@ public:
 	 * @param object
 	 */
 	void removeObject(MapObject* object);
+	void setScale(float scale) override;
 	
 };
 

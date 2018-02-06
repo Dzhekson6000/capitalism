@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "MapObject.h"
+#include "View/IsoScroller.h"
 
 USING_NS_CC;
 
@@ -31,7 +32,7 @@ public:
 	 * функция обновления видимости, нужно вызывать при изменение offset
 	 * @param offset смещение скроллера
 	 */
-	void updateInvisible(const Point& offset);
+	void updateInvisible(const IsoScroller& isoScroller);
 	
 	/**
 	 * ищет и обновляет все точки в объектах
@@ -70,7 +71,7 @@ public:
 	 * @param point позиция карты в экранных координатах
 	 * @return true если группа видна
 	 */
-	bool isVisible(const Point point) const;
+	bool isVisible(const Point point, const float zoom) const;
 	
 	/**
 	 * @param point точка в изометрии

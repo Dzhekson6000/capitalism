@@ -12,8 +12,11 @@ public:
 	
 	void setPosition(const cocos2d::Vec2 &position) override;
 	
+	
 	virtual void updateIsoPoints();
 	bool init() override;
+protected:
+	void onClick(const cocos2d::Point point) override;
 	
 	
 };

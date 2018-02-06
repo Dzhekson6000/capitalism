@@ -16,9 +16,9 @@ void GroupObject::removeObject(MapObject* object)
 
 }
 
-void GroupObject::updateInvisible(const Point &offset)
+void GroupObject::updateInvisible(const IsoScroller& isoScroller)
 {
-	if( !isVisible(offset))
+	if( !isVisible(isoScroller.getPosition(),isoScroller.getScale()))
 	{
 		setVisible(false);
 	}
@@ -33,7 +33,7 @@ void GroupObject::updateInvisible(const Point &offset)
 			for( auto groupObject: getChildren())
 			{
 				GroupObject* group = (GroupObject*)groupObject;
-				group->updateInvisible(offset);
+				group->updateInvisible(isoScroller);
 			}
 		}
 		
@@ -97,7 +97,7 @@ GroupObject* GroupObject::findSubGroupObject(Point point)
 	return nullptr;
 }
 
-bool GroupObject::isVisible(const Point point) const
+bool GroupObject::isVisible(const Point point, const float zoom) const
 {
 	auto size = Director::getInstance()->getWinSize();
 	
@@ -114,19 +114,19 @@ bool GroupObject::isVisible(const Point point) const
 	IsoPoint pointD;
 	
 	pointA.initOfScreen(
-			-point.x,
-			-point.y + size.height
+			-point.x/zoom,
+			-point.y/zoom + size.height/zoom
 	
 	);
 	pointB.initOfScreen(
-			-point.x + size.width,
-			-point.y + size.height
+			-point.x/zoom + size.width/zoom,
+			-point.y/zoom + size.height/zoom
 	
 	);
-	pointC.initOfScreen(-point);
+	pointC.initOfScreen(-point/zoom);
 	pointD.initOfScreen(
-			-point.x + size.width,
-			-point.y
+			-point.x/zoom + size.width/zoom,
+			-point.y/zoom
 	);
 	
 	auto resultX = std::minmax(
@@ -143,12 +143,6 @@ bool GroupObject::isVisible(const Point point) const
 					pointC.getOriginal().y,
 					pointD.getOriginal().y
 			});
-	
-	Rect isoScreen(
-			Point(resultX.first, resultY.first),
-			Size(resultX.second - resultX.first, resultY.second - resultY.first)
-	);
-	Rect group(_isoPoint.getOriginal(), _size);
 	
 	if(_isoPoint.getOriginal().x > resultX.second)
 	{

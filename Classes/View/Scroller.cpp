@@ -1,6 +1,5 @@
 #include <Model/IsoPoint.h>
 #include "Scroller.h"
-#include "Controller/BuildingController.h"
 #include "Model/Config.h"
 
 USING_NS_CC;
@@ -85,18 +84,6 @@ bool Scroller::isScrollMap(cocos2d::Point &touch, const Point point)
 
 void Scroller::onClick(const cocos2d::Point point)
 {
-	Point    p = point - getPosition();
-	IsoPoint offset;
-	offset.initOfScreen(p.x, p.y);
-	Point cell = offset.getCell();
-	
-	BuildingController* bc = BuildingController::getInstance();
-	if( bc->getBuildingMode())
-	{
-		bc->onClick();
-	}
-	
-	CCLOG("Click (%f, %f)", cell.x, cell.y);
 }
 
 Point Scroller::getOffsetPoint(const cocos2d::Point point)

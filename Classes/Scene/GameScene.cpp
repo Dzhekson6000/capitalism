@@ -53,6 +53,23 @@ bool GameScene::init()
 			}
 	);
 	
+	_keyboardController.addCallback(
+			EventKeyboard::KeyCode::KEY_KP_PLUS,
+			[this]()
+			{
+				_world->setScale(_world->getScale()*1.1);//zoom +10%
+			}
+	);
+	
+	_keyboardController.addCallback(
+			EventKeyboard::KeyCode::KEY_KP_MINUS,
+			[this]()
+			{
+				_world->setScale(_world->getScale()*0.9);//zoom -10%
+			}
+	);
+	
+	
 	return true;
 }
 

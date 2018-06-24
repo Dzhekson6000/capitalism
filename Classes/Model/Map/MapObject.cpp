@@ -12,7 +12,7 @@ MapObject::MapObject():
 
 bool MapObject::initObject()
 {
-	std::string fileName = group + "/" + name;
+	std::string fileName = groupSprite + "/" + nameSprite;
 	frame = getFrame();
 	if( frame != 0 )
 	{
@@ -32,9 +32,9 @@ void MapObject::updateIsoPoint()
 
 void MapObject::printDebugCell(std::string text)
 {
-	if(label)
+	if( label )
 	{
-		removeChild(label,true);
+		removeChild(label, true);
 	}
 	label = Label::createWithTTF(text.c_str(), "fonts/arial.ttf", 14);
 	label->setTextColor(Color4B::RED);
@@ -44,7 +44,10 @@ void MapObject::printDebugCell(std::string text)
 
 void MapObject::removeFromLayer()
 {
-	groupObject->removeChild(this);
+	if( groupObject )
+	{
+		groupObject->removeChild(this);
+	}
 }
 
 int MapObject::getFrame() const
@@ -63,7 +66,7 @@ void MapObject::setIsoPoint(const IsoPoint &isoPoint)
 	
 	int local = static_cast<int>(
 			(
-					(300-isoPoint.getCell().x) + (isoPoint.getCell().y)
+					(300 - isoPoint.getCell().x) + (isoPoint.getCell().y)
 			)
 	);
 	
@@ -81,24 +84,24 @@ void MapObject::setType(MapObject::Type type)
 	MapObject::type = type;
 }
 
-const std::string &MapObject::getGroup() const
+const std::string &MapObject::getGroupSprite() const
 {
-	return group;
+	return groupSprite;
 }
 
-void MapObject::setGroup(const std::string &group)
+void MapObject::setGroupSprite(const std::string &group)
 {
-	MapObject::group = group;
+	MapObject::groupSprite = group;
 }
 
-const std::string &MapObject::getName() const
+const std::string &MapObject::getNameSprite() const
 {
-	return name;
+	return nameSprite;
 }
 
-void MapObject::setName(const std::string &name)
+void MapObject::setNameSprite(const std::string &name)
 {
-	MapObject::name = name;
+	MapObject::nameSprite = name;
 }
 
 Layer* MapObject::getGroupObject() const

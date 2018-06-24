@@ -53,8 +53,8 @@ protected:
 	int wCell;
 	int hCell;
 	
-	std::string group;
-	std::string name;
+	std::string groupSprite;
+	std::string nameSprite;
 	int frame;
 	
 private:
@@ -70,11 +70,11 @@ public:
 	Type getType() const;
 	void setType(Type type);
 	
-	const std::string &getGroup() const;
-	void setGroup(const std::string &group);
+	const std::string &getGroupSprite() const;
+	void setGroupSprite(const std::string &group);
 	
-	const std::string &getName() const;
-	void setName(const std::string &name);
+	const std::string &getNameSprite() const;
+	void setNameSprite(const std::string &name);
 	
 	Layer* getGroupObject() const;
 	void setGroupObject(Layer* groupObject);

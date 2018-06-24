@@ -39,7 +39,6 @@ MapObject* LoaderMapObject::createObjectOfXML(tinyxml2::XMLElement* object)
 		return nullptr;
 	
 	Building* ret = Building::create();
-	ret->setType(MapObject::Type::BUILDING);
 	ret->setId(atoi(object->Attribute("id")));
 	ret->setTypeBuilding(typeBuilding);
 	int x = atoi(object->Attribute("x"));

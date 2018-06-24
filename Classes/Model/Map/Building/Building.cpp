@@ -22,8 +22,9 @@ TypeBuilding* Building::getTypeBuilding() const
 void Building::setTypeBuilding(TypeBuilding* typeBuilding)
 {
 	_typeBuilding = typeBuilding;
+	setType(Type::BUILDING);
 	wCell = typeBuilding->width;
 	hCell = typeBuilding->height;
-	setGroup(typeBuilding->group);
-	setName(typeBuilding->name);
+	setGroupSprite(typeBuilding->group);
+	setNameSprite(typeBuilding->name);
 }

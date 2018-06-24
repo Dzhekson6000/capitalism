@@ -7,8 +7,8 @@ Cell::Cell()
 
 bool Cell::initObject()
 {
-	group = "tiles";
-	name = TypesCell::getNameCellOfType(_type);
+	groupSprite = "tiles";
+	nameSprite = TypesCell::getNameCellOfType(_type);
 	frame = 1;
 	
 	//printDebugCell(std::to_string((int)_isoPoint.getCell().x)+":"+std::to_string((int)_isoPoint.getCell().y));

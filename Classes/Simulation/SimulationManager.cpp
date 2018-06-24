@@ -3,7 +3,7 @@
 SimulationManager::SimulationManager()
 {}
 
-CompaniesManager* SimulationManager::getCompaniesManager() const
+CompaniesManager* SimulationManager::getCompaniesManager()
 {
 	return &companiesManager;
 }

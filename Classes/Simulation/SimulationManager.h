@@ -9,7 +9,7 @@ class SimulationManager: public Manager
 public:
 	SimulationManager();
 	
-	CompaniesManager* getCompaniesManager() const;
+	CompaniesManager* getCompaniesManager();
 
 private:
 	CompaniesManager companiesManager;

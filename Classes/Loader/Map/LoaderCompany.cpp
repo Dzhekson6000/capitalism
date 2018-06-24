@@ -37,10 +37,14 @@ Company* LoaderCompany::createCompanyOfXML(tinyxml2::XMLElement* object)
 	ret->setId(atoi(object->Attribute("id")));
 	ret->setMoney(atoi(object->Attribute("money")));
 	
-	ret->setTypeOwner(object->Attribute("typeOwner"));
+	const char* typeOwner = object->Attribute("typeOwner", nullptr);
+	if( typeOwner )
+	{
+		ret->setTypeOwner(typeOwner);
+	}
 	
 	const char* owner = object->Attribute("owner", nullptr);
-	if(owner)
+	if( owner )
 	{
 		ret->setOwner(atoi(owner));
 	}

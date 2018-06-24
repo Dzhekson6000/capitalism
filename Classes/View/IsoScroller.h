@@ -3,21 +3,20 @@
 
 #include "Scroller.h"
 
-class IsoScroller: public Scroller
+class IsoScroller:public Scroller
 {
 private:
 	IsoPoint _cameraPosition;
 public:
 	CREATE_FUNC(IsoScroller)
+	bool init() override;
 	
 	void setPosition(const cocos2d::Vec2 &position) override;
-	
-	
+	void setScale(float scale) override;
 	virtual void updateIsoPoints();
-	bool init() override;
 protected:
 	void onClick(const cocos2d::Point point) override;
-	
+	virtual void onClickCell(const IsoPoint &point);
 	
 };
 

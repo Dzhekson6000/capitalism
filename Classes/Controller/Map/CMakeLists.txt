@@ -1,0 +1,12 @@
+CMAKE_POLICY(SET CMP0017 NEW)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+
+SET(GAME_SRC ${GAME_SRC}
+	Classes/Controller/Map/FactoryCells.cpp
+	PARENT_SCOPE
+	)
+
+SET(GAME_HEADERS ${GAME_HEADERS}
+	Classes/Controller/Map/FactoryCells.h
+	PARENT_SCOPE)

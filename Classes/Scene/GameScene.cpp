@@ -1,6 +1,7 @@
+#include <View/ViewManager.h>
 #include "GameScene.h"
 #include "View/Ui/buildings/Buildings.h"
-#include "Model/Camera.h"
+#include "Model/Map/Camera.h"
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -14,7 +15,7 @@ bool GameScene::init()
 		return false;
 	}
 	
-	this->scheduleUpdate();
+	this->scheduleUpdate();//начинаем обновлять постоянно
 	
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin      = Director::getInstance()->getVisibleOrigin();
@@ -22,76 +23,80 @@ bool GameScene::init()
 	//загружаем спрайты
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("images/tiles.plist");
 	
-	_world = World::create();
-	_world->loadMap("maps/test.png");
-	_world->loadMapObject("maps/test.xml");
-	this->addChild(_world);
+	world = World::create();
+	world->load("maps/test");
+	this->addChild(world);
 	
+	//указываем всем виюхам текущий мир
+	ViewManager::getInstance()->setWorld(world);
 	
 	//UI
-	/*
-	TODO::временно уберём
 	auto buildings = Buildings::create();
 	buildings->setContentSize(Size(100, visibleSize.height));
-	addChild(buildings);*/
+	this->addChild(buildings);
 	
-	//вращение камеры
-	_keyboardController.addCallback(
+	initKeyboard();
+	
+	return true;
+}
+
+void GameScene::initKeyboard()
+{
+	keyboardController.addCallback(
 			EventKeyboard::KeyCode::KEY_Q,
 			[this]()
 			{
 				::Camera::getInstance()->rotationLeft();
-				_world->updateIsoPoints();
+				world->updateIsoPoints();
 			}
 	);
-	_keyboardController.addCallback(
+	keyboardController.addCallback(
 			EventKeyboard::KeyCode::KEY_E,
 			[this]()
 			{
 				::Camera::getInstance()->rotationRight();
-				_world->updateIsoPoints();
+				world->updateIsoPoints();
 			}
 	);
 	
-	_keyboardController.addCallback(
+	keyboardController.addCallback(
 			EventKeyboard::KeyCode::KEY_KP_PLUS,
 			[this]()
 			{
-				_world->setScale(_world->getScale()*1.1);//zoom +10%
+				world->setScale(world->getScale()*1.1);//zoom +10%
 			}
 	);
 	
-	_keyboardController.addCallback(
+	keyboardController.addCallback(
 			EventKeyboard::KeyCode::KEY_KP_MINUS,
 			[this]()
 			{
-				_world->setScale(_world->getScale()*0.9);//zoom -10%
+				world->setScale(world->getScale()*0.9);//zoom -10%
 			}
 	);
-	
-	
-	return true;
 }
 
 void GameScene::update(float delta)
 {
 	Node::update(delta);
 	
-	if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_W))
+	if( keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_W))
 	{
-		_world->move(Point(0,-10));
+		world->move(Point(0,-10));
 	}
-	else if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_S))
+	else if( keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_S))
 	{
-		_world->move(Point(0,10));
+		world->move(Point(0,10));
 	}
 	
-	if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_A))
+	if( keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_A))
 	{
-		_world->move(Point(10,0));
+		world->move(Point(10,0));
 	}
-	else if( _keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_D))
+	else if( keyboardController.isKeyPressed(EventKeyboard::KeyCode::KEY_D))
 	{
-		_world->move(Point(-10,0));
+		world->move(Point(-10,0));
 	}
+	
+	world->update(delta);
 }

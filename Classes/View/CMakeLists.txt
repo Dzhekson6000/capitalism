@@ -7,10 +7,12 @@ ADD_SUBDIRECTORY("Ui")
 SET(GAME_SRC ${GAME_SRC}
 	Classes/View/Scroller.cpp
 	Classes/View/IsoScroller.cpp
+	Classes/View/ViewManager.cpp
 	PARENT_SCOPE
 	)
 
 SET(GAME_HEADERS ${GAME_HEADERS}
 	Classes/View/Scroller.h
 	Classes/View/IsoScroller.h
+	Classes/View/ViewManager.h
 	PARENT_SCOPE)

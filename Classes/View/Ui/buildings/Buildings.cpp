@@ -1,6 +1,7 @@
 #include "Buildings.h"
-#include <Controller/TileImageManager.h>
+#include "cocos2d.h"
 #include "ItemBuilding.h"
+#include "Manager/BuildingTypeManager.h"
 
 USING_NS_CC;
 
@@ -30,24 +31,22 @@ bool Buildings::init()
 bool Buildings::initIconBuilding()
 {
 	int y = 0;
-	TileImageManager::GroupsType gp = TileImageManager::getInstance()->getGroups();
-	for(auto group: gp)
+	auto types = BuildingTypeManager::getInstance()->getTypesBuilding();
+	for(std::pair<std::string, TypeBuilding*> type: types)
 	{
-		if(group.first == "tiles")
-			continue;
+		std::string filename = type.second->group + "/" + type.second->name + "/1.png";
 		
-		for(auto sprite: group.second->sprites)
-		{
-			
-			ItemBuilding* icon = ItemBuilding::create();
-			icon->initWithSpriteFrame(sprite.second->frames[0]);
-			icon->setGroupName(group.first);
-			icon->setObjectName(sprite.first);
-			icon->setPosition(Vec2(50, y));
-			icon->setScale(std::min(100/icon->getContentSize().width, 100/icon->getContentSize().height));
-			y+=icon->getContentSize().height*icon->getScale();
-			addChild(icon);
-		}
+		auto newspriteFrame = SpriteFrameCache::getInstance()->getSpriteFrameByName(filename);
+		
+		ItemBuilding* icon = ItemBuilding::create();
+		icon->initWithSpriteFrame(newspriteFrame);
+		icon->setGroupName(type.second->group);
+		icon->setObjectName(type.second->name);
+		icon->setPosition(Vec2(50, y));
+		icon->setScale(std::min(100/icon->getContentSize().width, 100/icon->getContentSize().height));
+		y+=icon->getContentSize().height*icon->getScale();
+		addChild(icon);
+		
 	}
 	
 	setInnerContainerSize(Size(100,y));

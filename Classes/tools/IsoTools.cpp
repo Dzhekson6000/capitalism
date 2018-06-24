@@ -1,5 +1,5 @@
 #include "IsoTools.h"
-#include "Model/Camera.h"
+#include "Model/Map/Camera.h"
 #include "Model/Config.h"
 #include <cmath>
 

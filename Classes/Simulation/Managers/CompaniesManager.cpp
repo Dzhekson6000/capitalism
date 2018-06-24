@@ -1,0 +1,2 @@
+#include "CompaniesManager.h"
+

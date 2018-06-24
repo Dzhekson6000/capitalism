@@ -1,4 +1,4 @@
-#include <Model/IsoPoint.h>
+#include <Model/Map/IsoPoint.h>
 #include "Scroller.h"
 #include "Model/Config.h"
 

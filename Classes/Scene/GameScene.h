@@ -2,7 +2,7 @@
 #define CAPITALISM_GAMESCENE_H
 
 #include "cocos2d.h"
-#include "Model/Map/World.h"
+#include "Model/Map/World/World.h"
 #include "Controller/KeyboardController.h"
 USING_NS_CC;
 
@@ -12,15 +12,19 @@ USING_NS_CC;
 class GameScene:public cocos2d::Scene
 {
 public:
+	CREATE_FUNC(GameScene);
 	static cocos2d::Scene* createScene();
 	
 	/**
 	 * функция инициализации
 	 * @return true = успешно
 	 */
-	virtual bool init();
-		
-	CREATE_FUNC(GameScene);
+	bool init() override;
+	
+	/**
+	 * инициализация вращения и приближение камеры по нажатию
+	 */
+	void initKeyboard();
 	
 	/**
 	 * @brief функция обновления состояния
@@ -28,8 +32,8 @@ public:
 	 */
 	void update(float delta) override;
 private:
-	KeyboardController _keyboardController; ///< Контролер клавиатуры
-	World* _world; ///< мир. там карта города.
+	KeyboardController keyboardController; ///< Контролер клавиатуры
+	World* world; ///< мир. там карта города.
 	
 };
 

@@ -2,7 +2,7 @@
 #define CAPITALISM_SCROLLER_H
 
 #include "cocos2d.h"
-#include "Model/IsoPoint.h"
+#include "Model/Map/IsoPoint.h"
 
 class Scroller:public cocos2d::Layer
 {
@@ -27,12 +27,6 @@ private:
 	 */
 	bool isScrollMap(cocos2d::Point &touch, const cocos2d::Point point);
 	
-	/**
- * смещение относительно текущего положения
- * @param point
- * @return возвращаем смещение
- */
-	cocos2d::Point getOffsetPoint(const cocos2d::Point point);
 	
 	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
 	void touchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
@@ -61,6 +55,13 @@ public:
 	 * @param offset параметр смещения
 	 */
 	void move(const cocos2d::Point offset);
+	
+	/**
+	* смещение относительно текущего положения
+	* @param point
+	* @return возвращаем смещение
+	*/
+	cocos2d::Point getOffsetPoint(const cocos2d::Point point);
 	
 };
 

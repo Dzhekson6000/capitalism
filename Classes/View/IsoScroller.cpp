@@ -1,5 +1,5 @@
 #include "IsoScroller.h"
-#include "Controller/BuildingController.h"
+#include "Manager/Map/BuildingManager.h"
 
 USING_NS_CC;
 
@@ -34,15 +34,25 @@ void IsoScroller::onClick(const cocos2d::Point point)
 	
 	IsoPoint offset;
 	offset.initOfScreen(p.x, p.y);
-	
-	BuildingController* bc = BuildingController::getInstance();
-	if( bc->getBuildingMode())
-	{
-		bc->onClick();
-	}
-	
-	Point cell = offset.getCell();
-	CCLOG("Click (%f, %f)", cell.x, cell.y);
+	onClickCell(offset);
 	
 	Scroller::onClick(point);
+}
+
+void IsoScroller::onClickCell(const IsoPoint& point)
+{
+	Point cell = point.getCell();
+	CCLOG("Click (%f, %f)", cell.x, cell.y);
+	
+}
+
+void IsoScroller::setScale(float scale)
+{
+	//пытаемся отцентровать
+	float dScale = getScale()-scale;
+	setPositionX(getPositionX() + getContentSize().width/2*dScale);
+	setPositionY(getPositionY() + getContentSize().height/2*dScale);
+	
+	Node::setScale(scale);
+	onMove();
 }

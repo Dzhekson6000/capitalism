@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tiles>
+    <tile id="0" name="ground"></tile>
+    <tile id="1" name="tundra"></tile>
+    <tile id="2" name="dryground"></tile>
+    <tile id="4" name="road"></tile>
+    <tile id="8" name="railroad"></tile>
+    <tile id="12" name="crossage"></tile>
+    <tile id="128" name="grass"></tile>
+    <tile id="129" name="desert"></tile>
+    <tile id="130" name="plage"></tile>
+    <tile id="131" name="city"></tile>
+    <tile id="132" name="court"></tile>
+    <tile id="133" name="park"></tile>
+    <tile id="134" name="asphault"></tile>
+    <tile id="135" name="square"></tile>
+    <tile id="136" name="industrial"></tile>
+    <tile id="255" name="water"></tile>
+    <tile id="36" name="tree"></tile>
+
+</tiles>

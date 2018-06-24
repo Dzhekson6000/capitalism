@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <area left="0" top="0" width="300" length="300">
-	<objects>
-		<house id="673519" x="0" y="0" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
-			<inh type="Жители" q="1773" w="4.0"/>
-			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
-		</house>
-		<house id="673519" x="3" y="3" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
-			<inh type="Жители" q="1773" w="4.0"/>
-			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
-		</house>
-		<house id="673519" x="3" y="0" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
-			<inh type="Жители" q="1773" w="4.0"/>
-			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
-		</house>
-		<house id="673519" x="0" y="3" w="3" l="3" h="18" o="79514" img="hs.modern:grand" attr="0.15000000596046448">
-			<inh type="Жители" q="1773" w="4.0"/>
-			<rent type="trade" s="2250" o="2250" p="623.9 р."/>
-		</house>
-	</objects>
+    <buildings>
+        <build
+                id="1"
+                x="15"
+                y="5"
+                img="hs.modern:grand"
+                owner="1"
+        />
+
+        <build
+                id="2"
+                x="0"
+                y="7"
+                img="trade:shop1"
+                owner="1"
+        />
+    </buildings>
+
+    <companies>
+        <company
+                id="1"
+                money="10000"
+                typeOwner="player"
+                owner="1"
+        >
+        </company>
+        <company
+                id="2"
+                money="10000"
+        >
+        </company>
+    </companies>
 </area>

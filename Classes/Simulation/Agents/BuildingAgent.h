@@ -1,0 +1,11 @@
+#ifndef CAPITALISM_BUILDINGAGENT_H
+#define CAPITALISM_BUILDINGAGENT_H
+
+
+class BuildingAgent
+{
+
+};
+
+
+#endif //CAPITALISM_BUILDINGAGENT_H

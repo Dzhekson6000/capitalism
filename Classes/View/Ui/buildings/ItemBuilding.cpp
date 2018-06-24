@@ -1,5 +1,5 @@
 #include "ItemBuilding.h"
-#include "Controller/BuildingController.h"
+#include "Manager/Map/BuildingManager.h"
 
 USING_NS_CC;
 
@@ -12,7 +12,7 @@ bool ItemBuilding::initWithSpriteFrame(cocos2d::SpriteFrame* spriteFrame)
 			case ui::Widget::TouchEventType::BEGAN:
 				break;
 			case ui::Widget::TouchEventType::ENDED:
-				BuildingController::getInstance()->onSelectItem(/*_groupName*/"hs.modern", "grand"/*_objectName*/);
+				((BuildingManager*)getWorld()->getBuildingManager())->onSelectItem(/*_groupName*/"hs.modern", "grand"/*_objectName*/);
 				break;
 			default:
 				break;

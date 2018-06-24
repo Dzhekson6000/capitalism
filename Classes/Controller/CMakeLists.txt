@@ -2,19 +2,13 @@ CMAKE_POLICY(SET CMP0017 NEW)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 
-ADD_SUBDIRECTORY("Loader")
+ADD_SUBDIRECTORY("Map")
 
 SET(GAME_SRC ${GAME_SRC}
-	Classes/Controller/TileImageManager.cpp
-	Classes/Controller/FactoryCells.cpp
-	Classes/Controller/BuildingController.cpp
 	Classes/Controller/KeyboardController.cpp
 	PARENT_SCOPE
 	)
 
 SET(GAME_HEADERS ${GAME_HEADERS}
-	Classes/Controller/TileImageManager.h
-	Classes/Controller/FactoryCells.h
-	Classes/Controller/BuildingController.h
 	Classes/Controller/KeyboardController.h
 	PARENT_SCOPE)

@@ -16,7 +16,7 @@ CC_SYNTHESIZE(int, _id, Id);
 	
 	CREATE_FUNC(Building)
 protected:
-	int getFrame() const override;
+	int getFrame() override;
 };
 
 

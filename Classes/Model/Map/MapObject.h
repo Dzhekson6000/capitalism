@@ -62,7 +62,7 @@ private:
 	Label* label;
 
 public:
-	virtual int getFrame() const;
+	virtual int getFrame();
 	
 	const IsoPoint &getIsoPoint() const;
 	void setIsoPoint(const IsoPoint &isoPoint);

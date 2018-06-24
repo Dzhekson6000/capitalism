@@ -6,7 +6,7 @@
 class RouteCell: public Cell
 {
 protected:
-	virtual int getFrame();
+	int getFrame() override;
 };
 
 

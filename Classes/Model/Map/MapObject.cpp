@@ -50,7 +50,7 @@ void MapObject::removeFromLayer()
 	}
 }
 
-int MapObject::getFrame() const
+int MapObject::getFrame()
 {
 	return frame;
 }

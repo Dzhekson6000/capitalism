@@ -1,7 +1,7 @@
 #include "Building.h"
 #include "Model/Map/Camera.h"
 
-int Building::getFrame() const
+int Building::getFrame()
 {
 	/*::Camera::Direction direction = ::Camera::getInstance()->getDirection();
 	

@@ -26,6 +26,7 @@ public:
 	void updateIsoPoints() override;
 	
 	BuildingManager* getBuildingManager() const;
+	LayerManager* getLayerManager() const;
 	
 	/**
 	 * загружает карту

@@ -12,7 +12,7 @@ bool ItemBuilding::initWithSpriteFrame(cocos2d::SpriteFrame* spriteFrame)
 			case ui::Widget::TouchEventType::BEGAN:
 				break;
 			case ui::Widget::TouchEventType::ENDED:
-				((BuildingManager*)getWorld()->getBuildingManager())->onSelectItem(/*_groupName*/"hs.modern", "grand"/*_objectName*/);
+				getWorld()->getBuildingManager()->onSelectItem(_groupName, _objectName);
 				break;
 			default:
 				break;

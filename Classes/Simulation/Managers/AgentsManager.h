@@ -12,9 +12,13 @@ public:
 	
 	void addNew(Agent* agent);
 	const std::vector<Agent*> &getAgents() const;
+	
+	Manager* getSimulationManager() const;
+	void setSimulationManager(Manager* simulationManager);
 
-private:
+protected:
 	std::vector<Agent*> agents;
+	Manager* simulationManager;
 };
 
 

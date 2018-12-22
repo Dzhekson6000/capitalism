@@ -7,25 +7,46 @@
 /**
  * Агент домохозяйств
  */
-class Household: public Agent
+class Household:public Agent
 {
-private:
+public:
 	/**
 	 * уровень дохода
 	 */
 	enum class IncomeLevel
 	{
-		high, ///<высокий
-		middle, ///<средний
-		low ///<низкий
+		HIGH, ///<высокий
+		MIDDLE, ///<средний
+		LOW ///<низкий
 	};
-
-	IncomeLevel _incomeLevel;
-	int _population;
-	float _workforce;///< трудовые ресурсы
-	float _money;///< финансы домохозяства
 	
-	cocos2d::Point _postition;
+	struct Cluster
+	{
+		Household* high;
+		Household* middle;
+		Household* low;
+	};
+	
+	explicit Household(IncomeLevel incomeLevel);
+	
+	void update(float dt) override;
+	
+	int getPopulation() const;
+	void setPopulation(int population);
+	float getMoney() const;
+	void setMoney(float money);
+	
+private:
+	IncomeLevel incomeLevel;
+	
+	cocos2d::Point position;///< позиция в клетках
+
+private:
+	float timer;
+	
+	void work();///< работаем
+	void eat();///< тратим деньги
+	void up();///< ростём
 };
 
 

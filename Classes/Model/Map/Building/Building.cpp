@@ -28,3 +28,13 @@ void Building::setTypeBuilding(TypeBuilding* typeBuilding)
 	setGroupSprite(typeBuilding->group);
 	setNameSprite(typeBuilding->name);
 }
+
+int Building::getId() const
+{
+	return id;
+}
+
+void Building::setId(int id)
+{
+	Building::id = id;
+}

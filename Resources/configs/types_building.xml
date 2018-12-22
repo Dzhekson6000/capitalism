@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<buildings>
+    <building
+            group="hs.modern"
+            name="grand"
+            w="3" h="3" l="0"
+            houseSpace="500"
+    />
+    <building
+            group="trade"
+            name="shop1"
+            w="2" h="2" l="0"
+            workSpace="100"
+    />
+</buildings>

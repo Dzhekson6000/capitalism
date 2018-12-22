@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<households>
+    <household id="1" title="Низкий">
+        <consumptions>
+            <consumption volume="2"/>
+        </consumptions>
+    </household>
+    <household id="2" title="Средний">
+        <consumptions>
+            <consumption volume="2"/>
+        </consumptions>
+    </household>
+    <household id="3" title="Высокий">
+        <consumptions>
+            <consumption volume="2"/>
+        </consumptions>
+    </household>
+</households>

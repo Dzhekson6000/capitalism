@@ -2,6 +2,7 @@
 #include "Loader/Map/LoaderMap.h"
 #include "Loader/Map/LoaderCompany.h"
 #include "Loader/Map/LoaderMapObject.h"
+#include "Loader/Map/LoaderHousehold.h"
 #include "Simulation/SimulationManager.h"
 
 World::World():_map(nullptr)
@@ -19,7 +20,7 @@ bool World::init()
 	
 	layerManager = new LayerManager(this);
 	simulationManager = new SimulationManager();
-	buildingManager = new BuildingManager(layerManager,this);
+	buildingManager = new BuildingManager(layerManager,this, simulationManager->getBuildingAManager());
 	
 	return true;
 }
@@ -46,8 +47,11 @@ bool World::load(const std::string &path)
 	LoaderCompany loaderCompany(simulationManager->getCompaniesManager());
 	loaderCompany.load(pathXml);
 	
-	LoaderMapObject loaderMapObject(layerManager);
+	LoaderMapObject loaderMapObject(layerManager, buildingManager);
 	loaderMapObject.load(pathXml);
+	
+	LoaderHousehold loaderHousehold(simulationManager->getBuildingAManager());
+	loaderHousehold.load(pathXml);
 	
 	return Loader::load(path);
 }
@@ -74,6 +78,11 @@ void World::onClickCell(const IsoPoint &point)
 }
 
 
+LayerManager* World::getLayerManager() const
+{
+	return layerManager;
+}
+
 BuildingManager* World::getBuildingManager() const
 {
 	return buildingManager;
@@ -81,5 +90,7 @@ BuildingManager* World::getBuildingManager() const
 
 void World::update(float dt)
 {
+	simulationManager->update(dt);
+	
 	Node::update(dt);
 }

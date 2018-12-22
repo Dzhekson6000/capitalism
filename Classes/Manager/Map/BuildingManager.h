@@ -4,7 +4,9 @@
 #include "cocos2d.h"
 #include "Base/Manager.h"
 #include "Manager/Map/LayerManager.h"
+#include "Simulation/Managers/BuildingAManager.h"
 #include "Model/Map/MapObject.h"
+#include "Model/Map/Building/Building.h"
 
 
 USING_NS_CC;
@@ -12,7 +14,7 @@ USING_NS_CC;
 class BuildingManager: public Manager
 {
 public:
-	explicit BuildingManager(LayerManager* layerManager, IsoScroller* isoScroller);
+	explicit BuildingManager(LayerManager* layerManager, IsoScroller* isoScroller, BuildingAManager* buildingAManager);
 	~BuildingManager();
 	
 	/**
@@ -41,6 +43,7 @@ public:
 	
 	void onClick();
 	
+	void build(Building* buildObject);
 	
 	CC_SYNTHESIZE(std::string, _objectName, ObjectName);
 	CC_SYNTHESIZE(std::string, _groupName, GroupName);
@@ -48,6 +51,7 @@ private:
 	EventListenerMouse* _mouseListener;
 	LayerManager* layerManager;
 	IsoScroller* isoScroller;
+	BuildingAManager* buildingAManager;
 	
 	/**
 	 * Функция привязывающая строющийся объект к мыши

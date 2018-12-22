@@ -10,8 +10,13 @@ public:
 	int height;
 	int length;
 	
+	int houseSpace;
+	int workSpace;
+	
 	std::string group;
 	std::string name;
+	
+	TypeBuilding();
 };
 
 

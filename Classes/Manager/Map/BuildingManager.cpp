@@ -4,9 +4,10 @@
 #include "Model/Map/Building/Building.h"
 
 
-BuildingManager::BuildingManager(LayerManager* layerManager, IsoScroller* isoScroller):
+BuildingManager::BuildingManager(LayerManager* layerManager, IsoScroller* isoScroller, BuildingAManager* buildingAManager):
 		layerManager(layerManager),
 		isoScroller(isoScroller),
+		buildingAManager(buildingAManager),
 		_mouseListener(nullptr),
 		_buildingMode(false)
 {
@@ -14,7 +15,7 @@ BuildingManager::BuildingManager(LayerManager* layerManager, IsoScroller* isoScr
 	
 	//загружаем типы построек
 	LoaderTypeBuildings loaderTypeBuildings;
-	loaderTypeBuildings.load("configs/typebuildings.xml");
+	loaderTypeBuildings.load("configs/types_building.xml");
 }
 
 BuildingManager::~BuildingManager()
@@ -26,6 +27,8 @@ void BuildingManager::onSelectItem(std::string groupName, std::string objectName
 {
 	_groupName  = groupName;
 	_objectName = objectName;
+	if(_buildingMode)
+		setBuildingMode(false);
 	setBuildingMode(true);
 }
 
@@ -76,7 +79,7 @@ void BuildingManager::setBuildingMode(bool buildingMode)
 	else
 	{
 		clearMouseEvent();
-		//world->buildObject(_object);
+		build((Building*)_object);
 		_object = nullptr;
 	}
 	_buildingMode = buildingMode;
@@ -110,4 +113,10 @@ void BuildingManager::clearMouseEvent()
 		_eventDispatcher->removeEventListener(_mouseListener);
 		_mouseListener = nullptr;
 	}
+}
+
+void BuildingManager::build(Building* buildObject)
+{
+	//создём агента для постройки
+	buildingAManager->addNew(buildingAManager->createBuildingAgent(buildObject));
 }

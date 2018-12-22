@@ -2,6 +2,7 @@
 #include "GameScene.h"
 #include "View/Ui/buildings/Buildings.h"
 #include "Model/Map/Camera.h"
+#include "Manager/BuildingTypeManager.h"
 
 cocos2d::Scene* GameScene::createScene()
 {
@@ -72,6 +73,23 @@ void GameScene::initKeyboard()
 			[this]()
 			{
 				world->setScale(world->getScale()*0.9);//zoom -10%
+			}
+	);
+	
+	keyboardController.addCallback(
+			EventKeyboard::KeyCode::KEY_SPACE,
+			[this]()
+			{
+				std::string img = "trade:shop1";
+				TypeBuilding* typeBuilding = BuildingTypeManager::getInstance()->
+						getTypeBuilding(img);
+				Building* ret = Building::create();
+				ret->setId(4);
+				ret->setTypeBuilding(typeBuilding);
+				ret->setIsoPoint(IsoPoint(2, 2));
+				ret->initObject();
+				world->getLayerManager()->addMapObject(ret);
+				world->getBuildingManager()->build(ret);
 			}
 	);
 }

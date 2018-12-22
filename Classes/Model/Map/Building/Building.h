@@ -5,17 +5,21 @@
 #include "Model/Map/MapObject.h"
 #include "TypeBuilding.h"
 
-class Building: public MapObject
+class Building:public MapObject
 {
 public:
-	TypeBuilding* _typeBuilding;
+	CREATE_FUNC(Building)
+	
 	TypeBuilding* getTypeBuilding() const;
 	void setTypeBuilding(TypeBuilding* typeBuilding);
-
-CC_SYNTHESIZE(int, _id, Id);
 	
-	CREATE_FUNC(Building)
+	
+	int getId() const;
+	void setId(int id);
 protected:
+	int id;
+	TypeBuilding* _typeBuilding;
+	
 	int getFrame() override;
 };
 

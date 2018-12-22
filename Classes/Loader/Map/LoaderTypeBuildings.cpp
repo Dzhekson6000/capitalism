@@ -39,6 +39,18 @@ void LoaderTypeBuildings::createTypeOfXML(tinyxml2::XMLElement* type)
 	typeBuilding->group = type->Attribute("group");
 	typeBuilding->name  = type->Attribute("name");
 	
+	const char* houseSpace = type->Attribute("houseSpace", nullptr);
+	if(houseSpace)
+	{
+		typeBuilding->houseSpace = atoi(houseSpace);
+	}
+	
+	const char* workSpace = type->Attribute("workSpace", nullptr);
+	if(workSpace)
+	{
+		typeBuilding->workSpace = atoi(workSpace);
+	}
+	
 	BuildingTypeManager::getInstance()->addTypeBuilding(typeBuilding);
 	
 }

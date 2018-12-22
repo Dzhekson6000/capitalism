@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <area left="0" top="0" width="300" length="300">
+    <companies>
+        <company
+                id="1"
+                money="10000"
+                typeOwner="player"
+                owner="1"
+        >
+        </company>
+        <company
+                id="2"
+                money="10000"
+        >
+        </company>
+    </companies>
+
     <buildings>
         <build
                 id="1"
@@ -18,18 +33,9 @@
         />
     </buildings>
 
-    <companies>
-        <company
-                id="1"
-                money="10000"
-                typeOwner="player"
-                owner="1"
-        >
-        </company>
-        <company
-                id="2"
-                money="10000"
-        >
-        </company>
-    </companies>
+    <households>
+        <building id="1">
+            <household income="low" population="10" money="1000"/>
+        </building>
+    </households>
 </area>

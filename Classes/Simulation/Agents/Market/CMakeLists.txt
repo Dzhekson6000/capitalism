@@ -1,0 +1,11 @@
+CMAKE_POLICY(SET CMP0017 NEW)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+
+SET(GAME_SRC ${GAME_SRC}
+	Classes/Simulation/Agents/Market/Market.cpp
+	PARENT_SCOPE)
+
+SET(GAME_HEADERS ${GAME_HEADERS}
+	Classes/Simulation/Agents/Market/Market.h
+	PARENT_SCOPE)
